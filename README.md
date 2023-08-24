@@ -1,18 +1,13 @@
-# ![Mr. PJ](./images/wordmark-dynamic.svg)
-
-**Mr**grain **P**ro**J**en types.
-Opinionated projen project types for everyone.
-
 ## Usage
 
 ```console
-projen new --from mrpj construct
+projen new --from schuettc construct
 ```
 
 ```console
-projen new --from mrpj projen
+projen new --from schuettc projen
 ```
 
 ```console
-projen new --from mrpj ts
+projen new --from schuettc ts
 ```

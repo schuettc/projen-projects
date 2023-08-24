@@ -1,20 +1,15 @@
-# ![Mr. PJ](./images/wordmark-dynamic.svg)
-
-**Mr**grain **P**ro**J**en types.
-Opinionated projen project types for everyone.
-
 ## Usage
 
 ```console
-projen new --from mrpj construct
+projen new --from schuettc construct
 ```
 
 ```console
-projen new --from mrpj projen
+projen new --from schuettc projen
 ```
 
 ```console
-projen new --from mrpj ts
+projen new --from schuettc ts
 ```
 
 # API Reference <a name="API Reference" id="api-reference"></a>
@@ -22,53 +17,14 @@ projen new --from mrpj ts
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ColorScheme <a name="ColorScheme" id="mrpj.logo.ColorScheme"></a>
-
-#### Initializer <a name="Initializer" id="mrpj.logo.ColorScheme.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const colorScheme: logo.ColorScheme = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.ColorScheme.property.dark">dark</a></code> | <code>mrpj.logo.FontOptions</code> | *No description.* |
-| <code><a href="#mrpj.logo.ColorScheme.property.light">light</a></code> | <code>mrpj.logo.FontOptions</code> | *No description.* |
-
----
-
-##### `dark`<sup>Optional</sup> <a name="dark" id="mrpj.logo.ColorScheme.property.dark"></a>
-
-```typescript
-public readonly dark: FontOptions;
-```
-
-- *Type:* mrpj.logo.FontOptions
-
----
-
-##### `light`<sup>Optional</sup> <a name="light" id="mrpj.logo.ColorScheme.property.light"></a>
-
-```typescript
-public readonly light: FontOptions;
-```
-
-- *Type:* mrpj.logo.FontOptions
-
----
-
-### ConstructProjectOptions <a name="ConstructProjectOptions" id="mrpj.ConstructProjectOptions"></a>
+### ConstructProjectOptions <a name="ConstructProjectOptions" id="schuettc.ConstructProjectOptions"></a>
 
 ConstructProjectOptions.
 
-#### Initializer <a name="Initializer" id="mrpj.ConstructProjectOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="schuettc.ConstructProjectOptions.Initializer"></a>
 
 ```typescript
-import { ConstructProjectOptions } from 'mrpj'
+import { ConstructProjectOptions } from 'schuettc'
 
 const constructProjectOptions: ConstructProjectOptions = { ... }
 ```
@@ -77,163 +33,163 @@ const constructProjectOptions: ConstructProjectOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ConstructProjectOptions.property.author">author</a></code> | <code>string</code> | The name of the library author. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.authorAddress">authorAddress</a></code> | <code>string</code> | Email or URL of the library author. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.repositoryUrl">repositoryUrl</a></code> | <code>string</code> | Git repository URL. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.catalog">catalog</a></code> | <code>projen.cdk.Catalog</code> | Libraries will be picked up by the construct catalog when they are published to npm as jsii modules and will be published under:. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
-| <code><a href="#mrpj.ConstructProjectOptions.property.cdkVersionPinning">cdkVersionPinning</a></code> | <code>boolean</code> | Use pinned version instead of caret version for CDK. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.compat">compat</a></code> | <code>boolean</code> | Automatically run API compatibility test against the latest version published to npm after compilation. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.compatIgnore">compatIgnore</a></code> | <code>string</code> | Name of the ignore file for API compatibility tests. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.compressAssembly">compressAssembly</a></code> | <code>boolean</code> | Emit a compressed version of the assembly. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.constructsVersion">constructsVersion</a></code> | <code>string</code> | Minimum version of the `constructs` library to depend on. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.docgenFilePath">docgenFilePath</a></code> | <code>string</code> | File path for generated docs. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.edgeLambdaAutoDiscover">edgeLambdaAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `cloudfront.experimental.EdgeFunction` for each `.edge-lambda.ts` handler in your source tree. If this is disabled, you can manually add an `awscdk.AutoDiscover` component to your project. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.excludeTypescript">excludeTypescript</a></code> | <code>string[]</code> | Accepts a list of glob patterns. Files matching any of those patterns will be excluded from the TypeScript compiler input. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.integrationTestAutoDiscover">integrationTestAutoDiscover</a></code> | <code>boolean</code> | Automatically discovers and creates integration tests for each `.integ.ts` file in under your test directory. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.jsiiVersion">jsiiVersion</a></code> | <code>string</code> | Version of the jsii compiler to use. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.lambdaAutoDiscover">lambdaAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `aws_lambda.Function` for each `.lambda.ts` handler in your source tree. If this is disabled, you either need to explicitly call `aws_lambda.Function.autoDiscover()` or define a `new aws_lambda.Function()` for each handler. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.lambdaExtensionAutoDiscover">lambdaExtensionAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `awscdk.LambdaExtension` for each `.lambda-extension.ts` entrypoint in your source tree. If this is disabled, you can manually add an `awscdk.AutoDiscover` component to your project. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.lambdaOptions">lambdaOptions</a></code> | <code>projen.awscdk.LambdaFunctionCommonOptions</code> | Common options for all AWS Lambda functions. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcTs">projenrcTs</a></code> | <code>boolean</code> | Use TypeScript for your projenrc file (`.projenrc.ts`). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | Publish Go bindings to a git repository. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishToMaven">publishToMaven</a></code> | <code>projen.cdk.JsiiJavaTarget</code> | Publish to maven. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | Publish to NuGet. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.publishToPypi">publishToPypi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | Publish to pypi. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releasableCommits">releasableCommits</a></code> | <code>projen.ReleasableCommits</code> | Find commits that should be considered releasable Used to decide if a release is required. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.rootdir">rootdir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProjectOptions.property.sampleCode">sampleCode</a></code> | <code>boolean</code> | Generate one-time sample in `src/` and `test/` if there are no files there. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
-| <code><a href="#mrpj.ConstructProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
-| <code><a href="#mrpj.ConstructProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.author">author</a></code> | <code>string</code> | The name of the library author. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.authorAddress">authorAddress</a></code> | <code>string</code> | Email or URL of the library author. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | Minimum version of the AWS CDK to depend on. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.repositoryUrl">repositoryUrl</a></code> | <code>string</code> | Git repository URL. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.catalog">catalog</a></code> | <code>projen.cdk.Catalog</code> | Libraries will be picked up by the construct catalog when they are published to npm as jsii modules and will be published under:. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.cdkAssertions">cdkAssertions</a></code> | <code>boolean</code> | Install the assertions library? |
+| <code><a href="#schuettc.ConstructProjectOptions.property.cdkVersionPinning">cdkVersionPinning</a></code> | <code>boolean</code> | Use pinned version instead of caret version for CDK. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.compat">compat</a></code> | <code>boolean</code> | Automatically run API compatibility test against the latest version published to npm after compilation. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.compatIgnore">compatIgnore</a></code> | <code>string</code> | Name of the ignore file for API compatibility tests. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.compressAssembly">compressAssembly</a></code> | <code>boolean</code> | Emit a compressed version of the assembly. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.constructsVersion">constructsVersion</a></code> | <code>string</code> | Minimum version of the `constructs` library to depend on. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.docgenFilePath">docgenFilePath</a></code> | <code>string</code> | File path for generated docs. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.edgeLambdaAutoDiscover">edgeLambdaAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `cloudfront.experimental.EdgeFunction` for each `.edge-lambda.ts` handler in your source tree. If this is disabled, you can manually add an `awscdk.AutoDiscover` component to your project. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.excludeTypescript">excludeTypescript</a></code> | <code>string[]</code> | Accepts a list of glob patterns. Files matching any of those patterns will be excluded from the TypeScript compiler input. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.integrationTestAutoDiscover">integrationTestAutoDiscover</a></code> | <code>boolean</code> | Automatically discovers and creates integration tests for each `.integ.ts` file in under your test directory. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.jsiiVersion">jsiiVersion</a></code> | <code>string</code> | Version of the jsii compiler to use. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.lambdaAutoDiscover">lambdaAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `aws_lambda.Function` for each `.lambda.ts` handler in your source tree. If this is disabled, you either need to explicitly call `aws_lambda.Function.autoDiscover()` or define a `new aws_lambda.Function()` for each handler. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.lambdaExtensionAutoDiscover">lambdaExtensionAutoDiscover</a></code> | <code>boolean</code> | Automatically adds an `awscdk.LambdaExtension` for each `.lambda-extension.ts` entrypoint in your source tree. If this is disabled, you can manually add an `awscdk.AutoDiscover` component to your project. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.lambdaOptions">lambdaOptions</a></code> | <code>projen.awscdk.LambdaFunctionCommonOptions</code> | Common options for all AWS Lambda functions. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcTs">projenrcTs</a></code> | <code>boolean</code> | Use TypeScript for your projenrc file (`.projenrc.ts`). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | Publish Go bindings to a git repository. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishToMaven">publishToMaven</a></code> | <code>projen.cdk.JsiiJavaTarget</code> | Publish to maven. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | Publish to NuGet. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.publishToPypi">publishToPypi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | Publish to pypi. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releasableCommits">releasableCommits</a></code> | <code>projen.ReleasableCommits</code> | Find commits that should be considered releasable Used to decide if a release is required. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.rootdir">rootdir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProjectOptions.property.sampleCode">sampleCode</a></code> | <code>boolean</code> | Generate one-time sample in `src/` and `test/` if there are no files there. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
+| <code><a href="#schuettc.ConstructProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
+| <code><a href="#schuettc.ConstructProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
 
 ---
 
-##### `author`<sup>Required</sup> <a name="author" id="mrpj.ConstructProjectOptions.property.author"></a>
+##### `author`<sup>Required</sup> <a name="author" id="schuettc.ConstructProjectOptions.property.author"></a>
 
 ```typescript
 public readonly author: string;
@@ -246,7 +202,7 @@ The name of the library author.
 
 ---
 
-##### `authorAddress`<sup>Required</sup> <a name="authorAddress" id="mrpj.ConstructProjectOptions.property.authorAddress"></a>
+##### `authorAddress`<sup>Required</sup> <a name="authorAddress" id="schuettc.ConstructProjectOptions.property.authorAddress"></a>
 
 ```typescript
 public readonly authorAddress: string;
@@ -259,7 +215,7 @@ Email or URL of the library author.
 
 ---
 
-##### `cdkVersion`<sup>Required</sup> <a name="cdkVersion" id="mrpj.ConstructProjectOptions.property.cdkVersion"></a>
+##### `cdkVersion`<sup>Required</sup> <a name="cdkVersion" id="schuettc.ConstructProjectOptions.property.cdkVersion"></a>
 
 ```typescript
 public readonly cdkVersion: string;
@@ -272,7 +228,7 @@ Minimum version of the AWS CDK to depend on.
 
 ---
 
-##### `defaultReleaseBranch`<sup>Required</sup> <a name="defaultReleaseBranch" id="mrpj.ConstructProjectOptions.property.defaultReleaseBranch"></a>
+##### `defaultReleaseBranch`<sup>Required</sup> <a name="defaultReleaseBranch" id="schuettc.ConstructProjectOptions.property.defaultReleaseBranch"></a>
 
 ```typescript
 public readonly defaultReleaseBranch: string;
@@ -285,7 +241,7 @@ The name of the main release branch.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProjectOptions.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProjectOptions.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -298,7 +254,7 @@ This is the name of your project.
 
 ---
 
-##### `repositoryUrl`<sup>Required</sup> <a name="repositoryUrl" id="mrpj.ConstructProjectOptions.property.repositoryUrl"></a>
+##### `repositoryUrl`<sup>Required</sup> <a name="repositoryUrl" id="schuettc.ConstructProjectOptions.property.repositoryUrl"></a>
 
 ```typescript
 public readonly repositoryUrl: string;
@@ -311,7 +267,7 @@ Git repository URL.
 
 ---
 
-##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="mrpj.ConstructProjectOptions.property.allowLibraryDependencies"></a>
+##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="schuettc.ConstructProjectOptions.property.allowLibraryDependencies"></a>
 
 ```typescript
 public readonly allowLibraryDependencies: boolean;
@@ -327,7 +283,7 @@ for specifying these.
 
 ---
 
-##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="mrpj.ConstructProjectOptions.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="schuettc.ConstructProjectOptions.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -340,7 +296,7 @@ A directory which will contain build artifacts.
 
 ---
 
-##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="mrpj.ConstructProjectOptions.property.authorEmail"></a>
+##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="schuettc.ConstructProjectOptions.property.authorEmail"></a>
 
 ```typescript
 public readonly authorEmail: string;
@@ -352,7 +308,7 @@ Author's e-mail.
 
 ---
 
-##### `authorName`<sup>Optional</sup> <a name="authorName" id="mrpj.ConstructProjectOptions.property.authorName"></a>
+##### `authorName`<sup>Optional</sup> <a name="authorName" id="schuettc.ConstructProjectOptions.property.authorName"></a>
 
 ```typescript
 public readonly authorName: string;
@@ -364,7 +320,7 @@ Author's name.
 
 ---
 
-##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="mrpj.ConstructProjectOptions.property.authorOrganization"></a>
+##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="schuettc.ConstructProjectOptions.property.authorOrganization"></a>
 
 ```typescript
 public readonly authorOrganization: boolean;
@@ -376,7 +332,7 @@ Is the author an organization.
 
 ---
 
-##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="mrpj.ConstructProjectOptions.property.authorUrl"></a>
+##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="schuettc.ConstructProjectOptions.property.authorUrl"></a>
 
 ```typescript
 public readonly authorUrl: string;
@@ -388,7 +344,7 @@ Author's URL / Website.
 
 ---
 
-##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="mrpj.ConstructProjectOptions.property.autoApproveOptions"></a>
+##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="schuettc.ConstructProjectOptions.property.autoApproveOptions"></a>
 
 ```typescript
 public readonly autoApproveOptions: AutoApproveOptions;
@@ -401,7 +357,7 @@ Enable and configure the 'auto approve' workflow.
 
 ---
 
-##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="mrpj.ConstructProjectOptions.property.autoApproveUpgrades"></a>
+##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="schuettc.ConstructProjectOptions.property.autoApproveUpgrades"></a>
 
 ```typescript
 public readonly autoApproveUpgrades: boolean;
@@ -416,7 +372,7 @@ Throw if set to true but `autoApproveOptions` are not defined.
 
 ---
 
-##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="mrpj.ConstructProjectOptions.property.autoDetectBin"></a>
+##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="schuettc.ConstructProjectOptions.property.autoDetectBin"></a>
 
 ```typescript
 public readonly autoDetectBin: boolean;
@@ -429,7 +385,7 @@ Automatically add all executables under the `bin` directory to your `package.jso
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.ConstructProjectOptions.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.ConstructProjectOptions.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: boolean;
@@ -445,7 +401,7 @@ is set to false.
 
 ---
 
-##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="mrpj.ConstructProjectOptions.property.autoMergeOptions"></a>
+##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="schuettc.ConstructProjectOptions.property.autoMergeOptions"></a>
 
 ```typescript
 public readonly autoMergeOptions: AutoMergeOptions;
@@ -461,7 +417,7 @@ Has no effect if
 
 ---
 
-##### `bin`<sup>Optional</sup> <a name="bin" id="mrpj.ConstructProjectOptions.property.bin"></a>
+##### `bin`<sup>Optional</sup> <a name="bin" id="schuettc.ConstructProjectOptions.property.bin"></a>
 
 ```typescript
 public readonly bin: {[ key: string ]: string};
@@ -477,7 +433,7 @@ executable file under `bin` will automatically be added to this section.
 
 ---
 
-##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="mrpj.ConstructProjectOptions.property.bugsEmail"></a>
+##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="schuettc.ConstructProjectOptions.property.bugsEmail"></a>
 
 ```typescript
 public readonly bugsEmail: string;
@@ -489,7 +445,7 @@ The email address to which issues should be reported.
 
 ---
 
-##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="mrpj.ConstructProjectOptions.property.bugsUrl"></a>
+##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="schuettc.ConstructProjectOptions.property.bugsUrl"></a>
 
 ```typescript
 public readonly bugsUrl: string;
@@ -501,7 +457,7 @@ The url to your project's issue tracker.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.ConstructProjectOptions.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.ConstructProjectOptions.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: boolean;
@@ -514,7 +470,7 @@ Define a GitHub workflow for building PRs.
 
 ---
 
-##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="mrpj.ConstructProjectOptions.property.buildWorkflowTriggers"></a>
+##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="schuettc.ConstructProjectOptions.property.buildWorkflowTriggers"></a>
 
 ```typescript
 public readonly buildWorkflowTriggers: Triggers;
@@ -527,7 +483,7 @@ Build workflow triggers.
 
 ---
 
-##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="mrpj.ConstructProjectOptions.property.bundledDeps"></a>
+##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="schuettc.ConstructProjectOptions.property.bundledDeps"></a>
 
 ```typescript
 public readonly bundledDeps: string[];
@@ -550,7 +506,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="mrpj.ConstructProjectOptions.property.bundlerOptions"></a>
+##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="schuettc.ConstructProjectOptions.property.bundlerOptions"></a>
 
 ```typescript
 public readonly bundlerOptions: BundlerOptions;
@@ -562,7 +518,7 @@ Options for `Bundler`.
 
 ---
 
-##### `catalog`<sup>Optional</sup> <a name="catalog" id="mrpj.ConstructProjectOptions.property.catalog"></a>
+##### `catalog`<sup>Optional</sup> <a name="catalog" id="schuettc.ConstructProjectOptions.property.catalog"></a>
 
 ```typescript
 public readonly catalog: Catalog;
@@ -584,7 +540,7 @@ mentioned in the tweet.
 
 ---
 
-##### `cdkAssertions`<sup>Optional</sup> <a name="cdkAssertions" id="mrpj.ConstructProjectOptions.property.cdkAssertions"></a>
+##### `cdkAssertions`<sup>Optional</sup> <a name="cdkAssertions" id="schuettc.ConstructProjectOptions.property.cdkAssertions"></a>
 
 ```typescript
 public readonly cdkAssertions: boolean;
@@ -600,7 +556,7 @@ assertions is already included in 'aws-cdk-lib'
 
 ---
 
-##### `cdkVersionPinning`<sup>Optional</sup> <a name="cdkVersionPinning" id="mrpj.ConstructProjectOptions.property.cdkVersionPinning"></a>
+##### `cdkVersionPinning`<sup>Optional</sup> <a name="cdkVersionPinning" id="schuettc.ConstructProjectOptions.property.cdkVersionPinning"></a>
 
 ```typescript
 public readonly cdkVersionPinning: boolean;
@@ -615,7 +571,7 @@ If you use experimental features this will let you define the moment you include
 
 ---
 
-##### `clobber`<sup>Optional</sup> <a name="clobber" id="mrpj.ConstructProjectOptions.property.clobber"></a>
+##### `clobber`<sup>Optional</sup> <a name="clobber" id="schuettc.ConstructProjectOptions.property.clobber"></a>
 
 ```typescript
 public readonly clobber: boolean;
@@ -628,7 +584,7 @@ Add a `clobber` task which resets the repo to origin.
 
 ---
 
-##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="mrpj.ConstructProjectOptions.property.codeArtifactOptions"></a>
+##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="schuettc.ConstructProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
 public readonly codeArtifactOptions: CodeArtifactOptions;
@@ -643,7 +599,7 @@ This is required if publishing packages to, or installing scoped packages from A
 
 ---
 
-##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="mrpj.ConstructProjectOptions.property.codeCov"></a>
+##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="schuettc.ConstructProjectOptions.property.codeCov"></a>
 
 ```typescript
 public readonly codeCov: boolean;
@@ -656,7 +612,7 @@ Define a GitHub workflow step for sending code coverage metrics to https://codec
 
 ---
 
-##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="mrpj.ConstructProjectOptions.property.codeCovTokenSecret"></a>
+##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="schuettc.ConstructProjectOptions.property.codeCovTokenSecret"></a>
 
 ```typescript
 public readonly codeCovTokenSecret: string;
@@ -669,7 +625,7 @@ Define the secret name for a specified https://codecov.io/ token A secret is req
 
 ---
 
-##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="mrpj.ConstructProjectOptions.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="schuettc.ConstructProjectOptions.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -682,7 +638,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compat`<sup>Optional</sup> <a name="compat" id="mrpj.ConstructProjectOptions.property.compat"></a>
+##### `compat`<sup>Optional</sup> <a name="compat" id="schuettc.ConstructProjectOptions.property.compat"></a>
 
 ```typescript
 public readonly compat: boolean;
@@ -698,7 +654,7 @@ You can manually run compatibility tests using `yarn compat` if this feature is 
 
 ---
 
-##### `compatIgnore`<sup>Optional</sup> <a name="compatIgnore" id="mrpj.ConstructProjectOptions.property.compatIgnore"></a>
+##### `compatIgnore`<sup>Optional</sup> <a name="compatIgnore" id="schuettc.ConstructProjectOptions.property.compatIgnore"></a>
 
 ```typescript
 public readonly compatIgnore: string;
@@ -711,7 +667,7 @@ Name of the ignore file for API compatibility tests.
 
 ---
 
-##### `compressAssembly`<sup>Optional</sup> <a name="compressAssembly" id="mrpj.ConstructProjectOptions.property.compressAssembly"></a>
+##### `compressAssembly`<sup>Optional</sup> <a name="compressAssembly" id="schuettc.ConstructProjectOptions.property.compressAssembly"></a>
 
 ```typescript
 public readonly compressAssembly: boolean;
@@ -724,7 +680,7 @@ Emit a compressed version of the assembly.
 
 ---
 
-##### `constructsVersion`<sup>Optional</sup> <a name="constructsVersion" id="mrpj.ConstructProjectOptions.property.constructsVersion"></a>
+##### `constructsVersion`<sup>Optional</sup> <a name="constructsVersion" id="schuettc.ConstructProjectOptions.property.constructsVersion"></a>
 
 ```typescript
 public readonly constructsVersion: string;
@@ -737,7 +693,7 @@ Minimum version of the `constructs` library to depend on.
 
 ---
 
-##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="mrpj.ConstructProjectOptions.property.copyrightOwner"></a>
+##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="schuettc.ConstructProjectOptions.property.copyrightOwner"></a>
 
 ```typescript
 public readonly copyrightOwner: string;
@@ -750,7 +706,7 @@ License copyright owner.
 
 ---
 
-##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="mrpj.ConstructProjectOptions.property.copyrightPeriod"></a>
+##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="schuettc.ConstructProjectOptions.property.copyrightPeriod"></a>
 
 ```typescript
 public readonly copyrightPeriod: string;
@@ -763,7 +719,7 @@ The copyright years to put in the LICENSE file.
 
 ---
 
-##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="mrpj.ConstructProjectOptions.property.dependabot"></a>
+##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="schuettc.ConstructProjectOptions.property.dependabot"></a>
 
 ```typescript
 public readonly dependabot: boolean;
@@ -778,7 +734,7 @@ Cannot be used in conjunction with `depsUpgrade`.
 
 ---
 
-##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="mrpj.ConstructProjectOptions.property.dependabotOptions"></a>
+##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="schuettc.ConstructProjectOptions.property.dependabotOptions"></a>
 
 ```typescript
 public readonly dependabotOptions: DependabotOptions;
@@ -791,7 +747,7 @@ Options for dependabot.
 
 ---
 
-##### `deps`<sup>Optional</sup> <a name="deps" id="mrpj.ConstructProjectOptions.property.deps"></a>
+##### `deps`<sup>Optional</sup> <a name="deps" id="schuettc.ConstructProjectOptions.property.deps"></a>
 
 ```typescript
 public readonly deps: string[];
@@ -811,7 +767,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="mrpj.ConstructProjectOptions.property.depsUpgrade"></a>
+##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="schuettc.ConstructProjectOptions.property.depsUpgrade"></a>
 
 ```typescript
 public readonly depsUpgrade: boolean;
@@ -826,7 +782,7 @@ Cannot be used in conjunction with `dependabot`.
 
 ---
 
-##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="mrpj.ConstructProjectOptions.property.depsUpgradeOptions"></a>
+##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="schuettc.ConstructProjectOptions.property.depsUpgradeOptions"></a>
 
 ```typescript
 public readonly depsUpgradeOptions: UpgradeDependenciesOptions;
@@ -839,7 +795,7 @@ Options for `UpgradeDependencies`.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="mrpj.ConstructProjectOptions.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="schuettc.ConstructProjectOptions.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -854,7 +810,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-description
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.ConstructProjectOptions.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.ConstructProjectOptions.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: boolean;
@@ -867,7 +823,7 @@ Add a VSCode development environment (used for GitHub Codespaces).
 
 ---
 
-##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="mrpj.ConstructProjectOptions.property.devDeps"></a>
+##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="schuettc.ConstructProjectOptions.property.devDeps"></a>
 
 ```typescript
 public readonly devDeps: string[];
@@ -891,7 +847,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="mrpj.ConstructProjectOptions.property.disableTsconfig"></a>
+##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="schuettc.ConstructProjectOptions.property.disableTsconfig"></a>
 
 ```typescript
 public readonly disableTsconfig: boolean;
@@ -904,7 +860,7 @@ Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.jso
 
 ---
 
-##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="mrpj.ConstructProjectOptions.property.disableTsconfigDev"></a>
+##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="schuettc.ConstructProjectOptions.property.disableTsconfigDev"></a>
 
 ```typescript
 public readonly disableTsconfigDev: boolean;
@@ -917,7 +873,7 @@ Do not generate a `tsconfig.dev.json` file.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.ConstructProjectOptions.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.ConstructProjectOptions.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -930,7 +886,7 @@ Docgen by Typedoc.
 
 ---
 
-##### `docgenFilePath`<sup>Optional</sup> <a name="docgenFilePath" id="mrpj.ConstructProjectOptions.property.docgenFilePath"></a>
+##### `docgenFilePath`<sup>Optional</sup> <a name="docgenFilePath" id="schuettc.ConstructProjectOptions.property.docgenFilePath"></a>
 
 ```typescript
 public readonly docgenFilePath: string;
@@ -943,7 +899,7 @@ File path for generated docs.
 
 ---
 
-##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="mrpj.ConstructProjectOptions.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="schuettc.ConstructProjectOptions.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -956,7 +912,7 @@ Docs directory.
 
 ---
 
-##### `edgeLambdaAutoDiscover`<sup>Optional</sup> <a name="edgeLambdaAutoDiscover" id="mrpj.ConstructProjectOptions.property.edgeLambdaAutoDiscover"></a>
+##### `edgeLambdaAutoDiscover`<sup>Optional</sup> <a name="edgeLambdaAutoDiscover" id="schuettc.ConstructProjectOptions.property.edgeLambdaAutoDiscover"></a>
 
 ```typescript
 public readonly edgeLambdaAutoDiscover: boolean;
@@ -969,7 +925,7 @@ Automatically adds an `cloudfront.experimental.EdgeFunction` for each `.edge-lam
 
 ---
 
-##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="mrpj.ConstructProjectOptions.property.entrypoint"></a>
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="schuettc.ConstructProjectOptions.property.entrypoint"></a>
 
 ```typescript
 public readonly entrypoint: string;
@@ -982,7 +938,7 @@ Module entrypoint (`main` in `package.json`). Set to an empty string to not incl
 
 ---
 
-##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="mrpj.ConstructProjectOptions.property.entrypointTypes"></a>
+##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="schuettc.ConstructProjectOptions.property.entrypointTypes"></a>
 
 ```typescript
 public readonly entrypointTypes: string;
@@ -995,7 +951,7 @@ The .d.ts file that includes the type declarations for this module.
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.ConstructProjectOptions.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.ConstructProjectOptions.property.eslint"></a>
 
 ```typescript
 public readonly eslint: boolean;
@@ -1008,7 +964,7 @@ Setup eslint.
 
 ---
 
-##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="mrpj.ConstructProjectOptions.property.eslintOptions"></a>
+##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="schuettc.ConstructProjectOptions.property.eslintOptions"></a>
 
 ```typescript
 public readonly eslintOptions: EslintOptions;
@@ -1021,7 +977,7 @@ Eslint options.
 
 ---
 
-##### `excludeTypescript`<sup>Optional</sup> <a name="excludeTypescript" id="mrpj.ConstructProjectOptions.property.excludeTypescript"></a>
+##### `excludeTypescript`<sup>Optional</sup> <a name="excludeTypescript" id="schuettc.ConstructProjectOptions.property.excludeTypescript"></a>
 
 ```typescript
 public readonly excludeTypescript: string[];
@@ -1037,7 +993,7 @@ that cannot be compiled with jsii's compiler settings.
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.ConstructProjectOptions.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.ConstructProjectOptions.property.github"></a>
 
 ```typescript
 public readonly github: boolean;
@@ -1052,7 +1008,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="mrpj.ConstructProjectOptions.property.githubOptions"></a>
+##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="schuettc.ConstructProjectOptions.property.githubOptions"></a>
 
 ```typescript
 public readonly githubOptions: GitHubOptions;
@@ -1065,7 +1021,7 @@ Options for GitHub integration.
 
 ---
 
-##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="mrpj.ConstructProjectOptions.property.gitignore"></a>
+##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="schuettc.ConstructProjectOptions.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: string[];
@@ -1077,7 +1033,7 @@ Additional entries to .gitignore.
 
 ---
 
-##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="mrpj.ConstructProjectOptions.property.gitIgnoreOptions"></a>
+##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="schuettc.ConstructProjectOptions.property.gitIgnoreOptions"></a>
 
 ```typescript
 public readonly gitIgnoreOptions: IgnoreFileOptions;
@@ -1089,7 +1045,7 @@ Configuration options for .gitignore file.
 
 ---
 
-##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="mrpj.ConstructProjectOptions.property.gitOptions"></a>
+##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="schuettc.ConstructProjectOptions.property.gitOptions"></a>
 
 ```typescript
 public readonly gitOptions: GitOptions;
@@ -1101,7 +1057,7 @@ Configuration options for git.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.ConstructProjectOptions.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.ConstructProjectOptions.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: boolean;
@@ -1114,7 +1070,7 @@ Add a Gitpod development environment.
 
 ---
 
-##### `homepage`<sup>Optional</sup> <a name="homepage" id="mrpj.ConstructProjectOptions.property.homepage"></a>
+##### `homepage`<sup>Optional</sup> <a name="homepage" id="schuettc.ConstructProjectOptions.property.homepage"></a>
 
 ```typescript
 public readonly homepage: string;
@@ -1126,7 +1082,7 @@ Package's Homepage / Website.
 
 ---
 
-##### `integrationTestAutoDiscover`<sup>Optional</sup> <a name="integrationTestAutoDiscover" id="mrpj.ConstructProjectOptions.property.integrationTestAutoDiscover"></a>
+##### `integrationTestAutoDiscover`<sup>Optional</sup> <a name="integrationTestAutoDiscover" id="schuettc.ConstructProjectOptions.property.integrationTestAutoDiscover"></a>
 
 ```typescript
 public readonly integrationTestAutoDiscover: boolean;
@@ -1139,7 +1095,7 @@ Automatically discovers and creates integration tests for each `.integ.ts` file 
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.ConstructProjectOptions.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.ConstructProjectOptions.property.jest"></a>
 
 ```typescript
 public readonly jest: boolean;
@@ -1152,7 +1108,7 @@ Setup jest unit tests.
 
 ---
 
-##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="mrpj.ConstructProjectOptions.property.jestOptions"></a>
+##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="schuettc.ConstructProjectOptions.property.jestOptions"></a>
 
 ```typescript
 public readonly jestOptions: JestOptions;
@@ -1165,7 +1121,7 @@ Jest options.
 
 ---
 
-##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="mrpj.ConstructProjectOptions.property.jsiiReleaseVersion"></a>
+##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="schuettc.ConstructProjectOptions.property.jsiiReleaseVersion"></a>
 
 ```typescript
 public readonly jsiiReleaseVersion: string;
@@ -1178,7 +1134,7 @@ Version requirement of `publib` which is used to publish modules to npm.
 
 ---
 
-##### `jsiiVersion`<sup>Optional</sup> <a name="jsiiVersion" id="mrpj.ConstructProjectOptions.property.jsiiVersion"></a>
+##### `jsiiVersion`<sup>Optional</sup> <a name="jsiiVersion" id="schuettc.ConstructProjectOptions.property.jsiiVersion"></a>
 
 ```typescript
 public readonly jsiiVersion: string;
@@ -1198,7 +1154,7 @@ and should remain on the same minor, so we recommend using a `~` dependency
 
 ---
 
-##### `keywords`<sup>Optional</sup> <a name="keywords" id="mrpj.ConstructProjectOptions.property.keywords"></a>
+##### `keywords`<sup>Optional</sup> <a name="keywords" id="schuettc.ConstructProjectOptions.property.keywords"></a>
 
 ```typescript
 public readonly keywords: string[];
@@ -1210,7 +1166,7 @@ Keywords to include in `package.json`.
 
 ---
 
-##### `lambdaAutoDiscover`<sup>Optional</sup> <a name="lambdaAutoDiscover" id="mrpj.ConstructProjectOptions.property.lambdaAutoDiscover"></a>
+##### `lambdaAutoDiscover`<sup>Optional</sup> <a name="lambdaAutoDiscover" id="schuettc.ConstructProjectOptions.property.lambdaAutoDiscover"></a>
 
 ```typescript
 public readonly lambdaAutoDiscover: boolean;
@@ -1223,7 +1179,7 @@ Automatically adds an `aws_lambda.Function` for each `.lambda.ts` handler in you
 
 ---
 
-##### `lambdaExtensionAutoDiscover`<sup>Optional</sup> <a name="lambdaExtensionAutoDiscover" id="mrpj.ConstructProjectOptions.property.lambdaExtensionAutoDiscover"></a>
+##### `lambdaExtensionAutoDiscover`<sup>Optional</sup> <a name="lambdaExtensionAutoDiscover" id="schuettc.ConstructProjectOptions.property.lambdaExtensionAutoDiscover"></a>
 
 ```typescript
 public readonly lambdaExtensionAutoDiscover: boolean;
@@ -1236,7 +1192,7 @@ Automatically adds an `awscdk.LambdaExtension` for each `.lambda-extension.ts` e
 
 ---
 
-##### `lambdaOptions`<sup>Optional</sup> <a name="lambdaOptions" id="mrpj.ConstructProjectOptions.property.lambdaOptions"></a>
+##### `lambdaOptions`<sup>Optional</sup> <a name="lambdaOptions" id="schuettc.ConstructProjectOptions.property.lambdaOptions"></a>
 
 ```typescript
 public readonly lambdaOptions: LambdaFunctionCommonOptions;
@@ -1249,7 +1205,7 @@ Common options for all AWS Lambda functions.
 
 ---
 
-##### `libdir`<sup>Optional</sup> <a name="libdir" id="mrpj.ConstructProjectOptions.property.libdir"></a>
+##### `libdir`<sup>Optional</sup> <a name="libdir" id="schuettc.ConstructProjectOptions.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -1262,7 +1218,7 @@ Typescript  artifacts output directory.
 
 ---
 
-##### `license`<sup>Optional</sup> <a name="license" id="mrpj.ConstructProjectOptions.property.license"></a>
+##### `license`<sup>Optional</sup> <a name="license" id="schuettc.ConstructProjectOptions.property.license"></a>
 
 ```typescript
 public readonly license: string;
@@ -1278,7 +1234,7 @@ Use the `licensed` option if you want to no license to be specified.
 
 ---
 
-##### `licensed`<sup>Optional</sup> <a name="licensed" id="mrpj.ConstructProjectOptions.property.licensed"></a>
+##### `licensed`<sup>Optional</sup> <a name="licensed" id="schuettc.ConstructProjectOptions.property.licensed"></a>
 
 ```typescript
 public readonly licensed: boolean;
@@ -1291,7 +1247,7 @@ Indicates if a license should be added.
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="mrpj.ConstructProjectOptions.property.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="schuettc.ConstructProjectOptions.property.logging"></a>
 
 ```typescript
 public readonly logging: LoggerOptions;
@@ -1304,7 +1260,7 @@ Configure logging options such as verbosity.
 
 ---
 
-##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="mrpj.ConstructProjectOptions.property.majorVersion"></a>
+##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="schuettc.ConstructProjectOptions.property.majorVersion"></a>
 
 ```typescript
 public readonly majorVersion: number;
@@ -1320,7 +1276,7 @@ If not specified, we bump the global latest version.
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.ConstructProjectOptions.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.ConstructProjectOptions.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -1333,7 +1289,7 @@ Minimum node.js version to require via `engines` (inclusive).
 
 ---
 
-##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="mrpj.ConstructProjectOptions.property.minMajorVersion"></a>
+##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="schuettc.ConstructProjectOptions.property.minMajorVersion"></a>
 
 ```typescript
 public readonly minMajorVersion: number;
@@ -1351,7 +1307,7 @@ Can not be set together with `majorVersion`.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.ConstructProjectOptions.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.ConstructProjectOptions.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -1364,7 +1320,7 @@ Minimum Node.js version to require via package.json `engines` (inclusive).
 
 ---
 
-##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="mrpj.ConstructProjectOptions.property.mutableBuild"></a>
+##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="schuettc.ConstructProjectOptions.property.mutableBuild"></a>
 
 ```typescript
 public readonly mutableBuild: boolean;
@@ -1383,7 +1339,7 @@ Implies that PR builds do not have anti-tamper checks.
 
 ---
 
-##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="mrpj.ConstructProjectOptions.property.npmAccess"></a>
+##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="schuettc.ConstructProjectOptions.property.npmAccess"></a>
 
 ```typescript
 public readonly npmAccess: NpmAccess;
@@ -1396,7 +1352,7 @@ Access level of the npm package.
 
 ---
 
-##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="mrpj.ConstructProjectOptions.property.npmDistTag"></a>
+##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="schuettc.ConstructProjectOptions.property.npmDistTag"></a>
 
 ```typescript
 public readonly npmDistTag: string;
@@ -1412,7 +1368,7 @@ for each branch.
 
 ---
 
-##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="mrpj.ConstructProjectOptions.property.npmignoreEnabled"></a>
+##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="schuettc.ConstructProjectOptions.property.npmignoreEnabled"></a>
 
 ```typescript
 public readonly npmignoreEnabled: boolean;
@@ -1425,7 +1381,7 @@ Defines an .npmignore file. Normally this is only needed for libraries that are 
 
 ---
 
-##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="mrpj.ConstructProjectOptions.property.npmIgnoreOptions"></a>
+##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="schuettc.ConstructProjectOptions.property.npmIgnoreOptions"></a>
 
 ```typescript
 public readonly npmIgnoreOptions: IgnoreFileOptions;
@@ -1437,7 +1393,7 @@ Configuration options for .npmignore file.
 
 ---
 
-##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="mrpj.ConstructProjectOptions.property.npmRegistryUrl"></a>
+##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="schuettc.ConstructProjectOptions.property.npmRegistryUrl"></a>
 
 ```typescript
 public readonly npmRegistryUrl: string;
@@ -1452,7 +1408,7 @@ Must be a URL (e.g. start with "https://" or "http://")
 
 ---
 
-##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="mrpj.ConstructProjectOptions.property.npmTokenSecret"></a>
+##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="schuettc.ConstructProjectOptions.property.npmTokenSecret"></a>
 
 ```typescript
 public readonly npmTokenSecret: string;
@@ -1465,7 +1421,7 @@ GitHub secret which contains the NPM token to use when publishing packages.
 
 ---
 
-##### `outdir`<sup>Optional</sup> <a name="outdir" id="mrpj.ConstructProjectOptions.property.outdir"></a>
+##### `outdir`<sup>Optional</sup> <a name="outdir" id="schuettc.ConstructProjectOptions.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -1482,7 +1438,7 @@ sub-projects.
 
 ---
 
-##### `package`<sup>Optional</sup> <a name="package" id="mrpj.ConstructProjectOptions.property.package"></a>
+##### `package`<sup>Optional</sup> <a name="package" id="schuettc.ConstructProjectOptions.property.package"></a>
 
 ```typescript
 public readonly package: boolean;
@@ -1495,7 +1451,7 @@ Defines a `package` task that will produce an npm tarball under the artifacts di
 
 ---
 
-##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="mrpj.ConstructProjectOptions.property.packageManager"></a>
+##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="schuettc.ConstructProjectOptions.property.packageManager"></a>
 
 ```typescript
 public readonly packageManager: NodePackageManager;
@@ -1508,7 +1464,7 @@ The Node Package Manager used to execute scripts.
 
 ---
 
-##### `packageName`<sup>Optional</sup> <a name="packageName" id="mrpj.ConstructProjectOptions.property.packageName"></a>
+##### `packageName`<sup>Optional</sup> <a name="packageName" id="schuettc.ConstructProjectOptions.property.packageName"></a>
 
 ```typescript
 public readonly packageName: string;
@@ -1521,7 +1477,7 @@ The "name" in package.json.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.ConstructProjectOptions.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.ConstructProjectOptions.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -1533,7 +1489,7 @@ The parent project, if this project is part of a bigger project.
 
 ---
 
-##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="mrpj.ConstructProjectOptions.property.peerDependencyOptions"></a>
+##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="schuettc.ConstructProjectOptions.property.peerDependencyOptions"></a>
 
 ```typescript
 public readonly peerDependencyOptions: PeerDependencyOptions;
@@ -1545,7 +1501,7 @@ Options for `peerDeps`.
 
 ---
 
-##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="mrpj.ConstructProjectOptions.property.peerDeps"></a>
+##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="schuettc.ConstructProjectOptions.property.peerDeps"></a>
 
 ```typescript
 public readonly peerDeps: string[];
@@ -1572,7 +1528,7 @@ test your module against the lowest peer version required.
 
 ---
 
-##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="mrpj.ConstructProjectOptions.property.pnpmVersion"></a>
+##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="schuettc.ConstructProjectOptions.property.pnpmVersion"></a>
 
 ```typescript
 public readonly pnpmVersion: string;
@@ -1585,7 +1541,7 @@ The version of PNPM to use if using PNPM as a package manager.
 
 ---
 
-##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="mrpj.ConstructProjectOptions.property.postBuildSteps"></a>
+##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="schuettc.ConstructProjectOptions.property.postBuildSteps"></a>
 
 ```typescript
 public readonly postBuildSteps: JobStep[];
@@ -1598,7 +1554,7 @@ Steps to execute after build as part of the release workflow.
 
 ---
 
-##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="mrpj.ConstructProjectOptions.property.prerelease"></a>
+##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="schuettc.ConstructProjectOptions.property.prerelease"></a>
 
 ```typescript
 public readonly prerelease: string;
@@ -1611,7 +1567,7 @@ Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pr
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.ConstructProjectOptions.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.ConstructProjectOptions.property.prettier"></a>
 
 ```typescript
 public readonly prettier: boolean;
@@ -1624,7 +1580,7 @@ Setup prettier.
 
 ---
 
-##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="mrpj.ConstructProjectOptions.property.prettierOptions"></a>
+##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="schuettc.ConstructProjectOptions.property.prettierOptions"></a>
 
 ```typescript
 public readonly prettierOptions: PrettierOptions;
@@ -1637,7 +1593,7 @@ Prettier options.
 
 ---
 
-##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="mrpj.ConstructProjectOptions.property.projenCommand"></a>
+##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="schuettc.ConstructProjectOptions.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -1652,7 +1608,7 @@ Can be used to customize in special environments.
 
 ---
 
-##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="mrpj.ConstructProjectOptions.property.projenCredentials"></a>
+##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="schuettc.ConstructProjectOptions.property.projenCredentials"></a>
 
 ```typescript
 public readonly projenCredentials: GithubCredentials;
@@ -1665,7 +1621,7 @@ Choose a method of providing GitHub API access for projen workflows.
 
 ---
 
-##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="mrpj.ConstructProjectOptions.property.projenDevDependency"></a>
+##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="schuettc.ConstructProjectOptions.property.projenDevDependency"></a>
 
 ```typescript
 public readonly projenDevDependency: boolean;
@@ -1678,7 +1634,7 @@ Indicates of "projen" should be installed as a devDependency.
 
 ---
 
-##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="mrpj.ConstructProjectOptions.property.projenrcJs"></a>
+##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="schuettc.ConstructProjectOptions.property.projenrcJs"></a>
 
 ```typescript
 public readonly projenrcJs: boolean;
@@ -1691,7 +1647,7 @@ Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable
 
 ---
 
-##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="mrpj.ConstructProjectOptions.property.projenrcJson"></a>
+##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="schuettc.ConstructProjectOptions.property.projenrcJson"></a>
 
 ```typescript
 public readonly projenrcJson: boolean;
@@ -1704,7 +1660,7 @@ Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .pr
 
 ---
 
-##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="mrpj.ConstructProjectOptions.property.projenrcJsonOptions"></a>
+##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="schuettc.ConstructProjectOptions.property.projenrcJsonOptions"></a>
 
 ```typescript
 public readonly projenrcJsonOptions: ProjenrcJsonOptions;
@@ -1717,7 +1673,7 @@ Options for .projenrc.json.
 
 ---
 
-##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="mrpj.ConstructProjectOptions.property.projenrcJsOptions"></a>
+##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="schuettc.ConstructProjectOptions.property.projenrcJsOptions"></a>
 
 ```typescript
 public readonly projenrcJsOptions: ProjenrcOptions;
@@ -1730,7 +1686,7 @@ Options for .projenrc.js.
 
 ---
 
-##### `projenrcTs`<sup>Optional</sup> <a name="projenrcTs" id="mrpj.ConstructProjectOptions.property.projenrcTs"></a>
+##### `projenrcTs`<sup>Optional</sup> <a name="projenrcTs" id="schuettc.ConstructProjectOptions.property.projenrcTs"></a>
 
 ```typescript
 public readonly projenrcTs: boolean;
@@ -1743,7 +1699,7 @@ Use TypeScript for your projenrc file (`.projenrc.ts`).
 
 ---
 
-##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="mrpj.ConstructProjectOptions.property.projenrcTsOptions"></a>
+##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="schuettc.ConstructProjectOptions.property.projenrcTsOptions"></a>
 
 ```typescript
 public readonly projenrcTsOptions: ProjenrcOptions;
@@ -1755,7 +1711,7 @@ Options for .projenrc.ts.
 
 ---
 
-##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="mrpj.ConstructProjectOptions.property.projenVersion"></a>
+##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="schuettc.ConstructProjectOptions.property.projenVersion"></a>
 
 ```typescript
 public readonly projenVersion: string;
@@ -1768,7 +1724,7 @@ Version of projen to install.
 
 ---
 
-##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="mrpj.ConstructProjectOptions.property.publishDryRun"></a>
+##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="schuettc.ConstructProjectOptions.property.publishDryRun"></a>
 
 ```typescript
 public readonly publishDryRun: boolean;
@@ -1781,7 +1737,7 @@ Instead of actually publishing to package managers, just print the publishing co
 
 ---
 
-##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="mrpj.ConstructProjectOptions.property.publishTasks"></a>
+##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="schuettc.ConstructProjectOptions.property.publishTasks"></a>
 
 ```typescript
 public readonly publishTasks: boolean;
@@ -1797,7 +1753,7 @@ in order to create a publishing task for each publishing activity.
 
 ---
 
-##### `publishToGo`<sup>Optional</sup> <a name="publishToGo" id="mrpj.ConstructProjectOptions.property.publishToGo"></a>
+##### `publishToGo`<sup>Optional</sup> <a name="publishToGo" id="schuettc.ConstructProjectOptions.property.publishToGo"></a>
 
 ```typescript
 public readonly publishToGo: JsiiGoTarget;
@@ -1810,7 +1766,7 @@ Publish Go bindings to a git repository.
 
 ---
 
-##### `publishToMaven`<sup>Optional</sup> <a name="publishToMaven" id="mrpj.ConstructProjectOptions.property.publishToMaven"></a>
+##### `publishToMaven`<sup>Optional</sup> <a name="publishToMaven" id="schuettc.ConstructProjectOptions.property.publishToMaven"></a>
 
 ```typescript
 public readonly publishToMaven: JsiiJavaTarget;
@@ -1823,7 +1779,7 @@ Publish to maven.
 
 ---
 
-##### `publishToNuget`<sup>Optional</sup> <a name="publishToNuget" id="mrpj.ConstructProjectOptions.property.publishToNuget"></a>
+##### `publishToNuget`<sup>Optional</sup> <a name="publishToNuget" id="schuettc.ConstructProjectOptions.property.publishToNuget"></a>
 
 ```typescript
 public readonly publishToNuget: JsiiDotNetTarget;
@@ -1836,7 +1792,7 @@ Publish to NuGet.
 
 ---
 
-##### `publishToPypi`<sup>Optional</sup> <a name="publishToPypi" id="mrpj.ConstructProjectOptions.property.publishToPypi"></a>
+##### `publishToPypi`<sup>Optional</sup> <a name="publishToPypi" id="schuettc.ConstructProjectOptions.property.publishToPypi"></a>
 
 ```typescript
 public readonly publishToPypi: JsiiPythonTarget;
@@ -1849,7 +1805,7 @@ Publish to pypi.
 
 ---
 
-##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="mrpj.ConstructProjectOptions.property.pullRequestTemplate"></a>
+##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="schuettc.ConstructProjectOptions.property.pullRequestTemplate"></a>
 
 ```typescript
 public readonly pullRequestTemplate: boolean;
@@ -1862,7 +1818,7 @@ Include a GitHub pull request template.
 
 ---
 
-##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="mrpj.ConstructProjectOptions.property.pullRequestTemplateContents"></a>
+##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="schuettc.ConstructProjectOptions.property.pullRequestTemplateContents"></a>
 
 ```typescript
 public readonly pullRequestTemplateContents: string[];
@@ -1875,7 +1831,7 @@ The contents of the pull request template.
 
 ---
 
-##### `readme`<sup>Optional</sup> <a name="readme" id="mrpj.ConstructProjectOptions.property.readme"></a>
+##### `readme`<sup>Optional</sup> <a name="readme" id="schuettc.ConstructProjectOptions.property.readme"></a>
 
 ```typescript
 public readonly readme: SampleReadmeProps;
@@ -1888,7 +1844,7 @@ The README setup.
 
 ---
 
-##### `releasableCommits`<sup>Optional</sup> <a name="releasableCommits" id="mrpj.ConstructProjectOptions.property.releasableCommits"></a>
+##### `releasableCommits`<sup>Optional</sup> <a name="releasableCommits" id="schuettc.ConstructProjectOptions.property.releasableCommits"></a>
 
 ```typescript
 public readonly releasableCommits: ReleasableCommits;
@@ -1901,7 +1857,7 @@ Find commits that should be considered releasable Used to decide if a release is
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.ConstructProjectOptions.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.ConstructProjectOptions.property.release"></a>
 
 ```typescript
 public readonly release: boolean;
@@ -1914,7 +1870,7 @@ Add release management to this project.
 
 ---
 
-##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="mrpj.ConstructProjectOptions.property.releaseBranches"></a>
+##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="schuettc.ConstructProjectOptions.property.releaseBranches"></a>
 
 ```typescript
 public readonly releaseBranches: {[ key: string ]: BranchOptions};
@@ -1934,7 +1890,7 @@ be provided for the default branch.
 
 ---
 
-##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="mrpj.ConstructProjectOptions.property.releaseFailureIssue"></a>
+##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="schuettc.ConstructProjectOptions.property.releaseFailureIssue"></a>
 
 ```typescript
 public readonly releaseFailureIssue: boolean;
@@ -1947,7 +1903,7 @@ Create a github issue on every failed publishing task.
 
 ---
 
-##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="mrpj.ConstructProjectOptions.property.releaseFailureIssueLabel"></a>
+##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="schuettc.ConstructProjectOptions.property.releaseFailureIssueLabel"></a>
 
 ```typescript
 public readonly releaseFailureIssueLabel: string;
@@ -1962,7 +1918,7 @@ Only applies if `releaseFailureIssue` is true.
 
 ---
 
-##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="mrpj.ConstructProjectOptions.property.releaseTagPrefix"></a>
+##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="schuettc.ConstructProjectOptions.property.releaseTagPrefix"></a>
 
 ```typescript
 public readonly releaseTagPrefix: string;
@@ -1981,7 +1937,7 @@ with the new prefix.
 
 ---
 
-##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="mrpj.ConstructProjectOptions.property.releaseToNpm"></a>
+##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="schuettc.ConstructProjectOptions.property.releaseToNpm"></a>
 
 ```typescript
 public readonly releaseToNpm: boolean;
@@ -1994,7 +1950,7 @@ Automatically release to npm when new versions are introduced.
 
 ---
 
-##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="mrpj.ConstructProjectOptions.property.releaseTrigger"></a>
+##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="schuettc.ConstructProjectOptions.property.releaseTrigger"></a>
 
 ```typescript
 public readonly releaseTrigger: ReleaseTrigger;
@@ -2007,7 +1963,7 @@ The release trigger to use.
 
 ---
 
-##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="mrpj.ConstructProjectOptions.property.releaseWorkflowName"></a>
+##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="schuettc.ConstructProjectOptions.property.releaseWorkflowName"></a>
 
 ```typescript
 public readonly releaseWorkflowName: string;
@@ -2020,7 +1976,7 @@ The name of the default release workflow.
 
 ---
 
-##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="mrpj.ConstructProjectOptions.property.releaseWorkflowSetupSteps"></a>
+##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="schuettc.ConstructProjectOptions.property.releaseWorkflowSetupSteps"></a>
 
 ```typescript
 public readonly releaseWorkflowSetupSteps: JobStep[];
@@ -2032,7 +1988,7 @@ A set of workflow steps to execute in order to setup the workflow container.
 
 ---
 
-##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="mrpj.ConstructProjectOptions.property.renovatebot"></a>
+##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="schuettc.ConstructProjectOptions.property.renovatebot"></a>
 
 ```typescript
 public readonly renovatebot: boolean;
@@ -2045,7 +2001,7 @@ Use renovatebot to handle dependency upgrades.
 
 ---
 
-##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="mrpj.ConstructProjectOptions.property.renovatebotOptions"></a>
+##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="schuettc.ConstructProjectOptions.property.renovatebotOptions"></a>
 
 ```typescript
 public readonly renovatebotOptions: RenovatebotOptions;
@@ -2058,7 +2014,7 @@ Options for renovatebot.
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="mrpj.ConstructProjectOptions.property.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="schuettc.ConstructProjectOptions.property.repository"></a>
 
 ```typescript
 public readonly repository: string;
@@ -2072,7 +2028,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-repository
 
 ---
 
-##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="mrpj.ConstructProjectOptions.property.repositoryDirectory"></a>
+##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="schuettc.ConstructProjectOptions.property.repositoryDirectory"></a>
 
 ```typescript
 public readonly repositoryDirectory: string;
@@ -2084,7 +2040,7 @@ If the package.json for your package is not in the root directory (for example i
 
 ---
 
-##### `rootdir`<sup>Optional</sup> <a name="rootdir" id="mrpj.ConstructProjectOptions.property.rootdir"></a>
+##### `rootdir`<sup>Optional</sup> <a name="rootdir" id="schuettc.ConstructProjectOptions.property.rootdir"></a>
 
 ```typescript
 public readonly rootdir: string;
@@ -2095,7 +2051,7 @@ public readonly rootdir: string;
 
 ---
 
-##### `sampleCode`<sup>Optional</sup> <a name="sampleCode" id="mrpj.ConstructProjectOptions.property.sampleCode"></a>
+##### `sampleCode`<sup>Optional</sup> <a name="sampleCode" id="schuettc.ConstructProjectOptions.property.sampleCode"></a>
 
 ```typescript
 public readonly sampleCode: boolean;
@@ -2108,7 +2064,7 @@ Generate one-time sample in `src/` and `test/` if there are no files there.
 
 ---
 
-##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="mrpj.ConstructProjectOptions.property.scopedPackagesOptions"></a>
+##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="schuettc.ConstructProjectOptions.property.scopedPackagesOptions"></a>
 
 ```typescript
 public readonly scopedPackagesOptions: ScopedPackagesOptions[];
@@ -2121,7 +2077,7 @@ Options for privately hosted scoped packages.
 
 ---
 
-##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="mrpj.ConstructProjectOptions.property.srcdir"></a>
+##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="schuettc.ConstructProjectOptions.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -2134,7 +2090,7 @@ Typescript sources directory.
 
 ---
 
-##### `stability`<sup>Optional</sup> <a name="stability" id="mrpj.ConstructProjectOptions.property.stability"></a>
+##### `stability`<sup>Optional</sup> <a name="stability" id="schuettc.ConstructProjectOptions.property.stability"></a>
 
 ```typescript
 public readonly stability: string;
@@ -2146,7 +2102,7 @@ Package's Stability.
 
 ---
 
-##### `stale`<sup>Optional</sup> <a name="stale" id="mrpj.ConstructProjectOptions.property.stale"></a>
+##### `stale`<sup>Optional</sup> <a name="stale" id="schuettc.ConstructProjectOptions.property.stale"></a>
 
 ```typescript
 public readonly stale: boolean;
@@ -2161,7 +2117,7 @@ See `staleOptions` for options.
 
 ---
 
-##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="mrpj.ConstructProjectOptions.property.staleOptions"></a>
+##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="schuettc.ConstructProjectOptions.property.staleOptions"></a>
 
 ```typescript
 public readonly staleOptions: StaleOptions;
@@ -2176,7 +2132,7 @@ To disable set `stale` to `false`.
 
 ---
 
-##### `testdir`<sup>Optional</sup> <a name="testdir" id="mrpj.ConstructProjectOptions.property.testdir"></a>
+##### `testdir`<sup>Optional</sup> <a name="testdir" id="schuettc.ConstructProjectOptions.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -2195,7 +2151,7 @@ compile the code in-memory.
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.ConstructProjectOptions.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.ConstructProjectOptions.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfigOptions;
@@ -2208,7 +2164,7 @@ Custom TSConfig.
 
 ---
 
-##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="mrpj.ConstructProjectOptions.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="schuettc.ConstructProjectOptions.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfigOptions;
@@ -2221,7 +2177,7 @@ Custom tsconfig options for the development tsconfig.json file (used for testing
 
 ---
 
-##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="mrpj.ConstructProjectOptions.property.tsconfigDevFile"></a>
+##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="schuettc.ConstructProjectOptions.property.tsconfigDevFile"></a>
 
 ```typescript
 public readonly tsconfigDevFile: string;
@@ -2234,7 +2190,7 @@ The name of the development tsconfig.json file.
 
 ---
 
-##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="mrpj.ConstructProjectOptions.property.typescriptVersion"></a>
+##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="schuettc.ConstructProjectOptions.property.typescriptVersion"></a>
 
 ```typescript
 public readonly typescriptVersion: string;
@@ -2250,7 +2206,7 @@ same minor, so we recommend using a `~` dependency (e.g. `~1.2.3`).
 
 ---
 
-##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="mrpj.ConstructProjectOptions.property.versionrcOptions"></a>
+##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="schuettc.ConstructProjectOptions.property.versionrcOptions"></a>
 
 ```typescript
 public readonly versionrcOptions: {[ key: string ]: any};
@@ -2265,7 +2221,7 @@ Given values either append to default configuration or overwrite values in it.
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.ConstructProjectOptions.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.ConstructProjectOptions.property.vscode"></a>
 
 ```typescript
 public readonly vscode: boolean;
@@ -2280,7 +2236,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="mrpj.ConstructProjectOptions.property.workflowBootstrapSteps"></a>
+##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="schuettc.ConstructProjectOptions.property.workflowBootstrapSteps"></a>
 
 ```typescript
 public readonly workflowBootstrapSteps: JobStep[];
@@ -2293,7 +2249,7 @@ Workflow steps to use in order to bootstrap this repo.
 
 ---
 
-##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="mrpj.ConstructProjectOptions.property.workflowContainerImage"></a>
+##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="schuettc.ConstructProjectOptions.property.workflowContainerImage"></a>
 
 ```typescript
 public readonly workflowContainerImage: string;
@@ -2306,7 +2262,7 @@ Container image to use for GitHub workflows.
 
 ---
 
-##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="mrpj.ConstructProjectOptions.property.workflowGitIdentity"></a>
+##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="schuettc.ConstructProjectOptions.property.workflowGitIdentity"></a>
 
 ```typescript
 public readonly workflowGitIdentity: GitIdentity;
@@ -2319,7 +2275,7 @@ The git identity to use in workflows.
 
 ---
 
-##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="mrpj.ConstructProjectOptions.property.workflowNodeVersion"></a>
+##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="schuettc.ConstructProjectOptions.property.workflowNodeVersion"></a>
 
 ```typescript
 public readonly workflowNodeVersion: string;
@@ -2332,7 +2288,7 @@ The node version to use in GitHub workflows.
 
 ---
 
-##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="mrpj.ConstructProjectOptions.property.workflowPackageCache"></a>
+##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="schuettc.ConstructProjectOptions.property.workflowPackageCache"></a>
 
 ```typescript
 public readonly workflowPackageCache: boolean;
@@ -2345,7 +2301,7 @@ Enable Node.js package cache in GitHub workflows.
 
 ---
 
-##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="mrpj.ConstructProjectOptions.property.workflowRunsOn"></a>
+##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="schuettc.ConstructProjectOptions.property.workflowRunsOn"></a>
 
 ```typescript
 public readonly workflowRunsOn: string[];
@@ -2358,395 +2314,14 @@ Github Runner selection labels.
 
 ---
 
-### FontOptions <a name="FontOptions" id="mrpj.logo.FontOptions"></a>
-
-#### Initializer <a name="Initializer" id="mrpj.logo.FontOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const fontOptions: logo.FontOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.FontOptions.property.color">color</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.FontOptions.property.family">family</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.FontOptions.property.size">size</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.FontOptions.property.weight">weight</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `color`<sup>Optional</sup> <a name="color" id="mrpj.logo.FontOptions.property.color"></a>
-
-```typescript
-public readonly color: string;
-```
-
-- *Type:* string
-
----
-
-##### `family`<sup>Optional</sup> <a name="family" id="mrpj.logo.FontOptions.property.family"></a>
-
-```typescript
-public readonly family: string;
-```
-
-- *Type:* string
-
----
-
-##### `size`<sup>Optional</sup> <a name="size" id="mrpj.logo.FontOptions.property.size"></a>
-
-```typescript
-public readonly size: number;
-```
-
-- *Type:* number
-
----
-
-##### `weight`<sup>Optional</sup> <a name="weight" id="mrpj.logo.FontOptions.property.weight"></a>
-
-```typescript
-public readonly weight: string;
-```
-
-- *Type:* string
-
----
-
-### LogoConfig <a name="LogoConfig" id="mrpj.logo.LogoConfig"></a>
-
-Provide additional configuration for the logo.
-
-#### Initializer <a name="Initializer" id="mrpj.logo.LogoConfig.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const logoConfig: logo.LogoConfig = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.LogoConfig.property.height">height</a></code> | <code>number</code> | The height of the logo in px. |
-| <code><a href="#mrpj.logo.LogoConfig.property.width">width</a></code> | <code>number</code> | The width of the logo in px. |
-| <code><a href="#mrpj.logo.LogoConfig.property.scale">scale</a></code> | <code>number</code> | Scale the logo by a factor. |
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.LogoConfig.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
-The height of the logo in px.
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.LogoConfig.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
-The width of the logo in px.
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.LogoConfig.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-- *Default:* 1
-
-Scale the logo by a factor.
-
----
-
-### LogoForProjenOptions <a name="LogoForProjenOptions" id="mrpj.logo.LogoForProjenOptions"></a>
-
-Options to create a logo from an SVG string.
-
-#### Initializer <a name="Initializer" id="mrpj.logo.LogoForProjenOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const logoForProjenOptions: logo.LogoForProjenOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.frontColor">frontColor</a></code> | <code>string</code> | The hex code for the color of the front of the box. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.icon">icon</a></code> | <code>string</code> | The icon in front of the parcel box. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.iconTransform">iconTransform</a></code> | <code>string</code> | SVG transform for the icon. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.outFile">outFile</a></code> | <code>string</code> | The path where the logo file will be created. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.outlineColor">outlineColor</a></code> | <code>string</code> | The hex code for the color of the parcel outline. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.tapeColor">tapeColor</a></code> | <code>string</code> | The hex code for the color of the packaging tape. |
-| <code><a href="#mrpj.logo.LogoForProjenOptions.property.topColor">topColor</a></code> | <code>string</code> | The hex code for the color of the top of the box. |
-
----
-
-##### `frontColor`<sup>Optional</sup> <a name="frontColor" id="mrpj.logo.LogoForProjenOptions.property.frontColor"></a>
-
-```typescript
-public readonly frontColor: string;
-```
-
-- *Type:* string
-- *Default:* "#fa983c"
-
-The hex code for the color of the front of the box.
-
----
-
-##### `icon`<sup>Optional</sup> <a name="icon" id="mrpj.logo.LogoForProjenOptions.property.icon"></a>
-
-```typescript
-public readonly icon: string;
-```
-
-- *Type:* string
-- *Default:* no icon
-
-The icon in front of the parcel box.
-
----
-
-##### `iconTransform`<sup>Optional</sup> <a name="iconTransform" id="mrpj.logo.LogoForProjenOptions.property.iconTransform"></a>
-
-```typescript
-public readonly iconTransform: string;
-```
-
-- *Type:* string
-
-SVG transform for the icon.
-
-Likely needed to position the icon correctly.
-
----
-
-##### `outFile`<sup>Optional</sup> <a name="outFile" id="mrpj.logo.LogoForProjenOptions.property.outFile"></a>
-
-```typescript
-public readonly outFile: string;
-```
-
-- *Type:* string
-
-The path where the logo file will be created.
-
----
-
-##### `outlineColor`<sup>Optional</sup> <a name="outlineColor" id="mrpj.logo.LogoForProjenOptions.property.outlineColor"></a>
-
-```typescript
-public readonly outlineColor: string;
-```
-
-- *Type:* string
-- *Default:* "#66200b"
-
-The hex code for the color of the parcel outline.
-
----
-
-##### `tapeColor`<sup>Optional</sup> <a name="tapeColor" id="mrpj.logo.LogoForProjenOptions.property.tapeColor"></a>
-
-```typescript
-public readonly tapeColor: string;
-```
-
-- *Type:* string
-- *Default:* "#cbdada"
-
-The hex code for the color of the packaging tape.
-
----
-
-##### `topColor`<sup>Optional</sup> <a name="topColor" id="mrpj.logo.LogoForProjenOptions.property.topColor"></a>
-
-```typescript
-public readonly topColor: string;
-```
-
-- *Type:* string
-- *Default:* "#fcc161"
-
-The hex code for the color of the top of the box.
-
----
-
-### LogoFromContentOptions <a name="LogoFromContentOptions" id="mrpj.logo.LogoFromContentOptions"></a>
-
-Options to create a logo from an SVG string.
-
-#### Initializer <a name="Initializer" id="mrpj.logo.LogoFromContentOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const logoFromContentOptions: logo.LogoFromContentOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.LogoFromContentOptions.property.height">height</a></code> | <code>number</code> | The height of the logo in px. |
-| <code><a href="#mrpj.logo.LogoFromContentOptions.property.width">width</a></code> | <code>number</code> | The width of the logo in px. |
-| <code><a href="#mrpj.logo.LogoFromContentOptions.property.scale">scale</a></code> | <code>number</code> | Scale the logo by a factor. |
-| <code><a href="#mrpj.logo.LogoFromContentOptions.property.outFile">outFile</a></code> | <code>string</code> | The path where the logo file will be created. |
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.LogoFromContentOptions.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
-The height of the logo in px.
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.LogoFromContentOptions.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
-The width of the logo in px.
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.LogoFromContentOptions.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-- *Default:* 1
-
-Scale the logo by a factor.
-
----
-
-##### `outFile`<sup>Optional</sup> <a name="outFile" id="mrpj.logo.LogoFromContentOptions.property.outFile"></a>
-
-```typescript
-public readonly outFile: string;
-```
-
-- *Type:* string
-
-The path where the logo file will be created.
-
----
-
-### LogoInfo <a name="LogoInfo" id="mrpj.logo.LogoInfo"></a>
-
-All required information to represent a logo.
-
-#### Initializer <a name="Initializer" id="mrpj.logo.LogoInfo.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const logoInfo: logo.LogoInfo = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.LogoInfo.property.height">height</a></code> | <code>number</code> | The height of the logo in px. |
-| <code><a href="#mrpj.logo.LogoInfo.property.width">width</a></code> | <code>number</code> | The width of the logo in px. |
-| <code><a href="#mrpj.logo.LogoInfo.property.scale">scale</a></code> | <code>number</code> | Scale the logo by a factor. |
-| <code><a href="#mrpj.logo.LogoInfo.property.content">content</a></code> | <code>string</code> | The SVG content of the logo as a string. |
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.LogoInfo.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
-The height of the logo in px.
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.LogoInfo.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
-The width of the logo in px.
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.LogoInfo.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-- *Default:* 1
-
-Scale the logo by a factor.
-
----
-
-##### `content`<sup>Required</sup> <a name="content" id="mrpj.logo.LogoInfo.property.content"></a>
-
-```typescript
-public readonly content: string;
-```
-
-- *Type:* string
-
-The SVG content of the logo as a string.
-
----
-
-### ProjenProjectOptions <a name="ProjenProjectOptions" id="mrpj.ProjenProjectOptions"></a>
+### ProjenProjectOptions <a name="ProjenProjectOptions" id="schuettc.ProjenProjectOptions"></a>
 
 ProjenProjectOptions.
 
-#### Initializer <a name="Initializer" id="mrpj.ProjenProjectOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="schuettc.ProjenProjectOptions.Initializer"></a>
 
 ```typescript
-import { ProjenProjectOptions } from 'mrpj'
+import { ProjenProjectOptions } from 'schuettc'
 
 const projenProjectOptions: ProjenProjectOptions = { ... }
 ```
@@ -2755,154 +2330,152 @@ const projenProjectOptions: ProjenProjectOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ProjenProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.repo">repo</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProjectOptions.property.allowedCommitTypes">allowedCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types are allowed to be used Types listed in `releasableCommitTypes` are always allowed. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.authorAddress">authorAddress</a></code> | <code>string</code> | Email or URL of the library author. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.automationAppName">automationAppName</a></code> | <code>string</code> | Use this app for workflow automation. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.compat">compat</a></code> | <code>boolean</code> | Automatically run API compatibility test against the latest version published to npm after compilation. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.compatIgnore">compatIgnore</a></code> | <code>string</code> | Name of the ignore file for API compatibility tests. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.compressAssembly">compressAssembly</a></code> | <code>boolean</code> | Emit a compressed version of the assembly. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.docgenFilePath">docgenFilePath</a></code> | <code>string</code> | File path for generated docs. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.excludeTypescript">excludeTypescript</a></code> | <code>string[]</code> | Accepts a list of glob patterns. Files matching any of those patterns will be excluded from the TypeScript compiler input. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.logo">logo</a></code> | <code>mrpj.logo.ILogo</code> | Add a logo. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.ownerCanSelfApprovePRs">ownerCanSelfApprovePRs</a></code> | <code>boolean</code> | Allow the repo owner to self approve PRs by putting a label on it. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | Publish Go bindings to a git repository. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishToMaven">publishToMaven</a></code> | <code>projen.cdk.JsiiJavaTarget</code> | Publish to maven. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | Publish to NuGet. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.publishToPypi">publishToPypi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | Publish to pypi. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releasableCommitTypes">releasableCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types should be released. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.rootdir">rootdir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
-| <code><a href="#mrpj.ProjenProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.upgradesSchedule">upgradesSchedule</a></code> | <code>projen.javascript.UpgradeDependenciesSchedule</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.wordmarkOptions">wordmarkOptions</a></code> | <code>mrpj.logo.WordmarkOptions</code> | Configure how the wordmark is created from a logo. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
-| <code><a href="#mrpj.ProjenProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.repo">repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProjectOptions.property.allowedCommitTypes">allowedCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types are allowed to be used Types listed in `releasableCommitTypes` are always allowed. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.authorAddress">authorAddress</a></code> | <code>string</code> | Email or URL of the library author. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.automationAppName">automationAppName</a></code> | <code>string</code> | Use this app for workflow automation. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.compat">compat</a></code> | <code>boolean</code> | Automatically run API compatibility test against the latest version published to npm after compilation. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.compatIgnore">compatIgnore</a></code> | <code>string</code> | Name of the ignore file for API compatibility tests. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.compressAssembly">compressAssembly</a></code> | <code>boolean</code> | Emit a compressed version of the assembly. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.docgenFilePath">docgenFilePath</a></code> | <code>string</code> | File path for generated docs. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.excludeTypescript">excludeTypescript</a></code> | <code>string[]</code> | Accepts a list of glob patterns. Files matching any of those patterns will be excluded from the TypeScript compiler input. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.ownerCanSelfApprovePRs">ownerCanSelfApprovePRs</a></code> | <code>boolean</code> | Allow the repo owner to self approve PRs by putting a label on it. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | Publish Go bindings to a git repository. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishToMaven">publishToMaven</a></code> | <code>projen.cdk.JsiiJavaTarget</code> | Publish to maven. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | Publish to NuGet. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.publishToPypi">publishToPypi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | Publish to pypi. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releasableCommitTypes">releasableCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types should be released. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.rootdir">rootdir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
+| <code><a href="#schuettc.ProjenProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.upgradesSchedule">upgradesSchedule</a></code> | <code>projen.javascript.UpgradeDependenciesSchedule</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
+| <code><a href="#schuettc.ProjenProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
 
 ---
 
-##### `authorName`<sup>Required</sup> <a name="authorName" id="mrpj.ProjenProjectOptions.property.authorName"></a>
+##### `authorName`<sup>Required</sup> <a name="authorName" id="schuettc.ProjenProjectOptions.property.authorName"></a>
 
 ```typescript
 public readonly authorName: string;
@@ -2914,7 +2487,7 @@ Author's name.
 
 ---
 
-##### `repo`<sup>Required</sup> <a name="repo" id="mrpj.ProjenProjectOptions.property.repo"></a>
+##### `repo`<sup>Required</sup> <a name="repo" id="schuettc.ProjenProjectOptions.property.repo"></a>
 
 ```typescript
 public readonly repo: string;
@@ -2924,7 +2497,7 @@ public readonly repo: string;
 
 ---
 
-##### `allowedCommitTypes`<sup>Optional</sup> <a name="allowedCommitTypes" id="mrpj.ProjenProjectOptions.property.allowedCommitTypes"></a>
+##### `allowedCommitTypes`<sup>Optional</sup> <a name="allowedCommitTypes" id="schuettc.ProjenProjectOptions.property.allowedCommitTypes"></a>
 
 ```typescript
 public readonly allowedCommitTypes: string[];
@@ -2937,7 +2510,7 @@ Which conventional commit types are allowed to be used Types listed in `releasab
 
 ---
 
-##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="mrpj.ProjenProjectOptions.property.allowLibraryDependencies"></a>
+##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="schuettc.ProjenProjectOptions.property.allowLibraryDependencies"></a>
 
 ```typescript
 public readonly allowLibraryDependencies: boolean;
@@ -2953,7 +2526,7 @@ for specifying these.
 
 ---
 
-##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="mrpj.ProjenProjectOptions.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="schuettc.ProjenProjectOptions.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -2966,7 +2539,7 @@ A directory which will contain build artifacts.
 
 ---
 
-##### `authorAddress`<sup>Optional</sup> <a name="authorAddress" id="mrpj.ProjenProjectOptions.property.authorAddress"></a>
+##### `authorAddress`<sup>Optional</sup> <a name="authorAddress" id="schuettc.ProjenProjectOptions.property.authorAddress"></a>
 
 ```typescript
 public readonly authorAddress: string;
@@ -2979,7 +2552,7 @@ Email or URL of the library author.
 
 ---
 
-##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="mrpj.ProjenProjectOptions.property.authorEmail"></a>
+##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="schuettc.ProjenProjectOptions.property.authorEmail"></a>
 
 ```typescript
 public readonly authorEmail: string;
@@ -2991,7 +2564,7 @@ Author's e-mail.
 
 ---
 
-##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="mrpj.ProjenProjectOptions.property.authorOrganization"></a>
+##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="schuettc.ProjenProjectOptions.property.authorOrganization"></a>
 
 ```typescript
 public readonly authorOrganization: boolean;
@@ -3003,7 +2576,7 @@ Is the author an organization.
 
 ---
 
-##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="mrpj.ProjenProjectOptions.property.authorUrl"></a>
+##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="schuettc.ProjenProjectOptions.property.authorUrl"></a>
 
 ```typescript
 public readonly authorUrl: string;
@@ -3015,7 +2588,7 @@ Author's URL / Website.
 
 ---
 
-##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="mrpj.ProjenProjectOptions.property.autoApproveOptions"></a>
+##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="schuettc.ProjenProjectOptions.property.autoApproveOptions"></a>
 
 ```typescript
 public readonly autoApproveOptions: AutoApproveOptions;
@@ -3028,7 +2601,7 @@ Enable and configure the 'auto approve' workflow.
 
 ---
 
-##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="mrpj.ProjenProjectOptions.property.autoApproveUpgrades"></a>
+##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="schuettc.ProjenProjectOptions.property.autoApproveUpgrades"></a>
 
 ```typescript
 public readonly autoApproveUpgrades: boolean;
@@ -3043,7 +2616,7 @@ Throw if set to true but `autoApproveOptions` are not defined.
 
 ---
 
-##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="mrpj.ProjenProjectOptions.property.autoDetectBin"></a>
+##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="schuettc.ProjenProjectOptions.property.autoDetectBin"></a>
 
 ```typescript
 public readonly autoDetectBin: boolean;
@@ -3056,7 +2629,7 @@ Automatically add all executables under the `bin` directory to your `package.jso
 
 ---
 
-##### `automationAppName`<sup>Optional</sup> <a name="automationAppName" id="mrpj.ProjenProjectOptions.property.automationAppName"></a>
+##### `automationAppName`<sup>Optional</sup> <a name="automationAppName" id="schuettc.ProjenProjectOptions.property.automationAppName"></a>
 
 ```typescript
 public readonly automationAppName: string;
@@ -3071,7 +2644,7 @@ Remember to install the app and to configure credentials.
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.ProjenProjectOptions.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.ProjenProjectOptions.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: boolean;
@@ -3087,7 +2660,7 @@ is set to false.
 
 ---
 
-##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="mrpj.ProjenProjectOptions.property.autoMergeOptions"></a>
+##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="schuettc.ProjenProjectOptions.property.autoMergeOptions"></a>
 
 ```typescript
 public readonly autoMergeOptions: AutoMergeOptions;
@@ -3103,7 +2676,7 @@ Has no effect if
 
 ---
 
-##### `bin`<sup>Optional</sup> <a name="bin" id="mrpj.ProjenProjectOptions.property.bin"></a>
+##### `bin`<sup>Optional</sup> <a name="bin" id="schuettc.ProjenProjectOptions.property.bin"></a>
 
 ```typescript
 public readonly bin: {[ key: string ]: string};
@@ -3119,7 +2692,7 @@ executable file under `bin` will automatically be added to this section.
 
 ---
 
-##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="mrpj.ProjenProjectOptions.property.bugsEmail"></a>
+##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="schuettc.ProjenProjectOptions.property.bugsEmail"></a>
 
 ```typescript
 public readonly bugsEmail: string;
@@ -3131,7 +2704,7 @@ The email address to which issues should be reported.
 
 ---
 
-##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="mrpj.ProjenProjectOptions.property.bugsUrl"></a>
+##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="schuettc.ProjenProjectOptions.property.bugsUrl"></a>
 
 ```typescript
 public readonly bugsUrl: string;
@@ -3143,7 +2716,7 @@ The url to your project's issue tracker.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.ProjenProjectOptions.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.ProjenProjectOptions.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: boolean;
@@ -3156,7 +2729,7 @@ Define a GitHub workflow for building PRs.
 
 ---
 
-##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="mrpj.ProjenProjectOptions.property.buildWorkflowTriggers"></a>
+##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="schuettc.ProjenProjectOptions.property.buildWorkflowTriggers"></a>
 
 ```typescript
 public readonly buildWorkflowTriggers: Triggers;
@@ -3169,7 +2742,7 @@ Build workflow triggers.
 
 ---
 
-##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="mrpj.ProjenProjectOptions.property.bundledDeps"></a>
+##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="schuettc.ProjenProjectOptions.property.bundledDeps"></a>
 
 ```typescript
 public readonly bundledDeps: string[];
@@ -3192,7 +2765,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="mrpj.ProjenProjectOptions.property.bundlerOptions"></a>
+##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="schuettc.ProjenProjectOptions.property.bundlerOptions"></a>
 
 ```typescript
 public readonly bundlerOptions: BundlerOptions;
@@ -3204,7 +2777,7 @@ Options for `Bundler`.
 
 ---
 
-##### `clobber`<sup>Optional</sup> <a name="clobber" id="mrpj.ProjenProjectOptions.property.clobber"></a>
+##### `clobber`<sup>Optional</sup> <a name="clobber" id="schuettc.ProjenProjectOptions.property.clobber"></a>
 
 ```typescript
 public readonly clobber: boolean;
@@ -3217,7 +2790,7 @@ Add a `clobber` task which resets the repo to origin.
 
 ---
 
-##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="mrpj.ProjenProjectOptions.property.codeArtifactOptions"></a>
+##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="schuettc.ProjenProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
 public readonly codeArtifactOptions: CodeArtifactOptions;
@@ -3232,7 +2805,7 @@ This is required if publishing packages to, or installing scoped packages from A
 
 ---
 
-##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="mrpj.ProjenProjectOptions.property.codeCov"></a>
+##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="schuettc.ProjenProjectOptions.property.codeCov"></a>
 
 ```typescript
 public readonly codeCov: boolean;
@@ -3245,7 +2818,7 @@ Define a GitHub workflow step for sending code coverage metrics to https://codec
 
 ---
 
-##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="mrpj.ProjenProjectOptions.property.codeCovTokenSecret"></a>
+##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="schuettc.ProjenProjectOptions.property.codeCovTokenSecret"></a>
 
 ```typescript
 public readonly codeCovTokenSecret: string;
@@ -3258,7 +2831,7 @@ Define the secret name for a specified https://codecov.io/ token A secret is req
 
 ---
 
-##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="mrpj.ProjenProjectOptions.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="schuettc.ProjenProjectOptions.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -3271,7 +2844,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compat`<sup>Optional</sup> <a name="compat" id="mrpj.ProjenProjectOptions.property.compat"></a>
+##### `compat`<sup>Optional</sup> <a name="compat" id="schuettc.ProjenProjectOptions.property.compat"></a>
 
 ```typescript
 public readonly compat: boolean;
@@ -3287,7 +2860,7 @@ You can manually run compatibility tests using `yarn compat` if this feature is 
 
 ---
 
-##### `compatIgnore`<sup>Optional</sup> <a name="compatIgnore" id="mrpj.ProjenProjectOptions.property.compatIgnore"></a>
+##### `compatIgnore`<sup>Optional</sup> <a name="compatIgnore" id="schuettc.ProjenProjectOptions.property.compatIgnore"></a>
 
 ```typescript
 public readonly compatIgnore: string;
@@ -3300,7 +2873,7 @@ Name of the ignore file for API compatibility tests.
 
 ---
 
-##### `compressAssembly`<sup>Optional</sup> <a name="compressAssembly" id="mrpj.ProjenProjectOptions.property.compressAssembly"></a>
+##### `compressAssembly`<sup>Optional</sup> <a name="compressAssembly" id="schuettc.ProjenProjectOptions.property.compressAssembly"></a>
 
 ```typescript
 public readonly compressAssembly: boolean;
@@ -3313,7 +2886,7 @@ Emit a compressed version of the assembly.
 
 ---
 
-##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="mrpj.ProjenProjectOptions.property.copyrightOwner"></a>
+##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="schuettc.ProjenProjectOptions.property.copyrightOwner"></a>
 
 ```typescript
 public readonly copyrightOwner: string;
@@ -3326,7 +2899,7 @@ License copyright owner.
 
 ---
 
-##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="mrpj.ProjenProjectOptions.property.copyrightPeriod"></a>
+##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="schuettc.ProjenProjectOptions.property.copyrightPeriod"></a>
 
 ```typescript
 public readonly copyrightPeriod: string;
@@ -3339,7 +2912,7 @@ The copyright years to put in the LICENSE file.
 
 ---
 
-##### `defaultReleaseBranch`<sup>Optional</sup> <a name="defaultReleaseBranch" id="mrpj.ProjenProjectOptions.property.defaultReleaseBranch"></a>
+##### `defaultReleaseBranch`<sup>Optional</sup> <a name="defaultReleaseBranch" id="schuettc.ProjenProjectOptions.property.defaultReleaseBranch"></a>
 
 ```typescript
 public readonly defaultReleaseBranch: string;
@@ -3352,7 +2925,7 @@ The name of the main release branch.
 
 ---
 
-##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="mrpj.ProjenProjectOptions.property.dependabot"></a>
+##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="schuettc.ProjenProjectOptions.property.dependabot"></a>
 
 ```typescript
 public readonly dependabot: boolean;
@@ -3367,7 +2940,7 @@ Cannot be used in conjunction with `depsUpgrade`.
 
 ---
 
-##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="mrpj.ProjenProjectOptions.property.dependabotOptions"></a>
+##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="schuettc.ProjenProjectOptions.property.dependabotOptions"></a>
 
 ```typescript
 public readonly dependabotOptions: DependabotOptions;
@@ -3380,7 +2953,7 @@ Options for dependabot.
 
 ---
 
-##### `deps`<sup>Optional</sup> <a name="deps" id="mrpj.ProjenProjectOptions.property.deps"></a>
+##### `deps`<sup>Optional</sup> <a name="deps" id="schuettc.ProjenProjectOptions.property.deps"></a>
 
 ```typescript
 public readonly deps: string[];
@@ -3400,7 +2973,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="mrpj.ProjenProjectOptions.property.depsUpgrade"></a>
+##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="schuettc.ProjenProjectOptions.property.depsUpgrade"></a>
 
 ```typescript
 public readonly depsUpgrade: boolean;
@@ -3415,7 +2988,7 @@ Cannot be used in conjunction with `dependabot`.
 
 ---
 
-##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="mrpj.ProjenProjectOptions.property.depsUpgradeOptions"></a>
+##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="schuettc.ProjenProjectOptions.property.depsUpgradeOptions"></a>
 
 ```typescript
 public readonly depsUpgradeOptions: UpgradeDependenciesOptions;
@@ -3428,7 +3001,7 @@ Options for `UpgradeDependencies`.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="mrpj.ProjenProjectOptions.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="schuettc.ProjenProjectOptions.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -3443,7 +3016,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-description
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.ProjenProjectOptions.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.ProjenProjectOptions.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: boolean;
@@ -3456,7 +3029,7 @@ Add a VSCode development environment (used for GitHub Codespaces).
 
 ---
 
-##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="mrpj.ProjenProjectOptions.property.devDeps"></a>
+##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="schuettc.ProjenProjectOptions.property.devDeps"></a>
 
 ```typescript
 public readonly devDeps: string[];
@@ -3480,7 +3053,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="mrpj.ProjenProjectOptions.property.disableTsconfig"></a>
+##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="schuettc.ProjenProjectOptions.property.disableTsconfig"></a>
 
 ```typescript
 public readonly disableTsconfig: boolean;
@@ -3493,7 +3066,7 @@ Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.jso
 
 ---
 
-##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="mrpj.ProjenProjectOptions.property.disableTsconfigDev"></a>
+##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="schuettc.ProjenProjectOptions.property.disableTsconfigDev"></a>
 
 ```typescript
 public readonly disableTsconfigDev: boolean;
@@ -3506,7 +3079,7 @@ Do not generate a `tsconfig.dev.json` file.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.ProjenProjectOptions.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.ProjenProjectOptions.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -3519,7 +3092,7 @@ Docgen by Typedoc.
 
 ---
 
-##### `docgenFilePath`<sup>Optional</sup> <a name="docgenFilePath" id="mrpj.ProjenProjectOptions.property.docgenFilePath"></a>
+##### `docgenFilePath`<sup>Optional</sup> <a name="docgenFilePath" id="schuettc.ProjenProjectOptions.property.docgenFilePath"></a>
 
 ```typescript
 public readonly docgenFilePath: string;
@@ -3532,7 +3105,7 @@ File path for generated docs.
 
 ---
 
-##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="mrpj.ProjenProjectOptions.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="schuettc.ProjenProjectOptions.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -3545,7 +3118,7 @@ Docs directory.
 
 ---
 
-##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="mrpj.ProjenProjectOptions.property.entrypoint"></a>
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="schuettc.ProjenProjectOptions.property.entrypoint"></a>
 
 ```typescript
 public readonly entrypoint: string;
@@ -3558,7 +3131,7 @@ Module entrypoint (`main` in `package.json`). Set to an empty string to not incl
 
 ---
 
-##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="mrpj.ProjenProjectOptions.property.entrypointTypes"></a>
+##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="schuettc.ProjenProjectOptions.property.entrypointTypes"></a>
 
 ```typescript
 public readonly entrypointTypes: string;
@@ -3571,7 +3144,7 @@ The .d.ts file that includes the type declarations for this module.
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.ProjenProjectOptions.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.ProjenProjectOptions.property.eslint"></a>
 
 ```typescript
 public readonly eslint: boolean;
@@ -3584,7 +3157,7 @@ Setup eslint.
 
 ---
 
-##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="mrpj.ProjenProjectOptions.property.eslintOptions"></a>
+##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="schuettc.ProjenProjectOptions.property.eslintOptions"></a>
 
 ```typescript
 public readonly eslintOptions: EslintOptions;
@@ -3597,7 +3170,7 @@ Eslint options.
 
 ---
 
-##### `excludeTypescript`<sup>Optional</sup> <a name="excludeTypescript" id="mrpj.ProjenProjectOptions.property.excludeTypescript"></a>
+##### `excludeTypescript`<sup>Optional</sup> <a name="excludeTypescript" id="schuettc.ProjenProjectOptions.property.excludeTypescript"></a>
 
 ```typescript
 public readonly excludeTypescript: string[];
@@ -3613,7 +3186,7 @@ that cannot be compiled with jsii's compiler settings.
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.ProjenProjectOptions.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.ProjenProjectOptions.property.github"></a>
 
 ```typescript
 public readonly github: boolean;
@@ -3628,7 +3201,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="mrpj.ProjenProjectOptions.property.githubOptions"></a>
+##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="schuettc.ProjenProjectOptions.property.githubOptions"></a>
 
 ```typescript
 public readonly githubOptions: GitHubOptions;
@@ -3641,7 +3214,7 @@ Options for GitHub integration.
 
 ---
 
-##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="mrpj.ProjenProjectOptions.property.gitignore"></a>
+##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="schuettc.ProjenProjectOptions.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: string[];
@@ -3653,7 +3226,7 @@ Additional entries to .gitignore.
 
 ---
 
-##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="mrpj.ProjenProjectOptions.property.gitIgnoreOptions"></a>
+##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="schuettc.ProjenProjectOptions.property.gitIgnoreOptions"></a>
 
 ```typescript
 public readonly gitIgnoreOptions: IgnoreFileOptions;
@@ -3665,7 +3238,7 @@ Configuration options for .gitignore file.
 
 ---
 
-##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="mrpj.ProjenProjectOptions.property.gitOptions"></a>
+##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="schuettc.ProjenProjectOptions.property.gitOptions"></a>
 
 ```typescript
 public readonly gitOptions: GitOptions;
@@ -3677,7 +3250,7 @@ Configuration options for git.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.ProjenProjectOptions.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.ProjenProjectOptions.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: boolean;
@@ -3690,7 +3263,7 @@ Add a Gitpod development environment.
 
 ---
 
-##### `homepage`<sup>Optional</sup> <a name="homepage" id="mrpj.ProjenProjectOptions.property.homepage"></a>
+##### `homepage`<sup>Optional</sup> <a name="homepage" id="schuettc.ProjenProjectOptions.property.homepage"></a>
 
 ```typescript
 public readonly homepage: string;
@@ -3702,7 +3275,7 @@ Package's Homepage / Website.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.ProjenProjectOptions.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.ProjenProjectOptions.property.jest"></a>
 
 ```typescript
 public readonly jest: boolean;
@@ -3715,7 +3288,7 @@ Setup jest unit tests.
 
 ---
 
-##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="mrpj.ProjenProjectOptions.property.jestOptions"></a>
+##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="schuettc.ProjenProjectOptions.property.jestOptions"></a>
 
 ```typescript
 public readonly jestOptions: JestOptions;
@@ -3728,7 +3301,7 @@ Jest options.
 
 ---
 
-##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="mrpj.ProjenProjectOptions.property.jsiiReleaseVersion"></a>
+##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="schuettc.ProjenProjectOptions.property.jsiiReleaseVersion"></a>
 
 ```typescript
 public readonly jsiiReleaseVersion: string;
@@ -3741,7 +3314,7 @@ Version requirement of `publib` which is used to publish modules to npm.
 
 ---
 
-##### `keywords`<sup>Optional</sup> <a name="keywords" id="mrpj.ProjenProjectOptions.property.keywords"></a>
+##### `keywords`<sup>Optional</sup> <a name="keywords" id="schuettc.ProjenProjectOptions.property.keywords"></a>
 
 ```typescript
 public readonly keywords: string[];
@@ -3753,7 +3326,7 @@ Keywords to include in `package.json`.
 
 ---
 
-##### `libdir`<sup>Optional</sup> <a name="libdir" id="mrpj.ProjenProjectOptions.property.libdir"></a>
+##### `libdir`<sup>Optional</sup> <a name="libdir" id="schuettc.ProjenProjectOptions.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -3766,7 +3339,7 @@ Typescript  artifacts output directory.
 
 ---
 
-##### `license`<sup>Optional</sup> <a name="license" id="mrpj.ProjenProjectOptions.property.license"></a>
+##### `license`<sup>Optional</sup> <a name="license" id="schuettc.ProjenProjectOptions.property.license"></a>
 
 ```typescript
 public readonly license: string;
@@ -3782,7 +3355,7 @@ Use the `licensed` option if you want to no license to be specified.
 
 ---
 
-##### `licensed`<sup>Optional</sup> <a name="licensed" id="mrpj.ProjenProjectOptions.property.licensed"></a>
+##### `licensed`<sup>Optional</sup> <a name="licensed" id="schuettc.ProjenProjectOptions.property.licensed"></a>
 
 ```typescript
 public readonly licensed: boolean;
@@ -3795,7 +3368,7 @@ Indicates if a license should be added.
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="mrpj.ProjenProjectOptions.property.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="schuettc.ProjenProjectOptions.property.logging"></a>
 
 ```typescript
 public readonly logging: LoggerOptions;
@@ -3808,21 +3381,7 @@ Configure logging options such as verbosity.
 
 ---
 
-##### `logo`<sup>Optional</sup> <a name="logo" id="mrpj.ProjenProjectOptions.property.logo"></a>
-
-```typescript
-public readonly logo: ILogo;
-```
-
-- *Type:* mrpj.logo.ILogo
-
-Add a logo.
-
-Use `Logo.placeholder()` to get started.
-
----
-
-##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="mrpj.ProjenProjectOptions.property.majorVersion"></a>
+##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="schuettc.ProjenProjectOptions.property.majorVersion"></a>
 
 ```typescript
 public readonly majorVersion: number;
@@ -3838,7 +3397,7 @@ If not specified, we bump the global latest version.
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.ProjenProjectOptions.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.ProjenProjectOptions.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -3851,7 +3410,7 @@ Minimum node.js version to require via `engines` (inclusive).
 
 ---
 
-##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="mrpj.ProjenProjectOptions.property.minMajorVersion"></a>
+##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="schuettc.ProjenProjectOptions.property.minMajorVersion"></a>
 
 ```typescript
 public readonly minMajorVersion: number;
@@ -3869,7 +3428,7 @@ Can not be set together with `majorVersion`.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.ProjenProjectOptions.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.ProjenProjectOptions.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -3882,7 +3441,7 @@ Minimum Node.js version to require via package.json `engines` (inclusive).
 
 ---
 
-##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="mrpj.ProjenProjectOptions.property.mutableBuild"></a>
+##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="schuettc.ProjenProjectOptions.property.mutableBuild"></a>
 
 ```typescript
 public readonly mutableBuild: boolean;
@@ -3901,7 +3460,7 @@ Implies that PR builds do not have anti-tamper checks.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="mrpj.ProjenProjectOptions.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="schuettc.ProjenProjectOptions.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -3914,7 +3473,7 @@ This is the name of your project.
 
 ---
 
-##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="mrpj.ProjenProjectOptions.property.npmAccess"></a>
+##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="schuettc.ProjenProjectOptions.property.npmAccess"></a>
 
 ```typescript
 public readonly npmAccess: NpmAccess;
@@ -3927,7 +3486,7 @@ Access level of the npm package.
 
 ---
 
-##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="mrpj.ProjenProjectOptions.property.npmDistTag"></a>
+##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="schuettc.ProjenProjectOptions.property.npmDistTag"></a>
 
 ```typescript
 public readonly npmDistTag: string;
@@ -3943,7 +3502,7 @@ for each branch.
 
 ---
 
-##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="mrpj.ProjenProjectOptions.property.npmignoreEnabled"></a>
+##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="schuettc.ProjenProjectOptions.property.npmignoreEnabled"></a>
 
 ```typescript
 public readonly npmignoreEnabled: boolean;
@@ -3956,7 +3515,7 @@ Defines an .npmignore file. Normally this is only needed for libraries that are 
 
 ---
 
-##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="mrpj.ProjenProjectOptions.property.npmIgnoreOptions"></a>
+##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="schuettc.ProjenProjectOptions.property.npmIgnoreOptions"></a>
 
 ```typescript
 public readonly npmIgnoreOptions: IgnoreFileOptions;
@@ -3968,7 +3527,7 @@ Configuration options for .npmignore file.
 
 ---
 
-##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="mrpj.ProjenProjectOptions.property.npmRegistryUrl"></a>
+##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="schuettc.ProjenProjectOptions.property.npmRegistryUrl"></a>
 
 ```typescript
 public readonly npmRegistryUrl: string;
@@ -3983,7 +3542,7 @@ Must be a URL (e.g. start with "https://" or "http://")
 
 ---
 
-##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="mrpj.ProjenProjectOptions.property.npmTokenSecret"></a>
+##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="schuettc.ProjenProjectOptions.property.npmTokenSecret"></a>
 
 ```typescript
 public readonly npmTokenSecret: string;
@@ -3996,7 +3555,7 @@ GitHub secret which contains the NPM token to use when publishing packages.
 
 ---
 
-##### `outdir`<sup>Optional</sup> <a name="outdir" id="mrpj.ProjenProjectOptions.property.outdir"></a>
+##### `outdir`<sup>Optional</sup> <a name="outdir" id="schuettc.ProjenProjectOptions.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -4013,7 +3572,7 @@ sub-projects.
 
 ---
 
-##### `ownerCanSelfApprovePRs`<sup>Optional</sup> <a name="ownerCanSelfApprovePRs" id="mrpj.ProjenProjectOptions.property.ownerCanSelfApprovePRs"></a>
+##### `ownerCanSelfApprovePRs`<sup>Optional</sup> <a name="ownerCanSelfApprovePRs" id="schuettc.ProjenProjectOptions.property.ownerCanSelfApprovePRs"></a>
 
 ```typescript
 public readonly ownerCanSelfApprovePRs: boolean;
@@ -4026,7 +3585,7 @@ Allow the repo owner to self approve PRs by putting a label on it.
 
 ---
 
-##### `package`<sup>Optional</sup> <a name="package" id="mrpj.ProjenProjectOptions.property.package"></a>
+##### `package`<sup>Optional</sup> <a name="package" id="schuettc.ProjenProjectOptions.property.package"></a>
 
 ```typescript
 public readonly package: boolean;
@@ -4039,7 +3598,7 @@ Defines a `package` task that will produce an npm tarball under the artifacts di
 
 ---
 
-##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="mrpj.ProjenProjectOptions.property.packageManager"></a>
+##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="schuettc.ProjenProjectOptions.property.packageManager"></a>
 
 ```typescript
 public readonly packageManager: NodePackageManager;
@@ -4052,7 +3611,7 @@ The Node Package Manager used to execute scripts.
 
 ---
 
-##### `packageName`<sup>Optional</sup> <a name="packageName" id="mrpj.ProjenProjectOptions.property.packageName"></a>
+##### `packageName`<sup>Optional</sup> <a name="packageName" id="schuettc.ProjenProjectOptions.property.packageName"></a>
 
 ```typescript
 public readonly packageName: string;
@@ -4065,7 +3624,7 @@ The "name" in package.json.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.ProjenProjectOptions.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.ProjenProjectOptions.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -4077,7 +3636,7 @@ The parent project, if this project is part of a bigger project.
 
 ---
 
-##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="mrpj.ProjenProjectOptions.property.peerDependencyOptions"></a>
+##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="schuettc.ProjenProjectOptions.property.peerDependencyOptions"></a>
 
 ```typescript
 public readonly peerDependencyOptions: PeerDependencyOptions;
@@ -4089,7 +3648,7 @@ Options for `peerDeps`.
 
 ---
 
-##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="mrpj.ProjenProjectOptions.property.peerDeps"></a>
+##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="schuettc.ProjenProjectOptions.property.peerDeps"></a>
 
 ```typescript
 public readonly peerDeps: string[];
@@ -4116,7 +3675,7 @@ test your module against the lowest peer version required.
 
 ---
 
-##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="mrpj.ProjenProjectOptions.property.pnpmVersion"></a>
+##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="schuettc.ProjenProjectOptions.property.pnpmVersion"></a>
 
 ```typescript
 public readonly pnpmVersion: string;
@@ -4129,7 +3688,7 @@ The version of PNPM to use if using PNPM as a package manager.
 
 ---
 
-##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="mrpj.ProjenProjectOptions.property.postBuildSteps"></a>
+##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="schuettc.ProjenProjectOptions.property.postBuildSteps"></a>
 
 ```typescript
 public readonly postBuildSteps: JobStep[];
@@ -4142,7 +3701,7 @@ Steps to execute after build as part of the release workflow.
 
 ---
 
-##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="mrpj.ProjenProjectOptions.property.prerelease"></a>
+##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="schuettc.ProjenProjectOptions.property.prerelease"></a>
 
 ```typescript
 public readonly prerelease: string;
@@ -4155,7 +3714,7 @@ Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pr
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.ProjenProjectOptions.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.ProjenProjectOptions.property.prettier"></a>
 
 ```typescript
 public readonly prettier: boolean;
@@ -4168,7 +3727,7 @@ Setup prettier.
 
 ---
 
-##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="mrpj.ProjenProjectOptions.property.prettierOptions"></a>
+##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="schuettc.ProjenProjectOptions.property.prettierOptions"></a>
 
 ```typescript
 public readonly prettierOptions: PrettierOptions;
@@ -4181,7 +3740,7 @@ Prettier options.
 
 ---
 
-##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="mrpj.ProjenProjectOptions.property.projenCommand"></a>
+##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="schuettc.ProjenProjectOptions.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -4196,7 +3755,7 @@ Can be used to customize in special environments.
 
 ---
 
-##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="mrpj.ProjenProjectOptions.property.projenCredentials"></a>
+##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="schuettc.ProjenProjectOptions.property.projenCredentials"></a>
 
 ```typescript
 public readonly projenCredentials: GithubCredentials;
@@ -4209,7 +3768,7 @@ Choose a method of providing GitHub API access for projen workflows.
 
 ---
 
-##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="mrpj.ProjenProjectOptions.property.projenDevDependency"></a>
+##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="schuettc.ProjenProjectOptions.property.projenDevDependency"></a>
 
 ```typescript
 public readonly projenDevDependency: boolean;
@@ -4222,7 +3781,7 @@ Indicates of "projen" should be installed as a devDependency.
 
 ---
 
-##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="mrpj.ProjenProjectOptions.property.projenrcJs"></a>
+##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="schuettc.ProjenProjectOptions.property.projenrcJs"></a>
 
 ```typescript
 public readonly projenrcJs: boolean;
@@ -4235,7 +3794,7 @@ Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable
 
 ---
 
-##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="mrpj.ProjenProjectOptions.property.projenrcJson"></a>
+##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="schuettc.ProjenProjectOptions.property.projenrcJson"></a>
 
 ```typescript
 public readonly projenrcJson: boolean;
@@ -4248,7 +3807,7 @@ Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .pr
 
 ---
 
-##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="mrpj.ProjenProjectOptions.property.projenrcJsonOptions"></a>
+##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="schuettc.ProjenProjectOptions.property.projenrcJsonOptions"></a>
 
 ```typescript
 public readonly projenrcJsonOptions: ProjenrcJsonOptions;
@@ -4261,7 +3820,7 @@ Options for .projenrc.json.
 
 ---
 
-##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="mrpj.ProjenProjectOptions.property.projenrcJsOptions"></a>
+##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="schuettc.ProjenProjectOptions.property.projenrcJsOptions"></a>
 
 ```typescript
 public readonly projenrcJsOptions: ProjenrcOptions;
@@ -4274,7 +3833,7 @@ Options for .projenrc.js.
 
 ---
 
-##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="mrpj.ProjenProjectOptions.property.projenrcTsOptions"></a>
+##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="schuettc.ProjenProjectOptions.property.projenrcTsOptions"></a>
 
 ```typescript
 public readonly projenrcTsOptions: ProjenrcOptions;
@@ -4286,7 +3845,7 @@ Options for .projenrc.ts.
 
 ---
 
-##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="mrpj.ProjenProjectOptions.property.projenVersion"></a>
+##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="schuettc.ProjenProjectOptions.property.projenVersion"></a>
 
 ```typescript
 public readonly projenVersion: string;
@@ -4299,7 +3858,7 @@ Version of projen to install.
 
 ---
 
-##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="mrpj.ProjenProjectOptions.property.publishDryRun"></a>
+##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="schuettc.ProjenProjectOptions.property.publishDryRun"></a>
 
 ```typescript
 public readonly publishDryRun: boolean;
@@ -4312,7 +3871,7 @@ Instead of actually publishing to package managers, just print the publishing co
 
 ---
 
-##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="mrpj.ProjenProjectOptions.property.publishTasks"></a>
+##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="schuettc.ProjenProjectOptions.property.publishTasks"></a>
 
 ```typescript
 public readonly publishTasks: boolean;
@@ -4328,7 +3887,7 @@ in order to create a publishing task for each publishing activity.
 
 ---
 
-##### `publishToGo`<sup>Optional</sup> <a name="publishToGo" id="mrpj.ProjenProjectOptions.property.publishToGo"></a>
+##### `publishToGo`<sup>Optional</sup> <a name="publishToGo" id="schuettc.ProjenProjectOptions.property.publishToGo"></a>
 
 ```typescript
 public readonly publishToGo: JsiiGoTarget;
@@ -4341,7 +3900,7 @@ Publish Go bindings to a git repository.
 
 ---
 
-##### `publishToMaven`<sup>Optional</sup> <a name="publishToMaven" id="mrpj.ProjenProjectOptions.property.publishToMaven"></a>
+##### `publishToMaven`<sup>Optional</sup> <a name="publishToMaven" id="schuettc.ProjenProjectOptions.property.publishToMaven"></a>
 
 ```typescript
 public readonly publishToMaven: JsiiJavaTarget;
@@ -4354,7 +3913,7 @@ Publish to maven.
 
 ---
 
-##### `publishToNuget`<sup>Optional</sup> <a name="publishToNuget" id="mrpj.ProjenProjectOptions.property.publishToNuget"></a>
+##### `publishToNuget`<sup>Optional</sup> <a name="publishToNuget" id="schuettc.ProjenProjectOptions.property.publishToNuget"></a>
 
 ```typescript
 public readonly publishToNuget: JsiiDotNetTarget;
@@ -4367,7 +3926,7 @@ Publish to NuGet.
 
 ---
 
-##### `publishToPypi`<sup>Optional</sup> <a name="publishToPypi" id="mrpj.ProjenProjectOptions.property.publishToPypi"></a>
+##### `publishToPypi`<sup>Optional</sup> <a name="publishToPypi" id="schuettc.ProjenProjectOptions.property.publishToPypi"></a>
 
 ```typescript
 public readonly publishToPypi: JsiiPythonTarget;
@@ -4380,7 +3939,7 @@ Publish to pypi.
 
 ---
 
-##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="mrpj.ProjenProjectOptions.property.pullRequestTemplate"></a>
+##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="schuettc.ProjenProjectOptions.property.pullRequestTemplate"></a>
 
 ```typescript
 public readonly pullRequestTemplate: boolean;
@@ -4393,7 +3952,7 @@ Include a GitHub pull request template.
 
 ---
 
-##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="mrpj.ProjenProjectOptions.property.pullRequestTemplateContents"></a>
+##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="schuettc.ProjenProjectOptions.property.pullRequestTemplateContents"></a>
 
 ```typescript
 public readonly pullRequestTemplateContents: string[];
@@ -4406,7 +3965,7 @@ The contents of the pull request template.
 
 ---
 
-##### `readme`<sup>Optional</sup> <a name="readme" id="mrpj.ProjenProjectOptions.property.readme"></a>
+##### `readme`<sup>Optional</sup> <a name="readme" id="schuettc.ProjenProjectOptions.property.readme"></a>
 
 ```typescript
 public readonly readme: SampleReadmeProps;
@@ -4419,7 +3978,7 @@ The README setup.
 
 ---
 
-##### `releasableCommitTypes`<sup>Optional</sup> <a name="releasableCommitTypes" id="mrpj.ProjenProjectOptions.property.releasableCommitTypes"></a>
+##### `releasableCommitTypes`<sup>Optional</sup> <a name="releasableCommitTypes" id="schuettc.ProjenProjectOptions.property.releasableCommitTypes"></a>
 
 ```typescript
 public readonly releasableCommitTypes: string[];
@@ -4432,7 +3991,7 @@ Which conventional commit types should be released.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.ProjenProjectOptions.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.ProjenProjectOptions.property.release"></a>
 
 ```typescript
 public readonly release: boolean;
@@ -4445,7 +4004,7 @@ Add release management to this project.
 
 ---
 
-##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="mrpj.ProjenProjectOptions.property.releaseBranches"></a>
+##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="schuettc.ProjenProjectOptions.property.releaseBranches"></a>
 
 ```typescript
 public readonly releaseBranches: {[ key: string ]: BranchOptions};
@@ -4465,7 +4024,7 @@ be provided for the default branch.
 
 ---
 
-##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="mrpj.ProjenProjectOptions.property.releaseFailureIssue"></a>
+##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="schuettc.ProjenProjectOptions.property.releaseFailureIssue"></a>
 
 ```typescript
 public readonly releaseFailureIssue: boolean;
@@ -4478,7 +4037,7 @@ Create a github issue on every failed publishing task.
 
 ---
 
-##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="mrpj.ProjenProjectOptions.property.releaseFailureIssueLabel"></a>
+##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="schuettc.ProjenProjectOptions.property.releaseFailureIssueLabel"></a>
 
 ```typescript
 public readonly releaseFailureIssueLabel: string;
@@ -4493,7 +4052,7 @@ Only applies if `releaseFailureIssue` is true.
 
 ---
 
-##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="mrpj.ProjenProjectOptions.property.releaseTagPrefix"></a>
+##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="schuettc.ProjenProjectOptions.property.releaseTagPrefix"></a>
 
 ```typescript
 public readonly releaseTagPrefix: string;
@@ -4512,7 +4071,7 @@ with the new prefix.
 
 ---
 
-##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="mrpj.ProjenProjectOptions.property.releaseToNpm"></a>
+##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="schuettc.ProjenProjectOptions.property.releaseToNpm"></a>
 
 ```typescript
 public readonly releaseToNpm: boolean;
@@ -4525,7 +4084,7 @@ Automatically release to npm when new versions are introduced.
 
 ---
 
-##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="mrpj.ProjenProjectOptions.property.releaseTrigger"></a>
+##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="schuettc.ProjenProjectOptions.property.releaseTrigger"></a>
 
 ```typescript
 public readonly releaseTrigger: ReleaseTrigger;
@@ -4538,7 +4097,7 @@ The release trigger to use.
 
 ---
 
-##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="mrpj.ProjenProjectOptions.property.releaseWorkflowName"></a>
+##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="schuettc.ProjenProjectOptions.property.releaseWorkflowName"></a>
 
 ```typescript
 public readonly releaseWorkflowName: string;
@@ -4551,7 +4110,7 @@ The name of the default release workflow.
 
 ---
 
-##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="mrpj.ProjenProjectOptions.property.releaseWorkflowSetupSteps"></a>
+##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="schuettc.ProjenProjectOptions.property.releaseWorkflowSetupSteps"></a>
 
 ```typescript
 public readonly releaseWorkflowSetupSteps: JobStep[];
@@ -4563,7 +4122,7 @@ A set of workflow steps to execute in order to setup the workflow container.
 
 ---
 
-##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="mrpj.ProjenProjectOptions.property.renovatebot"></a>
+##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="schuettc.ProjenProjectOptions.property.renovatebot"></a>
 
 ```typescript
 public readonly renovatebot: boolean;
@@ -4576,7 +4135,7 @@ Use renovatebot to handle dependency upgrades.
 
 ---
 
-##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="mrpj.ProjenProjectOptions.property.renovatebotOptions"></a>
+##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="schuettc.ProjenProjectOptions.property.renovatebotOptions"></a>
 
 ```typescript
 public readonly renovatebotOptions: RenovatebotOptions;
@@ -4589,7 +4148,7 @@ Options for renovatebot.
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="mrpj.ProjenProjectOptions.property.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="schuettc.ProjenProjectOptions.property.repository"></a>
 
 ```typescript
 public readonly repository: string;
@@ -4603,7 +4162,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-repository
 
 ---
 
-##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="mrpj.ProjenProjectOptions.property.repositoryDirectory"></a>
+##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="schuettc.ProjenProjectOptions.property.repositoryDirectory"></a>
 
 ```typescript
 public readonly repositoryDirectory: string;
@@ -4615,7 +4174,7 @@ If the package.json for your package is not in the root directory (for example i
 
 ---
 
-##### `rootdir`<sup>Optional</sup> <a name="rootdir" id="mrpj.ProjenProjectOptions.property.rootdir"></a>
+##### `rootdir`<sup>Optional</sup> <a name="rootdir" id="schuettc.ProjenProjectOptions.property.rootdir"></a>
 
 ```typescript
 public readonly rootdir: string;
@@ -4626,7 +4185,7 @@ public readonly rootdir: string;
 
 ---
 
-##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="mrpj.ProjenProjectOptions.property.scopedPackagesOptions"></a>
+##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="schuettc.ProjenProjectOptions.property.scopedPackagesOptions"></a>
 
 ```typescript
 public readonly scopedPackagesOptions: ScopedPackagesOptions[];
@@ -4639,7 +4198,7 @@ Options for privately hosted scoped packages.
 
 ---
 
-##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="mrpj.ProjenProjectOptions.property.srcdir"></a>
+##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="schuettc.ProjenProjectOptions.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -4652,7 +4211,7 @@ Typescript sources directory.
 
 ---
 
-##### `stability`<sup>Optional</sup> <a name="stability" id="mrpj.ProjenProjectOptions.property.stability"></a>
+##### `stability`<sup>Optional</sup> <a name="stability" id="schuettc.ProjenProjectOptions.property.stability"></a>
 
 ```typescript
 public readonly stability: string;
@@ -4664,7 +4223,7 @@ Package's Stability.
 
 ---
 
-##### `stale`<sup>Optional</sup> <a name="stale" id="mrpj.ProjenProjectOptions.property.stale"></a>
+##### `stale`<sup>Optional</sup> <a name="stale" id="schuettc.ProjenProjectOptions.property.stale"></a>
 
 ```typescript
 public readonly stale: boolean;
@@ -4679,7 +4238,7 @@ See `staleOptions` for options.
 
 ---
 
-##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="mrpj.ProjenProjectOptions.property.staleOptions"></a>
+##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="schuettc.ProjenProjectOptions.property.staleOptions"></a>
 
 ```typescript
 public readonly staleOptions: StaleOptions;
@@ -4694,7 +4253,7 @@ To disable set `stale` to `false`.
 
 ---
 
-##### `testdir`<sup>Optional</sup> <a name="testdir" id="mrpj.ProjenProjectOptions.property.testdir"></a>
+##### `testdir`<sup>Optional</sup> <a name="testdir" id="schuettc.ProjenProjectOptions.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -4713,7 +4272,7 @@ compile the code in-memory.
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.ProjenProjectOptions.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.ProjenProjectOptions.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfigOptions;
@@ -4726,7 +4285,7 @@ Custom TSConfig.
 
 ---
 
-##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="mrpj.ProjenProjectOptions.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="schuettc.ProjenProjectOptions.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfigOptions;
@@ -4739,7 +4298,7 @@ Custom tsconfig options for the development tsconfig.json file (used for testing
 
 ---
 
-##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="mrpj.ProjenProjectOptions.property.tsconfigDevFile"></a>
+##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="schuettc.ProjenProjectOptions.property.tsconfigDevFile"></a>
 
 ```typescript
 public readonly tsconfigDevFile: string;
@@ -4752,7 +4311,7 @@ The name of the development tsconfig.json file.
 
 ---
 
-##### `upgradesSchedule`<sup>Optional</sup> <a name="upgradesSchedule" id="mrpj.ProjenProjectOptions.property.upgradesSchedule"></a>
+##### `upgradesSchedule`<sup>Optional</sup> <a name="upgradesSchedule" id="schuettc.ProjenProjectOptions.property.upgradesSchedule"></a>
 
 ```typescript
 public readonly upgradesSchedule: UpgradeDependenciesSchedule;
@@ -4763,7 +4322,7 @@ public readonly upgradesSchedule: UpgradeDependenciesSchedule;
 
 ---
 
-##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="mrpj.ProjenProjectOptions.property.versionrcOptions"></a>
+##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="schuettc.ProjenProjectOptions.property.versionrcOptions"></a>
 
 ```typescript
 public readonly versionrcOptions: {[ key: string ]: any};
@@ -4778,7 +4337,7 @@ Given values either append to default configuration or overwrite values in it.
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.ProjenProjectOptions.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.ProjenProjectOptions.property.vscode"></a>
 
 ```typescript
 public readonly vscode: boolean;
@@ -4793,22 +4352,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `wordmarkOptions`<sup>Optional</sup> <a name="wordmarkOptions" id="mrpj.ProjenProjectOptions.property.wordmarkOptions"></a>
-
-```typescript
-public readonly wordmarkOptions: WordmarkOptions;
-```
-
-- *Type:* mrpj.logo.WordmarkOptions
-- *Default:* derived from logo and project
-
-Configure how the wordmark is created from a logo.
-
-Wordmarks are only created when a logo is available.
-
----
-
-##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="mrpj.ProjenProjectOptions.property.workflowBootstrapSteps"></a>
+##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="schuettc.ProjenProjectOptions.property.workflowBootstrapSteps"></a>
 
 ```typescript
 public readonly workflowBootstrapSteps: JobStep[];
@@ -4821,7 +4365,7 @@ Workflow steps to use in order to bootstrap this repo.
 
 ---
 
-##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="mrpj.ProjenProjectOptions.property.workflowContainerImage"></a>
+##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="schuettc.ProjenProjectOptions.property.workflowContainerImage"></a>
 
 ```typescript
 public readonly workflowContainerImage: string;
@@ -4834,7 +4378,7 @@ Container image to use for GitHub workflows.
 
 ---
 
-##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="mrpj.ProjenProjectOptions.property.workflowGitIdentity"></a>
+##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="schuettc.ProjenProjectOptions.property.workflowGitIdentity"></a>
 
 ```typescript
 public readonly workflowGitIdentity: GitIdentity;
@@ -4847,7 +4391,7 @@ The git identity to use in workflows.
 
 ---
 
-##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="mrpj.ProjenProjectOptions.property.workflowNodeVersion"></a>
+##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="schuettc.ProjenProjectOptions.property.workflowNodeVersion"></a>
 
 ```typescript
 public readonly workflowNodeVersion: string;
@@ -4860,7 +4404,7 @@ The node version to use in GitHub workflows.
 
 ---
 
-##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="mrpj.ProjenProjectOptions.property.workflowPackageCache"></a>
+##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="schuettc.ProjenProjectOptions.property.workflowPackageCache"></a>
 
 ```typescript
 public readonly workflowPackageCache: boolean;
@@ -4873,7 +4417,7 @@ Enable Node.js package cache in GitHub workflows.
 
 ---
 
-##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="mrpj.ProjenProjectOptions.property.workflowRunsOn"></a>
+##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="schuettc.ProjenProjectOptions.property.workflowRunsOn"></a>
 
 ```typescript
 public readonly workflowRunsOn: string[];
@@ -4886,205 +4430,14 @@ Github Runner selection labels.
 
 ---
 
-### SizeOptions <a name="SizeOptions" id="mrpj.logo.SizeOptions"></a>
-
-#### Initializer <a name="Initializer" id="mrpj.logo.SizeOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const sizeOptions: logo.SizeOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.SizeOptions.property.height">height</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.SizeOptions.property.scale">scale</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.SizeOptions.property.width">width</a></code> | <code>number</code> | *No description.* |
-
----
-
-##### `height`<sup>Optional</sup> <a name="height" id="mrpj.logo.SizeOptions.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.SizeOptions.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-
----
-
-##### `width`<sup>Optional</sup> <a name="width" id="mrpj.logo.SizeOptions.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
----
-
-### SvgFileOptions <a name="SvgFileOptions" id="mrpj.logo.SvgFileOptions"></a>
-
-Options for SvgFile.
-
-#### Initializer <a name="Initializer" id="mrpj.logo.SvgFileOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const svgFileOptions: logo.SvgFileOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.indent">indent</a></code> | <code>number</code> | Indentation size. |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.readonly">readonly</a></code> | <code>boolean</code> | Whether the generated file should be readonly. |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.height">height</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.width">width</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.content">content</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.scale">scale</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFileOptions.property.style">style</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `indent`<sup>Optional</sup> <a name="indent" id="mrpj.logo.SvgFileOptions.property.indent"></a>
-
-```typescript
-public readonly indent: number;
-```
-
-- *Type:* number
-- *Default:* 2
-
-Indentation size.
-
----
-
-##### `readonly`<sup>Optional</sup> <a name="readonly" id="mrpj.logo.SvgFileOptions.property.readonly"></a>
-
-```typescript
-public readonly readonly: boolean;
-```
-
-- *Type:* boolean
-- *Default:* true
-
-Whether the generated file should be readonly.
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.SvgFileOptions.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.SvgFileOptions.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
----
-
-##### `content`<sup>Optional</sup> <a name="content" id="mrpj.logo.SvgFileOptions.property.content"></a>
-
-```typescript
-public readonly content: string;
-```
-
-- *Type:* string
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.SvgFileOptions.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-
----
-
-##### `style`<sup>Optional</sup> <a name="style" id="mrpj.logo.SvgFileOptions.property.style"></a>
-
-```typescript
-public readonly style: string;
-```
-
-- *Type:* string
-
----
-
-### TranslateOptions <a name="TranslateOptions" id="mrpj.logo.TranslateOptions"></a>
-
-#### Initializer <a name="Initializer" id="mrpj.logo.TranslateOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const translateOptions: logo.TranslateOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.TranslateOptions.property.dx">dx</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.TranslateOptions.property.dy">dy</a></code> | <code>number</code> | *No description.* |
-
----
-
-##### `dx`<sup>Optional</sup> <a name="dx" id="mrpj.logo.TranslateOptions.property.dx"></a>
-
-```typescript
-public readonly dx: number;
-```
-
-- *Type:* number
-
----
-
-##### `dy`<sup>Optional</sup> <a name="dy" id="mrpj.logo.TranslateOptions.property.dy"></a>
-
-```typescript
-public readonly dy: number;
-```
-
-- *Type:* number
-
----
-
-### TypeScriptProjectOptions <a name="TypeScriptProjectOptions" id="mrpj.TypeScriptProjectOptions"></a>
+### TypeScriptProjectOptions <a name="TypeScriptProjectOptions" id="schuettc.TypeScriptProjectOptions"></a>
 
 TypeScriptProjectOptions.
 
-#### Initializer <a name="Initializer" id="mrpj.TypeScriptProjectOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="schuettc.TypeScriptProjectOptions.Initializer"></a>
 
 ```typescript
-import { TypeScriptProjectOptions } from 'mrpj'
+import { TypeScriptProjectOptions } from 'schuettc'
 
 const typeScriptProjectOptions: TypeScriptProjectOptions = { ... }
 ```
@@ -5093,144 +4446,142 @@ const typeScriptProjectOptions: TypeScriptProjectOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.repo">repo</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.allowedCommitTypes">allowedCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types are allowed to be used Types listed in `releasableCommitTypes` are always allowed. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.automationAppName">automationAppName</a></code> | <code>string</code> | Use this app for workflow automation. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.logo">logo</a></code> | <code>mrpj.logo.ILogo</code> | Add a logo. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.ownerCanSelfApprovePRs">ownerCanSelfApprovePRs</a></code> | <code>boolean</code> | Allow the repo owner to self approve PRs by putting a label on it. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releasableCommitTypes">releasableCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types should be released. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.upgradesSchedule">upgradesSchedule</a></code> | <code>projen.javascript.UpgradeDependenciesSchedule</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.wordmarkOptions">wordmarkOptions</a></code> | <code>mrpj.logo.WordmarkOptions</code> | Configure how the wordmark is created from a logo. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
-| <code><a href="#mrpj.TypeScriptProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.authorName">authorName</a></code> | <code>string</code> | Author's name. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.repo">repo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.allowedCommitTypes">allowedCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types are allowed to be used Types listed in `releasableCommitTypes` are always allowed. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | Allow the project to include `peerDependencies` and `bundledDependencies`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | A directory which will contain build artifacts. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.authorEmail">authorEmail</a></code> | <code>string</code> | Author's e-mail. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.authorOrganization">authorOrganization</a></code> | <code>boolean</code> | Is the author an organization. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.authorUrl">authorUrl</a></code> | <code>string</code> | Author's URL / Website. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.autoApproveOptions">autoApproveOptions</a></code> | <code>projen.github.AutoApproveOptions</code> | Enable and configure the 'auto approve' workflow. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.autoApproveUpgrades">autoApproveUpgrades</a></code> | <code>boolean</code> | Automatically approve deps upgrade PRs, allowing them to be merged by mergify (if configued). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.autoDetectBin">autoDetectBin</a></code> | <code>boolean</code> | Automatically add all executables under the `bin` directory to your `package.json` file under the `bin` section. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.automationAppName">automationAppName</a></code> | <code>string</code> | Use this app for workflow automation. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.autoMerge">autoMerge</a></code> | <code>boolean</code> | Enable automatic merging on GitHub. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.autoMergeOptions">autoMergeOptions</a></code> | <code>projen.github.AutoMergeOptions</code> | Configure options for automatic merging on GitHub. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.bin">bin</a></code> | <code>{[ key: string ]: string}</code> | Binary programs vended with your module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.bugsEmail">bugsEmail</a></code> | <code>string</code> | The email address to which issues should be reported. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.bugsUrl">bugsUrl</a></code> | <code>string</code> | The url to your project's issue tracker. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.buildWorkflow">buildWorkflow</a></code> | <code>boolean</code> | Define a GitHub workflow for building PRs. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.buildWorkflowTriggers">buildWorkflowTriggers</a></code> | <code>projen.github.workflows.Triggers</code> | Build workflow triggers. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.bundledDeps">bundledDeps</a></code> | <code>string[]</code> | List of dependencies to bundle into this module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.bundlerOptions">bundlerOptions</a></code> | <code>projen.javascript.BundlerOptions</code> | Options for `Bundler`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.clobber">clobber</a></code> | <code>boolean</code> | Add a `clobber` task which resets the repo to origin. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.codeArtifactOptions">codeArtifactOptions</a></code> | <code>projen.javascript.CodeArtifactOptions</code> | Options for npm packages using AWS CodeArtifact. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.codeCov">codeCov</a></code> | <code>boolean</code> | Define a GitHub workflow step for sending code coverage metrics to https://codecov.io/ Uses codecov/codecov-action@v3 A secret is required for private repos. Configured with `@codeCovTokenSecret`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.codeCovTokenSecret">codeCovTokenSecret</a></code> | <code>string</code> | Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.copyrightOwner">copyrightOwner</a></code> | <code>string</code> | License copyright owner. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.copyrightPeriod">copyrightPeriod</a></code> | <code>string</code> | The copyright years to put in the LICENSE file. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.defaultReleaseBranch">defaultReleaseBranch</a></code> | <code>string</code> | The name of the main release branch. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.dependabot">dependabot</a></code> | <code>boolean</code> | Use dependabot to handle dependency upgrades. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.dependabotOptions">dependabotOptions</a></code> | <code>projen.github.DependabotOptions</code> | Options for dependabot. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.deps">deps</a></code> | <code>string[]</code> | Runtime dependencies of this module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.depsUpgrade">depsUpgrade</a></code> | <code>boolean</code> | Use github workflows to handle dependency upgrades. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.depsUpgradeOptions">depsUpgradeOptions</a></code> | <code>projen.javascript.UpgradeDependenciesOptions</code> | Options for `UpgradeDependencies`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.description">description</a></code> | <code>string</code> | The description is just a string that helps people understand the purpose of the package. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.devContainer">devContainer</a></code> | <code>boolean</code> | Add a VSCode development environment (used for GitHub Codespaces). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.devDeps">devDeps</a></code> | <code>string[]</code> | Build dependencies for this module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.disableTsconfig">disableTsconfig</a></code> | <code>boolean</code> | Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.json is generated by the jsii compiler). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.disableTsconfigDev">disableTsconfigDev</a></code> | <code>boolean</code> | Do not generate a `tsconfig.dev.json` file. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.docgen">docgen</a></code> | <code>boolean</code> | Docgen by Typedoc. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | Docs directory. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.entrypoint">entrypoint</a></code> | <code>string</code> | Module entrypoint (`main` in `package.json`). Set to an empty string to not include `main` in your package.json. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.entrypointTypes">entrypointTypes</a></code> | <code>string</code> | The .d.ts file that includes the type declarations for this module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.eslint">eslint</a></code> | <code>boolean</code> | Setup eslint. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.eslintOptions">eslintOptions</a></code> | <code>projen.javascript.EslintOptions</code> | Eslint options. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.github">github</a></code> | <code>boolean</code> | Enable GitHub integration. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.githubOptions">githubOptions</a></code> | <code>projen.github.GitHubOptions</code> | Options for GitHub integration. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.gitignore">gitignore</a></code> | <code>string[]</code> | Additional entries to .gitignore. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.gitIgnoreOptions">gitIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .gitignore file. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.gitOptions">gitOptions</a></code> | <code>projen.GitOptions</code> | Configuration options for git. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.gitpod">gitpod</a></code> | <code>boolean</code> | Add a Gitpod development environment. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.homepage">homepage</a></code> | <code>string</code> | Package's Homepage / Website. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.jest">jest</a></code> | <code>boolean</code> | Setup jest unit tests. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.jestOptions">jestOptions</a></code> | <code>projen.javascript.JestOptions</code> | Jest options. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.jsiiReleaseVersion">jsiiReleaseVersion</a></code> | <code>string</code> | Version requirement of `publib` which is used to publish modules to npm. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.keywords">keywords</a></code> | <code>string[]</code> | Keywords to include in `package.json`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.libdir">libdir</a></code> | <code>string</code> | Typescript  artifacts output directory. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.license">license</a></code> | <code>string</code> | License's SPDX identifier. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.licensed">licensed</a></code> | <code>boolean</code> | Indicates if a license should be added. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.logging">logging</a></code> | <code>projen.LoggerOptions</code> | Configure logging options such as verbosity. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.majorVersion">majorVersion</a></code> | <code>number</code> | Major version to release from the default branch. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Minimum node.js version to require via `engines` (inclusive). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.minMajorVersion">minMajorVersion</a></code> | <code>number</code> | Minimal Major version to release. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum Node.js version to require via package.json `engines` (inclusive). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.mutableBuild">mutableBuild</a></code> | <code>boolean</code> | Automatically update files modified during builds to pull-request branches. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.name">name</a></code> | <code>string</code> | This is the name of your project. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | Access level of the npm package. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmDistTag">npmDistTag</a></code> | <code>string</code> | The npmDistTag to use when publishing from the default branch. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmignoreEnabled">npmignoreEnabled</a></code> | <code>boolean</code> | Defines an .npmignore file. Normally this is only needed for libraries that are packaged as tarballs. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmIgnoreOptions">npmIgnoreOptions</a></code> | <code>projen.IgnoreFileOptions</code> | Configuration options for .npmignore file. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmRegistryUrl">npmRegistryUrl</a></code> | <code>string</code> | The base URL of the npm package registry. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.npmTokenSecret">npmTokenSecret</a></code> | <code>string</code> | GitHub secret which contains the NPM token to use when publishing packages. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.outdir">outdir</a></code> | <code>string</code> | The root directory of the project. Relative to this directory, all files are synthesized. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.ownerCanSelfApprovePRs">ownerCanSelfApprovePRs</a></code> | <code>boolean</code> | Allow the repo owner to self approve PRs by putting a label on it. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.package">package</a></code> | <code>boolean</code> | Defines a `package` task that will produce an npm tarball under the artifacts directory (e.g. `dist`). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The Node Package Manager used to execute scripts. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.packageName">packageName</a></code> | <code>string</code> | The "name" in package.json. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.parent">parent</a></code> | <code>projen.Project</code> | The parent project, if this project is part of a bigger project. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.peerDependencyOptions">peerDependencyOptions</a></code> | <code>projen.javascript.PeerDependencyOptions</code> | Options for `peerDeps`. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.peerDeps">peerDeps</a></code> | <code>string[]</code> | Peer dependencies for this module. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.pnpmVersion">pnpmVersion</a></code> | <code>string</code> | The version of PNPM to use if using PNPM as a package manager. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.postBuildSteps">postBuildSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Steps to execute after build as part of the release workflow. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.prerelease">prerelease</a></code> | <code>string</code> | Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pre"). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.prettier">prettier</a></code> | <code>boolean</code> | Setup prettier. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.prettierOptions">prettierOptions</a></code> | <code>projen.javascript.PrettierOptions</code> | Prettier options. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenCommand">projenCommand</a></code> | <code>string</code> | The shell command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenCredentials">projenCredentials</a></code> | <code>projen.github.GithubCredentials</code> | Choose a method of providing GitHub API access for projen workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenDevDependency">projenDevDependency</a></code> | <code>boolean</code> | Indicates of "projen" should be installed as a devDependency. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenrcJs">projenrcJs</a></code> | <code>boolean</code> | Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable .projenrc.js generation. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenrcJson">projenrcJson</a></code> | <code>boolean</code> | Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .projenrc.json generation. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenrcJsonOptions">projenrcJsonOptions</a></code> | <code>projen.ProjenrcJsonOptions</code> | Options for .projenrc.json. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenrcJsOptions">projenrcJsOptions</a></code> | <code>projen.javascript.ProjenrcOptions</code> | Options for .projenrc.js. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenrcTsOptions">projenrcTsOptions</a></code> | <code>projen.typescript.ProjenrcOptions</code> | Options for .projenrc.ts. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.projenVersion">projenVersion</a></code> | <code>string</code> | Version of projen to install. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.publishDryRun">publishDryRun</a></code> | <code>boolean</code> | Instead of actually publishing to package managers, just print the publishing command. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.publishTasks">publishTasks</a></code> | <code>boolean</code> | Define publishing tasks that can be executed manually as well as workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.pullRequestTemplate">pullRequestTemplate</a></code> | <code>boolean</code> | Include a GitHub pull request template. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.pullRequestTemplateContents">pullRequestTemplateContents</a></code> | <code>string[]</code> | The contents of the pull request template. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.readme">readme</a></code> | <code>projen.SampleReadmeProps</code> | The README setup. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releasableCommitTypes">releasableCommitTypes</a></code> | <code>string[]</code> | Which conventional commit types should be released. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.release">release</a></code> | <code>boolean</code> | Add release management to this project. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseBranches">releaseBranches</a></code> | <code>{[ key: string ]: projen.release.BranchOptions}</code> | Defines additional release branches. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseFailureIssue">releaseFailureIssue</a></code> | <code>boolean</code> | Create a github issue on every failed publishing task. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseFailureIssueLabel">releaseFailureIssueLabel</a></code> | <code>string</code> | The label to apply to issues indicating publish failures. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseTagPrefix">releaseTagPrefix</a></code> | <code>string</code> | Automatically add the given prefix to release tags. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | Automatically release to npm when new versions are introduced. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseTrigger">releaseTrigger</a></code> | <code>projen.release.ReleaseTrigger</code> | The release trigger to use. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseWorkflowName">releaseWorkflowName</a></code> | <code>string</code> | The name of the default release workflow. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.releaseWorkflowSetupSteps">releaseWorkflowSetupSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | A set of workflow steps to execute in order to setup the workflow container. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.renovatebot">renovatebot</a></code> | <code>boolean</code> | Use renovatebot to handle dependency upgrades. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.renovatebotOptions">renovatebotOptions</a></code> | <code>projen.RenovatebotOptions</code> | Options for renovatebot. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.repository">repository</a></code> | <code>string</code> | The repository is the location where the actual code for your package lives. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.repositoryDirectory">repositoryDirectory</a></code> | <code>string</code> | If the package.json for your package is not in the root directory (for example if it is part of a monorepo), you can specify the directory in which it lives. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.scopedPackagesOptions">scopedPackagesOptions</a></code> | <code>projen.javascript.ScopedPackagesOptions[]</code> | Options for privately hosted scoped packages. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.srcdir">srcdir</a></code> | <code>string</code> | Typescript sources directory. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.stability">stability</a></code> | <code>string</code> | Package's Stability. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.stale">stale</a></code> | <code>boolean</code> | Auto-close of stale issues and pull request. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.staleOptions">staleOptions</a></code> | <code>projen.github.StaleOptions</code> | Auto-close stale issues and pull requests. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.testdir">testdir</a></code> | <code>string</code> | Jest tests directory. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom TSConfig. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfigOptions</code> | Custom tsconfig options for the development tsconfig.json file (used for testing). |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.tsconfigDevFile">tsconfigDevFile</a></code> | <code>string</code> | The name of the development tsconfig.json file. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.typescriptVersion">typescriptVersion</a></code> | <code>string</code> | TypeScript version to use. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.upgradesSchedule">upgradesSchedule</a></code> | <code>projen.javascript.UpgradeDependenciesSchedule</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.versionrcOptions">versionrcOptions</a></code> | <code>{[ key: string ]: any}</code> | Custom configuration used when creating changelog with standard-version package. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.vscode">vscode</a></code> | <code>boolean</code> | Enable VSCode integration. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowBootstrapSteps">workflowBootstrapSteps</a></code> | <code>projen.github.workflows.JobStep[]</code> | Workflow steps to use in order to bootstrap this repo. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowContainerImage">workflowContainerImage</a></code> | <code>string</code> | Container image to use for GitHub workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowGitIdentity">workflowGitIdentity</a></code> | <code>projen.github.GitIdentity</code> | The git identity to use in workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowNodeVersion">workflowNodeVersion</a></code> | <code>string</code> | The node version to use in GitHub workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowPackageCache">workflowPackageCache</a></code> | <code>boolean</code> | Enable Node.js package cache in GitHub workflows. |
+| <code><a href="#schuettc.TypeScriptProjectOptions.property.workflowRunsOn">workflowRunsOn</a></code> | <code>string[]</code> | Github Runner selection labels. |
 
 ---
 
-##### `authorName`<sup>Required</sup> <a name="authorName" id="mrpj.TypeScriptProjectOptions.property.authorName"></a>
+##### `authorName`<sup>Required</sup> <a name="authorName" id="schuettc.TypeScriptProjectOptions.property.authorName"></a>
 
 ```typescript
 public readonly authorName: string;
@@ -5242,7 +4593,7 @@ Author's name.
 
 ---
 
-##### `repo`<sup>Required</sup> <a name="repo" id="mrpj.TypeScriptProjectOptions.property.repo"></a>
+##### `repo`<sup>Required</sup> <a name="repo" id="schuettc.TypeScriptProjectOptions.property.repo"></a>
 
 ```typescript
 public readonly repo: string;
@@ -5252,7 +4603,7 @@ public readonly repo: string;
 
 ---
 
-##### `allowedCommitTypes`<sup>Optional</sup> <a name="allowedCommitTypes" id="mrpj.TypeScriptProjectOptions.property.allowedCommitTypes"></a>
+##### `allowedCommitTypes`<sup>Optional</sup> <a name="allowedCommitTypes" id="schuettc.TypeScriptProjectOptions.property.allowedCommitTypes"></a>
 
 ```typescript
 public readonly allowedCommitTypes: string[];
@@ -5265,7 +4616,7 @@ Which conventional commit types are allowed to be used Types listed in `releasab
 
 ---
 
-##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="mrpj.TypeScriptProjectOptions.property.allowLibraryDependencies"></a>
+##### `allowLibraryDependencies`<sup>Optional</sup> <a name="allowLibraryDependencies" id="schuettc.TypeScriptProjectOptions.property.allowLibraryDependencies"></a>
 
 ```typescript
 public readonly allowLibraryDependencies: boolean;
@@ -5281,7 +4632,7 @@ for specifying these.
 
 ---
 
-##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="mrpj.TypeScriptProjectOptions.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Optional</sup> <a name="artifactsDirectory" id="schuettc.TypeScriptProjectOptions.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -5294,7 +4645,7 @@ A directory which will contain build artifacts.
 
 ---
 
-##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="mrpj.TypeScriptProjectOptions.property.authorEmail"></a>
+##### `authorEmail`<sup>Optional</sup> <a name="authorEmail" id="schuettc.TypeScriptProjectOptions.property.authorEmail"></a>
 
 ```typescript
 public readonly authorEmail: string;
@@ -5306,7 +4657,7 @@ Author's e-mail.
 
 ---
 
-##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="mrpj.TypeScriptProjectOptions.property.authorOrganization"></a>
+##### `authorOrganization`<sup>Optional</sup> <a name="authorOrganization" id="schuettc.TypeScriptProjectOptions.property.authorOrganization"></a>
 
 ```typescript
 public readonly authorOrganization: boolean;
@@ -5318,7 +4669,7 @@ Is the author an organization.
 
 ---
 
-##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="mrpj.TypeScriptProjectOptions.property.authorUrl"></a>
+##### `authorUrl`<sup>Optional</sup> <a name="authorUrl" id="schuettc.TypeScriptProjectOptions.property.authorUrl"></a>
 
 ```typescript
 public readonly authorUrl: string;
@@ -5330,7 +4681,7 @@ Author's URL / Website.
 
 ---
 
-##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="mrpj.TypeScriptProjectOptions.property.autoApproveOptions"></a>
+##### `autoApproveOptions`<sup>Optional</sup> <a name="autoApproveOptions" id="schuettc.TypeScriptProjectOptions.property.autoApproveOptions"></a>
 
 ```typescript
 public readonly autoApproveOptions: AutoApproveOptions;
@@ -5343,7 +4694,7 @@ Enable and configure the 'auto approve' workflow.
 
 ---
 
-##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="mrpj.TypeScriptProjectOptions.property.autoApproveUpgrades"></a>
+##### `autoApproveUpgrades`<sup>Optional</sup> <a name="autoApproveUpgrades" id="schuettc.TypeScriptProjectOptions.property.autoApproveUpgrades"></a>
 
 ```typescript
 public readonly autoApproveUpgrades: boolean;
@@ -5358,7 +4709,7 @@ Throw if set to true but `autoApproveOptions` are not defined.
 
 ---
 
-##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="mrpj.TypeScriptProjectOptions.property.autoDetectBin"></a>
+##### `autoDetectBin`<sup>Optional</sup> <a name="autoDetectBin" id="schuettc.TypeScriptProjectOptions.property.autoDetectBin"></a>
 
 ```typescript
 public readonly autoDetectBin: boolean;
@@ -5371,7 +4722,7 @@ Automatically add all executables under the `bin` directory to your `package.jso
 
 ---
 
-##### `automationAppName`<sup>Optional</sup> <a name="automationAppName" id="mrpj.TypeScriptProjectOptions.property.automationAppName"></a>
+##### `automationAppName`<sup>Optional</sup> <a name="automationAppName" id="schuettc.TypeScriptProjectOptions.property.automationAppName"></a>
 
 ```typescript
 public readonly automationAppName: string;
@@ -5386,7 +4737,7 @@ Remember to install the app and to configure credentials.
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.TypeScriptProjectOptions.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.TypeScriptProjectOptions.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: boolean;
@@ -5402,7 +4753,7 @@ is set to false.
 
 ---
 
-##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="mrpj.TypeScriptProjectOptions.property.autoMergeOptions"></a>
+##### `autoMergeOptions`<sup>Optional</sup> <a name="autoMergeOptions" id="schuettc.TypeScriptProjectOptions.property.autoMergeOptions"></a>
 
 ```typescript
 public readonly autoMergeOptions: AutoMergeOptions;
@@ -5418,7 +4769,7 @@ Has no effect if
 
 ---
 
-##### `bin`<sup>Optional</sup> <a name="bin" id="mrpj.TypeScriptProjectOptions.property.bin"></a>
+##### `bin`<sup>Optional</sup> <a name="bin" id="schuettc.TypeScriptProjectOptions.property.bin"></a>
 
 ```typescript
 public readonly bin: {[ key: string ]: string};
@@ -5434,7 +4785,7 @@ executable file under `bin` will automatically be added to this section.
 
 ---
 
-##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="mrpj.TypeScriptProjectOptions.property.bugsEmail"></a>
+##### `bugsEmail`<sup>Optional</sup> <a name="bugsEmail" id="schuettc.TypeScriptProjectOptions.property.bugsEmail"></a>
 
 ```typescript
 public readonly bugsEmail: string;
@@ -5446,7 +4797,7 @@ The email address to which issues should be reported.
 
 ---
 
-##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="mrpj.TypeScriptProjectOptions.property.bugsUrl"></a>
+##### `bugsUrl`<sup>Optional</sup> <a name="bugsUrl" id="schuettc.TypeScriptProjectOptions.property.bugsUrl"></a>
 
 ```typescript
 public readonly bugsUrl: string;
@@ -5458,7 +4809,7 @@ The url to your project's issue tracker.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.TypeScriptProjectOptions.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.TypeScriptProjectOptions.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: boolean;
@@ -5471,7 +4822,7 @@ Define a GitHub workflow for building PRs.
 
 ---
 
-##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="mrpj.TypeScriptProjectOptions.property.buildWorkflowTriggers"></a>
+##### `buildWorkflowTriggers`<sup>Optional</sup> <a name="buildWorkflowTriggers" id="schuettc.TypeScriptProjectOptions.property.buildWorkflowTriggers"></a>
 
 ```typescript
 public readonly buildWorkflowTriggers: Triggers;
@@ -5484,7 +4835,7 @@ Build workflow triggers.
 
 ---
 
-##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="mrpj.TypeScriptProjectOptions.property.bundledDeps"></a>
+##### `bundledDeps`<sup>Optional</sup> <a name="bundledDeps" id="schuettc.TypeScriptProjectOptions.property.bundledDeps"></a>
 
 ```typescript
 public readonly bundledDeps: string[];
@@ -5507,7 +4858,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="mrpj.TypeScriptProjectOptions.property.bundlerOptions"></a>
+##### `bundlerOptions`<sup>Optional</sup> <a name="bundlerOptions" id="schuettc.TypeScriptProjectOptions.property.bundlerOptions"></a>
 
 ```typescript
 public readonly bundlerOptions: BundlerOptions;
@@ -5519,7 +4870,7 @@ Options for `Bundler`.
 
 ---
 
-##### `clobber`<sup>Optional</sup> <a name="clobber" id="mrpj.TypeScriptProjectOptions.property.clobber"></a>
+##### `clobber`<sup>Optional</sup> <a name="clobber" id="schuettc.TypeScriptProjectOptions.property.clobber"></a>
 
 ```typescript
 public readonly clobber: boolean;
@@ -5532,7 +4883,7 @@ Add a `clobber` task which resets the repo to origin.
 
 ---
 
-##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="mrpj.TypeScriptProjectOptions.property.codeArtifactOptions"></a>
+##### `codeArtifactOptions`<sup>Optional</sup> <a name="codeArtifactOptions" id="schuettc.TypeScriptProjectOptions.property.codeArtifactOptions"></a>
 
 ```typescript
 public readonly codeArtifactOptions: CodeArtifactOptions;
@@ -5547,7 +4898,7 @@ This is required if publishing packages to, or installing scoped packages from A
 
 ---
 
-##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="mrpj.TypeScriptProjectOptions.property.codeCov"></a>
+##### `codeCov`<sup>Optional</sup> <a name="codeCov" id="schuettc.TypeScriptProjectOptions.property.codeCov"></a>
 
 ```typescript
 public readonly codeCov: boolean;
@@ -5560,7 +4911,7 @@ Define a GitHub workflow step for sending code coverage metrics to https://codec
 
 ---
 
-##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="mrpj.TypeScriptProjectOptions.property.codeCovTokenSecret"></a>
+##### `codeCovTokenSecret`<sup>Optional</sup> <a name="codeCovTokenSecret" id="schuettc.TypeScriptProjectOptions.property.codeCovTokenSecret"></a>
 
 ```typescript
 public readonly codeCovTokenSecret: string;
@@ -5573,7 +4924,7 @@ Define the secret name for a specified https://codecov.io/ token A secret is req
 
 ---
 
-##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="mrpj.TypeScriptProjectOptions.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Optional</sup> <a name="commitGenerated" id="schuettc.TypeScriptProjectOptions.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -5586,7 +4937,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="mrpj.TypeScriptProjectOptions.property.copyrightOwner"></a>
+##### `copyrightOwner`<sup>Optional</sup> <a name="copyrightOwner" id="schuettc.TypeScriptProjectOptions.property.copyrightOwner"></a>
 
 ```typescript
 public readonly copyrightOwner: string;
@@ -5599,7 +4950,7 @@ License copyright owner.
 
 ---
 
-##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="mrpj.TypeScriptProjectOptions.property.copyrightPeriod"></a>
+##### `copyrightPeriod`<sup>Optional</sup> <a name="copyrightPeriod" id="schuettc.TypeScriptProjectOptions.property.copyrightPeriod"></a>
 
 ```typescript
 public readonly copyrightPeriod: string;
@@ -5612,7 +4963,7 @@ The copyright years to put in the LICENSE file.
 
 ---
 
-##### `defaultReleaseBranch`<sup>Optional</sup> <a name="defaultReleaseBranch" id="mrpj.TypeScriptProjectOptions.property.defaultReleaseBranch"></a>
+##### `defaultReleaseBranch`<sup>Optional</sup> <a name="defaultReleaseBranch" id="schuettc.TypeScriptProjectOptions.property.defaultReleaseBranch"></a>
 
 ```typescript
 public readonly defaultReleaseBranch: string;
@@ -5625,7 +4976,7 @@ The name of the main release branch.
 
 ---
 
-##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="mrpj.TypeScriptProjectOptions.property.dependabot"></a>
+##### `dependabot`<sup>Optional</sup> <a name="dependabot" id="schuettc.TypeScriptProjectOptions.property.dependabot"></a>
 
 ```typescript
 public readonly dependabot: boolean;
@@ -5640,7 +4991,7 @@ Cannot be used in conjunction with `depsUpgrade`.
 
 ---
 
-##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="mrpj.TypeScriptProjectOptions.property.dependabotOptions"></a>
+##### `dependabotOptions`<sup>Optional</sup> <a name="dependabotOptions" id="schuettc.TypeScriptProjectOptions.property.dependabotOptions"></a>
 
 ```typescript
 public readonly dependabotOptions: DependabotOptions;
@@ -5653,7 +5004,7 @@ Options for dependabot.
 
 ---
 
-##### `deps`<sup>Optional</sup> <a name="deps" id="mrpj.TypeScriptProjectOptions.property.deps"></a>
+##### `deps`<sup>Optional</sup> <a name="deps" id="schuettc.TypeScriptProjectOptions.property.deps"></a>
 
 ```typescript
 public readonly deps: string[];
@@ -5673,7 +5024,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="mrpj.TypeScriptProjectOptions.property.depsUpgrade"></a>
+##### `depsUpgrade`<sup>Optional</sup> <a name="depsUpgrade" id="schuettc.TypeScriptProjectOptions.property.depsUpgrade"></a>
 
 ```typescript
 public readonly depsUpgrade: boolean;
@@ -5688,7 +5039,7 @@ Cannot be used in conjunction with `dependabot`.
 
 ---
 
-##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="mrpj.TypeScriptProjectOptions.property.depsUpgradeOptions"></a>
+##### `depsUpgradeOptions`<sup>Optional</sup> <a name="depsUpgradeOptions" id="schuettc.TypeScriptProjectOptions.property.depsUpgradeOptions"></a>
 
 ```typescript
 public readonly depsUpgradeOptions: UpgradeDependenciesOptions;
@@ -5701,7 +5052,7 @@ Options for `UpgradeDependencies`.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="mrpj.TypeScriptProjectOptions.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="schuettc.TypeScriptProjectOptions.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -5716,7 +5067,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-description
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.TypeScriptProjectOptions.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.TypeScriptProjectOptions.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: boolean;
@@ -5729,7 +5080,7 @@ Add a VSCode development environment (used for GitHub Codespaces).
 
 ---
 
-##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="mrpj.TypeScriptProjectOptions.property.devDeps"></a>
+##### `devDeps`<sup>Optional</sup> <a name="devDeps" id="schuettc.TypeScriptProjectOptions.property.devDeps"></a>
 
 ```typescript
 public readonly devDeps: string[];
@@ -5753,7 +5104,7 @@ this will be what you `package.json` will eventually include.
 
 ---
 
-##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="mrpj.TypeScriptProjectOptions.property.disableTsconfig"></a>
+##### `disableTsconfig`<sup>Optional</sup> <a name="disableTsconfig" id="schuettc.TypeScriptProjectOptions.property.disableTsconfig"></a>
 
 ```typescript
 public readonly disableTsconfig: boolean;
@@ -5766,7 +5117,7 @@ Do not generate a `tsconfig.json` file (used by jsii projects since tsconfig.jso
 
 ---
 
-##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="mrpj.TypeScriptProjectOptions.property.disableTsconfigDev"></a>
+##### `disableTsconfigDev`<sup>Optional</sup> <a name="disableTsconfigDev" id="schuettc.TypeScriptProjectOptions.property.disableTsconfigDev"></a>
 
 ```typescript
 public readonly disableTsconfigDev: boolean;
@@ -5779,7 +5130,7 @@ Do not generate a `tsconfig.dev.json` file.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.TypeScriptProjectOptions.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.TypeScriptProjectOptions.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -5792,7 +5143,7 @@ Docgen by Typedoc.
 
 ---
 
-##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="mrpj.TypeScriptProjectOptions.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Optional</sup> <a name="docsDirectory" id="schuettc.TypeScriptProjectOptions.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -5805,7 +5156,7 @@ Docs directory.
 
 ---
 
-##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="mrpj.TypeScriptProjectOptions.property.entrypoint"></a>
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="schuettc.TypeScriptProjectOptions.property.entrypoint"></a>
 
 ```typescript
 public readonly entrypoint: string;
@@ -5818,7 +5169,7 @@ Module entrypoint (`main` in `package.json`). Set to an empty string to not incl
 
 ---
 
-##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="mrpj.TypeScriptProjectOptions.property.entrypointTypes"></a>
+##### `entrypointTypes`<sup>Optional</sup> <a name="entrypointTypes" id="schuettc.TypeScriptProjectOptions.property.entrypointTypes"></a>
 
 ```typescript
 public readonly entrypointTypes: string;
@@ -5831,7 +5182,7 @@ The .d.ts file that includes the type declarations for this module.
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.TypeScriptProjectOptions.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.TypeScriptProjectOptions.property.eslint"></a>
 
 ```typescript
 public readonly eslint: boolean;
@@ -5844,7 +5195,7 @@ Setup eslint.
 
 ---
 
-##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="mrpj.TypeScriptProjectOptions.property.eslintOptions"></a>
+##### `eslintOptions`<sup>Optional</sup> <a name="eslintOptions" id="schuettc.TypeScriptProjectOptions.property.eslintOptions"></a>
 
 ```typescript
 public readonly eslintOptions: EslintOptions;
@@ -5857,7 +5208,7 @@ Eslint options.
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.TypeScriptProjectOptions.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.TypeScriptProjectOptions.property.github"></a>
 
 ```typescript
 public readonly github: boolean;
@@ -5872,7 +5223,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="mrpj.TypeScriptProjectOptions.property.githubOptions"></a>
+##### `githubOptions`<sup>Optional</sup> <a name="githubOptions" id="schuettc.TypeScriptProjectOptions.property.githubOptions"></a>
 
 ```typescript
 public readonly githubOptions: GitHubOptions;
@@ -5885,7 +5236,7 @@ Options for GitHub integration.
 
 ---
 
-##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="mrpj.TypeScriptProjectOptions.property.gitignore"></a>
+##### `gitignore`<sup>Optional</sup> <a name="gitignore" id="schuettc.TypeScriptProjectOptions.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: string[];
@@ -5897,7 +5248,7 @@ Additional entries to .gitignore.
 
 ---
 
-##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="mrpj.TypeScriptProjectOptions.property.gitIgnoreOptions"></a>
+##### `gitIgnoreOptions`<sup>Optional</sup> <a name="gitIgnoreOptions" id="schuettc.TypeScriptProjectOptions.property.gitIgnoreOptions"></a>
 
 ```typescript
 public readonly gitIgnoreOptions: IgnoreFileOptions;
@@ -5909,7 +5260,7 @@ Configuration options for .gitignore file.
 
 ---
 
-##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="mrpj.TypeScriptProjectOptions.property.gitOptions"></a>
+##### `gitOptions`<sup>Optional</sup> <a name="gitOptions" id="schuettc.TypeScriptProjectOptions.property.gitOptions"></a>
 
 ```typescript
 public readonly gitOptions: GitOptions;
@@ -5921,7 +5272,7 @@ Configuration options for git.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.TypeScriptProjectOptions.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.TypeScriptProjectOptions.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: boolean;
@@ -5934,7 +5285,7 @@ Add a Gitpod development environment.
 
 ---
 
-##### `homepage`<sup>Optional</sup> <a name="homepage" id="mrpj.TypeScriptProjectOptions.property.homepage"></a>
+##### `homepage`<sup>Optional</sup> <a name="homepage" id="schuettc.TypeScriptProjectOptions.property.homepage"></a>
 
 ```typescript
 public readonly homepage: string;
@@ -5946,7 +5297,7 @@ Package's Homepage / Website.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.TypeScriptProjectOptions.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.TypeScriptProjectOptions.property.jest"></a>
 
 ```typescript
 public readonly jest: boolean;
@@ -5959,7 +5310,7 @@ Setup jest unit tests.
 
 ---
 
-##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="mrpj.TypeScriptProjectOptions.property.jestOptions"></a>
+##### `jestOptions`<sup>Optional</sup> <a name="jestOptions" id="schuettc.TypeScriptProjectOptions.property.jestOptions"></a>
 
 ```typescript
 public readonly jestOptions: JestOptions;
@@ -5972,7 +5323,7 @@ Jest options.
 
 ---
 
-##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="mrpj.TypeScriptProjectOptions.property.jsiiReleaseVersion"></a>
+##### `jsiiReleaseVersion`<sup>Optional</sup> <a name="jsiiReleaseVersion" id="schuettc.TypeScriptProjectOptions.property.jsiiReleaseVersion"></a>
 
 ```typescript
 public readonly jsiiReleaseVersion: string;
@@ -5985,7 +5336,7 @@ Version requirement of `publib` which is used to publish modules to npm.
 
 ---
 
-##### `keywords`<sup>Optional</sup> <a name="keywords" id="mrpj.TypeScriptProjectOptions.property.keywords"></a>
+##### `keywords`<sup>Optional</sup> <a name="keywords" id="schuettc.TypeScriptProjectOptions.property.keywords"></a>
 
 ```typescript
 public readonly keywords: string[];
@@ -5997,7 +5348,7 @@ Keywords to include in `package.json`.
 
 ---
 
-##### `libdir`<sup>Optional</sup> <a name="libdir" id="mrpj.TypeScriptProjectOptions.property.libdir"></a>
+##### `libdir`<sup>Optional</sup> <a name="libdir" id="schuettc.TypeScriptProjectOptions.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -6010,7 +5361,7 @@ Typescript  artifacts output directory.
 
 ---
 
-##### `license`<sup>Optional</sup> <a name="license" id="mrpj.TypeScriptProjectOptions.property.license"></a>
+##### `license`<sup>Optional</sup> <a name="license" id="schuettc.TypeScriptProjectOptions.property.license"></a>
 
 ```typescript
 public readonly license: string;
@@ -6026,7 +5377,7 @@ Use the `licensed` option if you want to no license to be specified.
 
 ---
 
-##### `licensed`<sup>Optional</sup> <a name="licensed" id="mrpj.TypeScriptProjectOptions.property.licensed"></a>
+##### `licensed`<sup>Optional</sup> <a name="licensed" id="schuettc.TypeScriptProjectOptions.property.licensed"></a>
 
 ```typescript
 public readonly licensed: boolean;
@@ -6039,7 +5390,7 @@ Indicates if a license should be added.
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="mrpj.TypeScriptProjectOptions.property.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="schuettc.TypeScriptProjectOptions.property.logging"></a>
 
 ```typescript
 public readonly logging: LoggerOptions;
@@ -6052,21 +5403,7 @@ Configure logging options such as verbosity.
 
 ---
 
-##### `logo`<sup>Optional</sup> <a name="logo" id="mrpj.TypeScriptProjectOptions.property.logo"></a>
-
-```typescript
-public readonly logo: ILogo;
-```
-
-- *Type:* mrpj.logo.ILogo
-
-Add a logo.
-
-Use `Logo.placeholder()` to get started.
-
----
-
-##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="mrpj.TypeScriptProjectOptions.property.majorVersion"></a>
+##### `majorVersion`<sup>Optional</sup> <a name="majorVersion" id="schuettc.TypeScriptProjectOptions.property.majorVersion"></a>
 
 ```typescript
 public readonly majorVersion: number;
@@ -6082,7 +5419,7 @@ If not specified, we bump the global latest version.
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.TypeScriptProjectOptions.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.TypeScriptProjectOptions.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -6095,7 +5432,7 @@ Minimum node.js version to require via `engines` (inclusive).
 
 ---
 
-##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="mrpj.TypeScriptProjectOptions.property.minMajorVersion"></a>
+##### `minMajorVersion`<sup>Optional</sup> <a name="minMajorVersion" id="schuettc.TypeScriptProjectOptions.property.minMajorVersion"></a>
 
 ```typescript
 public readonly minMajorVersion: number;
@@ -6113,7 +5450,7 @@ Can not be set together with `majorVersion`.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.TypeScriptProjectOptions.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.TypeScriptProjectOptions.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -6126,7 +5463,7 @@ Minimum Node.js version to require via package.json `engines` (inclusive).
 
 ---
 
-##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="mrpj.TypeScriptProjectOptions.property.mutableBuild"></a>
+##### `mutableBuild`<sup>Optional</sup> <a name="mutableBuild" id="schuettc.TypeScriptProjectOptions.property.mutableBuild"></a>
 
 ```typescript
 public readonly mutableBuild: boolean;
@@ -6145,7 +5482,7 @@ Implies that PR builds do not have anti-tamper checks.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="mrpj.TypeScriptProjectOptions.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="schuettc.TypeScriptProjectOptions.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -6158,7 +5495,7 @@ This is the name of your project.
 
 ---
 
-##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="mrpj.TypeScriptProjectOptions.property.npmAccess"></a>
+##### `npmAccess`<sup>Optional</sup> <a name="npmAccess" id="schuettc.TypeScriptProjectOptions.property.npmAccess"></a>
 
 ```typescript
 public readonly npmAccess: NpmAccess;
@@ -6171,7 +5508,7 @@ Access level of the npm package.
 
 ---
 
-##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="mrpj.TypeScriptProjectOptions.property.npmDistTag"></a>
+##### `npmDistTag`<sup>Optional</sup> <a name="npmDistTag" id="schuettc.TypeScriptProjectOptions.property.npmDistTag"></a>
 
 ```typescript
 public readonly npmDistTag: string;
@@ -6187,7 +5524,7 @@ for each branch.
 
 ---
 
-##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="mrpj.TypeScriptProjectOptions.property.npmignoreEnabled"></a>
+##### `npmignoreEnabled`<sup>Optional</sup> <a name="npmignoreEnabled" id="schuettc.TypeScriptProjectOptions.property.npmignoreEnabled"></a>
 
 ```typescript
 public readonly npmignoreEnabled: boolean;
@@ -6200,7 +5537,7 @@ Defines an .npmignore file. Normally this is only needed for libraries that are 
 
 ---
 
-##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="mrpj.TypeScriptProjectOptions.property.npmIgnoreOptions"></a>
+##### `npmIgnoreOptions`<sup>Optional</sup> <a name="npmIgnoreOptions" id="schuettc.TypeScriptProjectOptions.property.npmIgnoreOptions"></a>
 
 ```typescript
 public readonly npmIgnoreOptions: IgnoreFileOptions;
@@ -6212,7 +5549,7 @@ Configuration options for .npmignore file.
 
 ---
 
-##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="mrpj.TypeScriptProjectOptions.property.npmRegistryUrl"></a>
+##### `npmRegistryUrl`<sup>Optional</sup> <a name="npmRegistryUrl" id="schuettc.TypeScriptProjectOptions.property.npmRegistryUrl"></a>
 
 ```typescript
 public readonly npmRegistryUrl: string;
@@ -6227,7 +5564,7 @@ Must be a URL (e.g. start with "https://" or "http://")
 
 ---
 
-##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="mrpj.TypeScriptProjectOptions.property.npmTokenSecret"></a>
+##### `npmTokenSecret`<sup>Optional</sup> <a name="npmTokenSecret" id="schuettc.TypeScriptProjectOptions.property.npmTokenSecret"></a>
 
 ```typescript
 public readonly npmTokenSecret: string;
@@ -6240,7 +5577,7 @@ GitHub secret which contains the NPM token to use when publishing packages.
 
 ---
 
-##### `outdir`<sup>Optional</sup> <a name="outdir" id="mrpj.TypeScriptProjectOptions.property.outdir"></a>
+##### `outdir`<sup>Optional</sup> <a name="outdir" id="schuettc.TypeScriptProjectOptions.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -6257,7 +5594,7 @@ sub-projects.
 
 ---
 
-##### `ownerCanSelfApprovePRs`<sup>Optional</sup> <a name="ownerCanSelfApprovePRs" id="mrpj.TypeScriptProjectOptions.property.ownerCanSelfApprovePRs"></a>
+##### `ownerCanSelfApprovePRs`<sup>Optional</sup> <a name="ownerCanSelfApprovePRs" id="schuettc.TypeScriptProjectOptions.property.ownerCanSelfApprovePRs"></a>
 
 ```typescript
 public readonly ownerCanSelfApprovePRs: boolean;
@@ -6270,7 +5607,7 @@ Allow the repo owner to self approve PRs by putting a label on it.
 
 ---
 
-##### `package`<sup>Optional</sup> <a name="package" id="mrpj.TypeScriptProjectOptions.property.package"></a>
+##### `package`<sup>Optional</sup> <a name="package" id="schuettc.TypeScriptProjectOptions.property.package"></a>
 
 ```typescript
 public readonly package: boolean;
@@ -6283,7 +5620,7 @@ Defines a `package` task that will produce an npm tarball under the artifacts di
 
 ---
 
-##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="mrpj.TypeScriptProjectOptions.property.packageManager"></a>
+##### `packageManager`<sup>Optional</sup> <a name="packageManager" id="schuettc.TypeScriptProjectOptions.property.packageManager"></a>
 
 ```typescript
 public readonly packageManager: NodePackageManager;
@@ -6296,7 +5633,7 @@ The Node Package Manager used to execute scripts.
 
 ---
 
-##### `packageName`<sup>Optional</sup> <a name="packageName" id="mrpj.TypeScriptProjectOptions.property.packageName"></a>
+##### `packageName`<sup>Optional</sup> <a name="packageName" id="schuettc.TypeScriptProjectOptions.property.packageName"></a>
 
 ```typescript
 public readonly packageName: string;
@@ -6309,7 +5646,7 @@ The "name" in package.json.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.TypeScriptProjectOptions.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.TypeScriptProjectOptions.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -6321,7 +5658,7 @@ The parent project, if this project is part of a bigger project.
 
 ---
 
-##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="mrpj.TypeScriptProjectOptions.property.peerDependencyOptions"></a>
+##### `peerDependencyOptions`<sup>Optional</sup> <a name="peerDependencyOptions" id="schuettc.TypeScriptProjectOptions.property.peerDependencyOptions"></a>
 
 ```typescript
 public readonly peerDependencyOptions: PeerDependencyOptions;
@@ -6333,7 +5670,7 @@ Options for `peerDeps`.
 
 ---
 
-##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="mrpj.TypeScriptProjectOptions.property.peerDeps"></a>
+##### `peerDeps`<sup>Optional</sup> <a name="peerDeps" id="schuettc.TypeScriptProjectOptions.property.peerDeps"></a>
 
 ```typescript
 public readonly peerDeps: string[];
@@ -6360,7 +5697,7 @@ test your module against the lowest peer version required.
 
 ---
 
-##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="mrpj.TypeScriptProjectOptions.property.pnpmVersion"></a>
+##### `pnpmVersion`<sup>Optional</sup> <a name="pnpmVersion" id="schuettc.TypeScriptProjectOptions.property.pnpmVersion"></a>
 
 ```typescript
 public readonly pnpmVersion: string;
@@ -6373,7 +5710,7 @@ The version of PNPM to use if using PNPM as a package manager.
 
 ---
 
-##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="mrpj.TypeScriptProjectOptions.property.postBuildSteps"></a>
+##### `postBuildSteps`<sup>Optional</sup> <a name="postBuildSteps" id="schuettc.TypeScriptProjectOptions.property.postBuildSteps"></a>
 
 ```typescript
 public readonly postBuildSteps: JobStep[];
@@ -6386,7 +5723,7 @@ Steps to execute after build as part of the release workflow.
 
 ---
 
-##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="mrpj.TypeScriptProjectOptions.property.prerelease"></a>
+##### `prerelease`<sup>Optional</sup> <a name="prerelease" id="schuettc.TypeScriptProjectOptions.property.prerelease"></a>
 
 ```typescript
 public readonly prerelease: string;
@@ -6399,7 +5736,7 @@ Bump versions from the default branch as pre-releases (e.g. "beta", "alpha", "pr
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.TypeScriptProjectOptions.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.TypeScriptProjectOptions.property.prettier"></a>
 
 ```typescript
 public readonly prettier: boolean;
@@ -6412,7 +5749,7 @@ Setup prettier.
 
 ---
 
-##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="mrpj.TypeScriptProjectOptions.property.prettierOptions"></a>
+##### `prettierOptions`<sup>Optional</sup> <a name="prettierOptions" id="schuettc.TypeScriptProjectOptions.property.prettierOptions"></a>
 
 ```typescript
 public readonly prettierOptions: PrettierOptions;
@@ -6425,7 +5762,7 @@ Prettier options.
 
 ---
 
-##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="mrpj.TypeScriptProjectOptions.property.projenCommand"></a>
+##### `projenCommand`<sup>Optional</sup> <a name="projenCommand" id="schuettc.TypeScriptProjectOptions.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -6440,7 +5777,7 @@ Can be used to customize in special environments.
 
 ---
 
-##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="mrpj.TypeScriptProjectOptions.property.projenCredentials"></a>
+##### `projenCredentials`<sup>Optional</sup> <a name="projenCredentials" id="schuettc.TypeScriptProjectOptions.property.projenCredentials"></a>
 
 ```typescript
 public readonly projenCredentials: GithubCredentials;
@@ -6453,7 +5790,7 @@ Choose a method of providing GitHub API access for projen workflows.
 
 ---
 
-##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="mrpj.TypeScriptProjectOptions.property.projenDevDependency"></a>
+##### `projenDevDependency`<sup>Optional</sup> <a name="projenDevDependency" id="schuettc.TypeScriptProjectOptions.property.projenDevDependency"></a>
 
 ```typescript
 public readonly projenDevDependency: boolean;
@@ -6466,7 +5803,7 @@ Indicates of "projen" should be installed as a devDependency.
 
 ---
 
-##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="mrpj.TypeScriptProjectOptions.property.projenrcJs"></a>
+##### `projenrcJs`<sup>Optional</sup> <a name="projenrcJs" id="schuettc.TypeScriptProjectOptions.property.projenrcJs"></a>
 
 ```typescript
 public readonly projenrcJs: boolean;
@@ -6479,7 +5816,7 @@ Generate (once) .projenrc.js (in JavaScript). Set to `false` in order to disable
 
 ---
 
-##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="mrpj.TypeScriptProjectOptions.property.projenrcJson"></a>
+##### `projenrcJson`<sup>Optional</sup> <a name="projenrcJson" id="schuettc.TypeScriptProjectOptions.property.projenrcJson"></a>
 
 ```typescript
 public readonly projenrcJson: boolean;
@@ -6492,7 +5829,7 @@ Generate (once) .projenrc.json (in JSON). Set to `false` in order to disable .pr
 
 ---
 
-##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="mrpj.TypeScriptProjectOptions.property.projenrcJsonOptions"></a>
+##### `projenrcJsonOptions`<sup>Optional</sup> <a name="projenrcJsonOptions" id="schuettc.TypeScriptProjectOptions.property.projenrcJsonOptions"></a>
 
 ```typescript
 public readonly projenrcJsonOptions: ProjenrcJsonOptions;
@@ -6505,7 +5842,7 @@ Options for .projenrc.json.
 
 ---
 
-##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="mrpj.TypeScriptProjectOptions.property.projenrcJsOptions"></a>
+##### `projenrcJsOptions`<sup>Optional</sup> <a name="projenrcJsOptions" id="schuettc.TypeScriptProjectOptions.property.projenrcJsOptions"></a>
 
 ```typescript
 public readonly projenrcJsOptions: ProjenrcOptions;
@@ -6518,7 +5855,7 @@ Options for .projenrc.js.
 
 ---
 
-##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="mrpj.TypeScriptProjectOptions.property.projenrcTsOptions"></a>
+##### `projenrcTsOptions`<sup>Optional</sup> <a name="projenrcTsOptions" id="schuettc.TypeScriptProjectOptions.property.projenrcTsOptions"></a>
 
 ```typescript
 public readonly projenrcTsOptions: ProjenrcOptions;
@@ -6530,7 +5867,7 @@ Options for .projenrc.ts.
 
 ---
 
-##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="mrpj.TypeScriptProjectOptions.property.projenVersion"></a>
+##### `projenVersion`<sup>Optional</sup> <a name="projenVersion" id="schuettc.TypeScriptProjectOptions.property.projenVersion"></a>
 
 ```typescript
 public readonly projenVersion: string;
@@ -6543,7 +5880,7 @@ Version of projen to install.
 
 ---
 
-##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="mrpj.TypeScriptProjectOptions.property.publishDryRun"></a>
+##### `publishDryRun`<sup>Optional</sup> <a name="publishDryRun" id="schuettc.TypeScriptProjectOptions.property.publishDryRun"></a>
 
 ```typescript
 public readonly publishDryRun: boolean;
@@ -6556,7 +5893,7 @@ Instead of actually publishing to package managers, just print the publishing co
 
 ---
 
-##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="mrpj.TypeScriptProjectOptions.property.publishTasks"></a>
+##### `publishTasks`<sup>Optional</sup> <a name="publishTasks" id="schuettc.TypeScriptProjectOptions.property.publishTasks"></a>
 
 ```typescript
 public readonly publishTasks: boolean;
@@ -6572,7 +5909,7 @@ in order to create a publishing task for each publishing activity.
 
 ---
 
-##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="mrpj.TypeScriptProjectOptions.property.pullRequestTemplate"></a>
+##### `pullRequestTemplate`<sup>Optional</sup> <a name="pullRequestTemplate" id="schuettc.TypeScriptProjectOptions.property.pullRequestTemplate"></a>
 
 ```typescript
 public readonly pullRequestTemplate: boolean;
@@ -6585,7 +5922,7 @@ Include a GitHub pull request template.
 
 ---
 
-##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="mrpj.TypeScriptProjectOptions.property.pullRequestTemplateContents"></a>
+##### `pullRequestTemplateContents`<sup>Optional</sup> <a name="pullRequestTemplateContents" id="schuettc.TypeScriptProjectOptions.property.pullRequestTemplateContents"></a>
 
 ```typescript
 public readonly pullRequestTemplateContents: string[];
@@ -6598,7 +5935,7 @@ The contents of the pull request template.
 
 ---
 
-##### `readme`<sup>Optional</sup> <a name="readme" id="mrpj.TypeScriptProjectOptions.property.readme"></a>
+##### `readme`<sup>Optional</sup> <a name="readme" id="schuettc.TypeScriptProjectOptions.property.readme"></a>
 
 ```typescript
 public readonly readme: SampleReadmeProps;
@@ -6611,7 +5948,7 @@ The README setup.
 
 ---
 
-##### `releasableCommitTypes`<sup>Optional</sup> <a name="releasableCommitTypes" id="mrpj.TypeScriptProjectOptions.property.releasableCommitTypes"></a>
+##### `releasableCommitTypes`<sup>Optional</sup> <a name="releasableCommitTypes" id="schuettc.TypeScriptProjectOptions.property.releasableCommitTypes"></a>
 
 ```typescript
 public readonly releasableCommitTypes: string[];
@@ -6624,7 +5961,7 @@ Which conventional commit types should be released.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.TypeScriptProjectOptions.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.TypeScriptProjectOptions.property.release"></a>
 
 ```typescript
 public readonly release: boolean;
@@ -6637,7 +5974,7 @@ Add release management to this project.
 
 ---
 
-##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="mrpj.TypeScriptProjectOptions.property.releaseBranches"></a>
+##### `releaseBranches`<sup>Optional</sup> <a name="releaseBranches" id="schuettc.TypeScriptProjectOptions.property.releaseBranches"></a>
 
 ```typescript
 public readonly releaseBranches: {[ key: string ]: BranchOptions};
@@ -6657,7 +5994,7 @@ be provided for the default branch.
 
 ---
 
-##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="mrpj.TypeScriptProjectOptions.property.releaseFailureIssue"></a>
+##### `releaseFailureIssue`<sup>Optional</sup> <a name="releaseFailureIssue" id="schuettc.TypeScriptProjectOptions.property.releaseFailureIssue"></a>
 
 ```typescript
 public readonly releaseFailureIssue: boolean;
@@ -6670,7 +6007,7 @@ Create a github issue on every failed publishing task.
 
 ---
 
-##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="mrpj.TypeScriptProjectOptions.property.releaseFailureIssueLabel"></a>
+##### `releaseFailureIssueLabel`<sup>Optional</sup> <a name="releaseFailureIssueLabel" id="schuettc.TypeScriptProjectOptions.property.releaseFailureIssueLabel"></a>
 
 ```typescript
 public readonly releaseFailureIssueLabel: string;
@@ -6685,7 +6022,7 @@ Only applies if `releaseFailureIssue` is true.
 
 ---
 
-##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="mrpj.TypeScriptProjectOptions.property.releaseTagPrefix"></a>
+##### `releaseTagPrefix`<sup>Optional</sup> <a name="releaseTagPrefix" id="schuettc.TypeScriptProjectOptions.property.releaseTagPrefix"></a>
 
 ```typescript
 public readonly releaseTagPrefix: string;
@@ -6704,7 +6041,7 @@ with the new prefix.
 
 ---
 
-##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="mrpj.TypeScriptProjectOptions.property.releaseToNpm"></a>
+##### `releaseToNpm`<sup>Optional</sup> <a name="releaseToNpm" id="schuettc.TypeScriptProjectOptions.property.releaseToNpm"></a>
 
 ```typescript
 public readonly releaseToNpm: boolean;
@@ -6717,7 +6054,7 @@ Automatically release to npm when new versions are introduced.
 
 ---
 
-##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="mrpj.TypeScriptProjectOptions.property.releaseTrigger"></a>
+##### `releaseTrigger`<sup>Optional</sup> <a name="releaseTrigger" id="schuettc.TypeScriptProjectOptions.property.releaseTrigger"></a>
 
 ```typescript
 public readonly releaseTrigger: ReleaseTrigger;
@@ -6730,7 +6067,7 @@ The release trigger to use.
 
 ---
 
-##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="mrpj.TypeScriptProjectOptions.property.releaseWorkflowName"></a>
+##### `releaseWorkflowName`<sup>Optional</sup> <a name="releaseWorkflowName" id="schuettc.TypeScriptProjectOptions.property.releaseWorkflowName"></a>
 
 ```typescript
 public readonly releaseWorkflowName: string;
@@ -6743,7 +6080,7 @@ The name of the default release workflow.
 
 ---
 
-##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="mrpj.TypeScriptProjectOptions.property.releaseWorkflowSetupSteps"></a>
+##### `releaseWorkflowSetupSteps`<sup>Optional</sup> <a name="releaseWorkflowSetupSteps" id="schuettc.TypeScriptProjectOptions.property.releaseWorkflowSetupSteps"></a>
 
 ```typescript
 public readonly releaseWorkflowSetupSteps: JobStep[];
@@ -6755,7 +6092,7 @@ A set of workflow steps to execute in order to setup the workflow container.
 
 ---
 
-##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="mrpj.TypeScriptProjectOptions.property.renovatebot"></a>
+##### `renovatebot`<sup>Optional</sup> <a name="renovatebot" id="schuettc.TypeScriptProjectOptions.property.renovatebot"></a>
 
 ```typescript
 public readonly renovatebot: boolean;
@@ -6768,7 +6105,7 @@ Use renovatebot to handle dependency upgrades.
 
 ---
 
-##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="mrpj.TypeScriptProjectOptions.property.renovatebotOptions"></a>
+##### `renovatebotOptions`<sup>Optional</sup> <a name="renovatebotOptions" id="schuettc.TypeScriptProjectOptions.property.renovatebotOptions"></a>
 
 ```typescript
 public readonly renovatebotOptions: RenovatebotOptions;
@@ -6781,7 +6118,7 @@ Options for renovatebot.
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="mrpj.TypeScriptProjectOptions.property.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="schuettc.TypeScriptProjectOptions.property.repository"></a>
 
 ```typescript
 public readonly repository: string;
@@ -6795,7 +6132,7 @@ See https://classic.yarnpkg.com/en/docs/package-json/#toc-repository
 
 ---
 
-##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="mrpj.TypeScriptProjectOptions.property.repositoryDirectory"></a>
+##### `repositoryDirectory`<sup>Optional</sup> <a name="repositoryDirectory" id="schuettc.TypeScriptProjectOptions.property.repositoryDirectory"></a>
 
 ```typescript
 public readonly repositoryDirectory: string;
@@ -6807,7 +6144,7 @@ If the package.json for your package is not in the root directory (for example i
 
 ---
 
-##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="mrpj.TypeScriptProjectOptions.property.scopedPackagesOptions"></a>
+##### `scopedPackagesOptions`<sup>Optional</sup> <a name="scopedPackagesOptions" id="schuettc.TypeScriptProjectOptions.property.scopedPackagesOptions"></a>
 
 ```typescript
 public readonly scopedPackagesOptions: ScopedPackagesOptions[];
@@ -6820,7 +6157,7 @@ Options for privately hosted scoped packages.
 
 ---
 
-##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="mrpj.TypeScriptProjectOptions.property.srcdir"></a>
+##### `srcdir`<sup>Optional</sup> <a name="srcdir" id="schuettc.TypeScriptProjectOptions.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -6833,7 +6170,7 @@ Typescript sources directory.
 
 ---
 
-##### `stability`<sup>Optional</sup> <a name="stability" id="mrpj.TypeScriptProjectOptions.property.stability"></a>
+##### `stability`<sup>Optional</sup> <a name="stability" id="schuettc.TypeScriptProjectOptions.property.stability"></a>
 
 ```typescript
 public readonly stability: string;
@@ -6845,7 +6182,7 @@ Package's Stability.
 
 ---
 
-##### `stale`<sup>Optional</sup> <a name="stale" id="mrpj.TypeScriptProjectOptions.property.stale"></a>
+##### `stale`<sup>Optional</sup> <a name="stale" id="schuettc.TypeScriptProjectOptions.property.stale"></a>
 
 ```typescript
 public readonly stale: boolean;
@@ -6860,7 +6197,7 @@ See `staleOptions` for options.
 
 ---
 
-##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="mrpj.TypeScriptProjectOptions.property.staleOptions"></a>
+##### `staleOptions`<sup>Optional</sup> <a name="staleOptions" id="schuettc.TypeScriptProjectOptions.property.staleOptions"></a>
 
 ```typescript
 public readonly staleOptions: StaleOptions;
@@ -6875,7 +6212,7 @@ To disable set `stale` to `false`.
 
 ---
 
-##### `testdir`<sup>Optional</sup> <a name="testdir" id="mrpj.TypeScriptProjectOptions.property.testdir"></a>
+##### `testdir`<sup>Optional</sup> <a name="testdir" id="schuettc.TypeScriptProjectOptions.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -6894,7 +6231,7 @@ compile the code in-memory.
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.TypeScriptProjectOptions.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.TypeScriptProjectOptions.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfigOptions;
@@ -6907,7 +6244,7 @@ Custom TSConfig.
 
 ---
 
-##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="mrpj.TypeScriptProjectOptions.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Optional</sup> <a name="tsconfigDev" id="schuettc.TypeScriptProjectOptions.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfigOptions;
@@ -6920,7 +6257,7 @@ Custom tsconfig options for the development tsconfig.json file (used for testing
 
 ---
 
-##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="mrpj.TypeScriptProjectOptions.property.tsconfigDevFile"></a>
+##### `tsconfigDevFile`<sup>Optional</sup> <a name="tsconfigDevFile" id="schuettc.TypeScriptProjectOptions.property.tsconfigDevFile"></a>
 
 ```typescript
 public readonly tsconfigDevFile: string;
@@ -6933,7 +6270,7 @@ The name of the development tsconfig.json file.
 
 ---
 
-##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="mrpj.TypeScriptProjectOptions.property.typescriptVersion"></a>
+##### `typescriptVersion`<sup>Optional</sup> <a name="typescriptVersion" id="schuettc.TypeScriptProjectOptions.property.typescriptVersion"></a>
 
 ```typescript
 public readonly typescriptVersion: string;
@@ -6949,7 +6286,7 @@ same minor, so we recommend using a `~` dependency (e.g. `~1.2.3`).
 
 ---
 
-##### `upgradesSchedule`<sup>Optional</sup> <a name="upgradesSchedule" id="mrpj.TypeScriptProjectOptions.property.upgradesSchedule"></a>
+##### `upgradesSchedule`<sup>Optional</sup> <a name="upgradesSchedule" id="schuettc.TypeScriptProjectOptions.property.upgradesSchedule"></a>
 
 ```typescript
 public readonly upgradesSchedule: UpgradeDependenciesSchedule;
@@ -6960,7 +6297,7 @@ public readonly upgradesSchedule: UpgradeDependenciesSchedule;
 
 ---
 
-##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="mrpj.TypeScriptProjectOptions.property.versionrcOptions"></a>
+##### `versionrcOptions`<sup>Optional</sup> <a name="versionrcOptions" id="schuettc.TypeScriptProjectOptions.property.versionrcOptions"></a>
 
 ```typescript
 public readonly versionrcOptions: {[ key: string ]: any};
@@ -6975,7 +6312,7 @@ Given values either append to default configuration or overwrite values in it.
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.TypeScriptProjectOptions.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.TypeScriptProjectOptions.property.vscode"></a>
 
 ```typescript
 public readonly vscode: boolean;
@@ -6990,22 +6327,7 @@ Enabled by default for root projects. Disabled for non-root projects.
 
 ---
 
-##### `wordmarkOptions`<sup>Optional</sup> <a name="wordmarkOptions" id="mrpj.TypeScriptProjectOptions.property.wordmarkOptions"></a>
-
-```typescript
-public readonly wordmarkOptions: WordmarkOptions;
-```
-
-- *Type:* mrpj.logo.WordmarkOptions
-- *Default:* derived from logo and project
-
-Configure how the wordmark is created from a logo.
-
-Wordmarks are only created when a logo is available.
-
----
-
-##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="mrpj.TypeScriptProjectOptions.property.workflowBootstrapSteps"></a>
+##### `workflowBootstrapSteps`<sup>Optional</sup> <a name="workflowBootstrapSteps" id="schuettc.TypeScriptProjectOptions.property.workflowBootstrapSteps"></a>
 
 ```typescript
 public readonly workflowBootstrapSteps: JobStep[];
@@ -7018,7 +6340,7 @@ Workflow steps to use in order to bootstrap this repo.
 
 ---
 
-##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="mrpj.TypeScriptProjectOptions.property.workflowContainerImage"></a>
+##### `workflowContainerImage`<sup>Optional</sup> <a name="workflowContainerImage" id="schuettc.TypeScriptProjectOptions.property.workflowContainerImage"></a>
 
 ```typescript
 public readonly workflowContainerImage: string;
@@ -7031,7 +6353,7 @@ Container image to use for GitHub workflows.
 
 ---
 
-##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="mrpj.TypeScriptProjectOptions.property.workflowGitIdentity"></a>
+##### `workflowGitIdentity`<sup>Optional</sup> <a name="workflowGitIdentity" id="schuettc.TypeScriptProjectOptions.property.workflowGitIdentity"></a>
 
 ```typescript
 public readonly workflowGitIdentity: GitIdentity;
@@ -7044,7 +6366,7 @@ The git identity to use in workflows.
 
 ---
 
-##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="mrpj.TypeScriptProjectOptions.property.workflowNodeVersion"></a>
+##### `workflowNodeVersion`<sup>Optional</sup> <a name="workflowNodeVersion" id="schuettc.TypeScriptProjectOptions.property.workflowNodeVersion"></a>
 
 ```typescript
 public readonly workflowNodeVersion: string;
@@ -7057,7 +6379,7 @@ The node version to use in GitHub workflows.
 
 ---
 
-##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="mrpj.TypeScriptProjectOptions.property.workflowPackageCache"></a>
+##### `workflowPackageCache`<sup>Optional</sup> <a name="workflowPackageCache" id="schuettc.TypeScriptProjectOptions.property.workflowPackageCache"></a>
 
 ```typescript
 public readonly workflowPackageCache: boolean;
@@ -7070,7 +6392,7 @@ Enable Node.js package cache in GitHub workflows.
 
 ---
 
-##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="mrpj.TypeScriptProjectOptions.property.workflowRunsOn"></a>
+##### `workflowRunsOn`<sup>Optional</sup> <a name="workflowRunsOn" id="schuettc.TypeScriptProjectOptions.property.workflowRunsOn"></a>
 
 ```typescript
 public readonly workflowRunsOn: string[];
@@ -7083,163 +6405,25 @@ Github Runner selection labels.
 
 ---
 
-### WordmarkOptions <a name="WordmarkOptions" id="mrpj.logo.WordmarkOptions"></a>
-
-#### Initializer <a name="Initializer" id="mrpj.logo.WordmarkOptions.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-const wordmarkOptions: logo.WordmarkOptions = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.colorScheme">colorScheme</a></code> | <code>mrpj.logo.ColorScheme</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.dirName">dirName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.fileBaseName">fileBaseName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.font">font</a></code> | <code>mrpj.logo.FontOptions</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.logo">logo</a></code> | <code>mrpj.logo.LogoInfo</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.logoPosition">logoPosition</a></code> | <code>mrpj.logo.TranslateOptions</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.logoScale">logoScale</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.raw">raw</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.size">size</a></code> | <code>mrpj.logo.SizeOptions</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.text">text</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.WordmarkOptions.property.textPosition">textPosition</a></code> | <code>mrpj.logo.TranslateOptions</code> | *No description.* |
-
----
-
-##### `colorScheme`<sup>Optional</sup> <a name="colorScheme" id="mrpj.logo.WordmarkOptions.property.colorScheme"></a>
-
-```typescript
-public readonly colorScheme: ColorScheme;
-```
-
-- *Type:* mrpj.logo.ColorScheme
-
----
-
-##### `dirName`<sup>Optional</sup> <a name="dirName" id="mrpj.logo.WordmarkOptions.property.dirName"></a>
-
-```typescript
-public readonly dirName: string;
-```
-
-- *Type:* string
-
----
-
-##### `fileBaseName`<sup>Optional</sup> <a name="fileBaseName" id="mrpj.logo.WordmarkOptions.property.fileBaseName"></a>
-
-```typescript
-public readonly fileBaseName: string;
-```
-
-- *Type:* string
-
----
-
-##### `font`<sup>Optional</sup> <a name="font" id="mrpj.logo.WordmarkOptions.property.font"></a>
-
-```typescript
-public readonly font: FontOptions;
-```
-
-- *Type:* mrpj.logo.FontOptions
-
----
-
-##### `logo`<sup>Optional</sup> <a name="logo" id="mrpj.logo.WordmarkOptions.property.logo"></a>
-
-```typescript
-public readonly logo: LogoInfo;
-```
-
-- *Type:* mrpj.logo.LogoInfo
-
----
-
-##### `logoPosition`<sup>Optional</sup> <a name="logoPosition" id="mrpj.logo.WordmarkOptions.property.logoPosition"></a>
-
-```typescript
-public readonly logoPosition: TranslateOptions;
-```
-
-- *Type:* mrpj.logo.TranslateOptions
-
----
-
-##### `logoScale`<sup>Optional</sup> <a name="logoScale" id="mrpj.logo.WordmarkOptions.property.logoScale"></a>
-
-```typescript
-public readonly logoScale: number;
-```
-
-- *Type:* number
-
----
-
-##### `raw`<sup>Optional</sup> <a name="raw" id="mrpj.logo.WordmarkOptions.property.raw"></a>
-
-```typescript
-public readonly raw: string;
-```
-
-- *Type:* string
-
----
-
-##### `size`<sup>Optional</sup> <a name="size" id="mrpj.logo.WordmarkOptions.property.size"></a>
-
-```typescript
-public readonly size: SizeOptions;
-```
-
-- *Type:* mrpj.logo.SizeOptions
-
----
-
-##### `text`<sup>Optional</sup> <a name="text" id="mrpj.logo.WordmarkOptions.property.text"></a>
-
-```typescript
-public readonly text: string;
-```
-
-- *Type:* string
-
----
-
-##### `textPosition`<sup>Optional</sup> <a name="textPosition" id="mrpj.logo.WordmarkOptions.property.textPosition"></a>
-
-```typescript
-public readonly textPosition: TranslateOptions;
-```
-
-- *Type:* mrpj.logo.TranslateOptions
-
----
-
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ConstructProject <a name="ConstructProject" id="mrpj.ConstructProject"></a>
+### ConstructProject <a name="ConstructProject" id="schuettc.ConstructProject"></a>
 
-#### Initializers <a name="Initializers" id="mrpj.ConstructProject.Initializer"></a>
+#### Initializers <a name="Initializers" id="schuettc.ConstructProject.Initializer"></a>
 
 ```typescript
-import { ConstructProject } from 'mrpj'
+import { ConstructProject } from 'schuettc'
 
 new ConstructProject(options: AwsCdkConstructLibraryOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ConstructProject.Initializer.parameter.options">options</a></code> | <code>projen.awscdk.AwsCdkConstructLibraryOptions</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.Initializer.parameter.options">options</a></code> | <code>projen.awscdk.AwsCdkConstructLibraryOptions</code> | *No description.* |
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="mrpj.ConstructProject.Initializer.parameter.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="schuettc.ConstructProject.Initializer.parameter.options"></a>
 
 - *Type:* projen.awscdk.AwsCdkConstructLibraryOptions
 
@@ -7249,41 +6433,41 @@ new ConstructProject(options: AwsCdkConstructLibraryOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#mrpj.ConstructProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
-| <code><a href="#mrpj.ConstructProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
-| <code><a href="#mrpj.ConstructProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
-| <code><a href="#mrpj.ConstructProject.addTask">addTask</a></code> | Adds a new task to this project. |
-| <code><a href="#mrpj.ConstructProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
-| <code><a href="#mrpj.ConstructProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
-| <code><a href="#mrpj.ConstructProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
-| <code><a href="#mrpj.ConstructProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
-| <code><a href="#mrpj.ConstructProject.removeTask">removeTask</a></code> | Removes a task from a project. |
-| <code><a href="#mrpj.ConstructProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
-| <code><a href="#mrpj.ConstructProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
-| <code><a href="#mrpj.ConstructProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
-| <code><a href="#mrpj.ConstructProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
-| <code><a href="#mrpj.ConstructProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
-| <code><a href="#mrpj.ConstructProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
-| <code><a href="#mrpj.ConstructProject.addBins">addBins</a></code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
-| <code><a href="#mrpj.ConstructProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.ConstructProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
-| <code><a href="#mrpj.ConstructProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
-| <code><a href="#mrpj.ConstructProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
-| <code><a href="#mrpj.ConstructProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
-| <code><a href="#mrpj.ConstructProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
-| <code><a href="#mrpj.ConstructProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
-| <code><a href="#mrpj.ConstructProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.ConstructProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
-| <code><a href="#mrpj.ConstructProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
-| <code><a href="#mrpj.ConstructProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
-| <code><a href="#mrpj.ConstructProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
-| <code><a href="#mrpj.ConstructProject.addCdkDependencies">addCdkDependencies</a></code> | Adds dependencies to AWS CDK modules. |
-| <code><a href="#mrpj.ConstructProject.addCdkTestDependencies">addCdkTestDependencies</a></code> | Adds AWS CDK modules as dev dependencies. |
+| <code><a href="#schuettc.ConstructProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
+| <code><a href="#schuettc.ConstructProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
+| <code><a href="#schuettc.ConstructProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
+| <code><a href="#schuettc.ConstructProject.addTask">addTask</a></code> | Adds a new task to this project. |
+| <code><a href="#schuettc.ConstructProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
+| <code><a href="#schuettc.ConstructProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
+| <code><a href="#schuettc.ConstructProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
+| <code><a href="#schuettc.ConstructProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
+| <code><a href="#schuettc.ConstructProject.removeTask">removeTask</a></code> | Removes a task from a project. |
+| <code><a href="#schuettc.ConstructProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
+| <code><a href="#schuettc.ConstructProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
+| <code><a href="#schuettc.ConstructProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
+| <code><a href="#schuettc.ConstructProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
+| <code><a href="#schuettc.ConstructProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
+| <code><a href="#schuettc.ConstructProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
+| <code><a href="#schuettc.ConstructProject.addBins">addBins</a></code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
+| <code><a href="#schuettc.ConstructProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.ConstructProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
+| <code><a href="#schuettc.ConstructProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
+| <code><a href="#schuettc.ConstructProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
+| <code><a href="#schuettc.ConstructProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
+| <code><a href="#schuettc.ConstructProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#schuettc.ConstructProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
+| <code><a href="#schuettc.ConstructProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.ConstructProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
+| <code><a href="#schuettc.ConstructProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
+| <code><a href="#schuettc.ConstructProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
+| <code><a href="#schuettc.ConstructProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
+| <code><a href="#schuettc.ConstructProject.addCdkDependencies">addCdkDependencies</a></code> | Adds dependencies to AWS CDK modules. |
+| <code><a href="#schuettc.ConstructProject.addCdkTestDependencies">addCdkTestDependencies</a></code> | Adds AWS CDK modules as dev dependencies. |
 
 ---
 
-##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="mrpj.ConstructProject.addExcludeFromCleanup"></a>
+##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="schuettc.ConstructProject.addExcludeFromCleanup"></a>
 
 ```typescript
 public addExcludeFromCleanup(globs: string): void
@@ -7294,7 +6478,7 @@ Exclude the matching files from pre-synth cleanup.
 Can be used when, for example, some
 source files include the projen marker and we don't want them to be erased during synth.
 
-###### `globs`<sup>Required</sup> <a name="globs" id="mrpj.ConstructProject.addExcludeFromCleanup.parameter.globs"></a>
+###### `globs`<sup>Required</sup> <a name="globs" id="schuettc.ConstructProject.addExcludeFromCleanup.parameter.globs"></a>
 
 - *Type:* string
 
@@ -7302,7 +6486,7 @@ The glob patterns to match.
 
 ---
 
-##### `addGitIgnore` <a name="addGitIgnore" id="mrpj.ConstructProject.addGitIgnore"></a>
+##### `addGitIgnore` <a name="addGitIgnore" id="schuettc.ConstructProject.addGitIgnore"></a>
 
 ```typescript
 public addGitIgnore(pattern: string): void
@@ -7310,7 +6494,7 @@ public addGitIgnore(pattern: string): void
 
 Adds a .gitignore pattern.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.ConstructProject.addGitIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.ConstructProject.addGitIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
@@ -7318,7 +6502,7 @@ The glob pattern to ignore.
 
 ---
 
-##### `addPackageIgnore` <a name="addPackageIgnore" id="mrpj.ConstructProject.addPackageIgnore"></a>
+##### `addPackageIgnore` <a name="addPackageIgnore" id="schuettc.ConstructProject.addPackageIgnore"></a>
 
 ```typescript
 public addPackageIgnore(pattern: string): void
@@ -7329,13 +6513,13 @@ Exclude these files from the bundled package.
 Implemented by project types based on the
 packaging mechanism. For example, `NodeProject` delegates this to `.npmignore`.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.ConstructProject.addPackageIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.ConstructProject.addPackageIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
 ---
 
-##### `addTask` <a name="addTask" id="mrpj.ConstructProject.addTask"></a>
+##### `addTask` <a name="addTask" id="schuettc.ConstructProject.addTask"></a>
 
 ```typescript
 public addTask(name: string, props?: TaskOptions): Task
@@ -7346,7 +6530,7 @@ Adds a new task to this project.
 This will fail if the project already has
 a task with this name.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.addTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.addTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -7354,7 +6538,7 @@ The task name to add.
 
 ---
 
-###### `props`<sup>Optional</sup> <a name="props" id="mrpj.ConstructProject.addTask.parameter.props"></a>
+###### `props`<sup>Optional</sup> <a name="props" id="schuettc.ConstructProject.addTask.parameter.props"></a>
 
 - *Type:* projen.TaskOptions
 
@@ -7362,7 +6546,7 @@ Task properties.
 
 ---
 
-##### ~~`addTip`~~ <a name="addTip" id="mrpj.ConstructProject.addTip"></a>
+##### ~~`addTip`~~ <a name="addTip" id="schuettc.ConstructProject.addTip"></a>
 
 ```typescript
 public addTip(message: string): void
@@ -7370,7 +6554,7 @@ public addTip(message: string): void
 
 Prints a "tip" message during synthesis.
 
-###### `message`<sup>Required</sup> <a name="message" id="mrpj.ConstructProject.addTip.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="schuettc.ConstructProject.addTip.parameter.message"></a>
 
 - *Type:* string
 
@@ -7378,7 +6562,7 @@ The message.
 
 ---
 
-##### `annotateGenerated` <a name="annotateGenerated" id="mrpj.ConstructProject.annotateGenerated"></a>
+##### `annotateGenerated` <a name="annotateGenerated" id="schuettc.ConstructProject.annotateGenerated"></a>
 
 ```typescript
 public annotateGenerated(glob: string): void
@@ -7392,7 +6576,7 @@ repository statistics and language breakdown.
 
 > [https://github.com/github/linguist/blob/master/docs/overrides.md](https://github.com/github/linguist/blob/master/docs/overrides.md)
 
-###### `glob`<sup>Required</sup> <a name="glob" id="mrpj.ConstructProject.annotateGenerated.parameter.glob"></a>
+###### `glob`<sup>Required</sup> <a name="glob" id="schuettc.ConstructProject.annotateGenerated.parameter.glob"></a>
 
 - *Type:* string
 
@@ -7400,7 +6584,7 @@ the glob pattern to match (could be a file path).
 
 ---
 
-##### `postSynthesize` <a name="postSynthesize" id="mrpj.ConstructProject.postSynthesize"></a>
+##### `postSynthesize` <a name="postSynthesize" id="schuettc.ConstructProject.postSynthesize"></a>
 
 ```typescript
 public postSynthesize(): void
@@ -7410,7 +6594,7 @@ Called after all components are synthesized.
 
 Order is *not* guaranteed.
 
-##### `preSynthesize` <a name="preSynthesize" id="mrpj.ConstructProject.preSynthesize"></a>
+##### `preSynthesize` <a name="preSynthesize" id="schuettc.ConstructProject.preSynthesize"></a>
 
 ```typescript
 public preSynthesize(): void
@@ -7418,7 +6602,7 @@ public preSynthesize(): void
 
 Called before all components are synthesized.
 
-##### `removeTask` <a name="removeTask" id="mrpj.ConstructProject.removeTask"></a>
+##### `removeTask` <a name="removeTask" id="schuettc.ConstructProject.removeTask"></a>
 
 ```typescript
 public removeTask(name: string): Task
@@ -7426,7 +6610,7 @@ public removeTask(name: string): Task
 
 Removes a task from a project.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.removeTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.removeTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -7434,7 +6618,7 @@ The name of the task to remove.
 
 ---
 
-##### `runTaskCommand` <a name="runTaskCommand" id="mrpj.ConstructProject.runTaskCommand"></a>
+##### `runTaskCommand` <a name="runTaskCommand" id="schuettc.ConstructProject.runTaskCommand"></a>
 
 ```typescript
 public runTaskCommand(task: Task): string
@@ -7445,7 +6629,7 @@ Returns the shell command to execute in order to run a task.
 This will
 typically be `npx projen TASK`.
 
-###### `task`<sup>Required</sup> <a name="task" id="mrpj.ConstructProject.runTaskCommand.parameter.task"></a>
+###### `task`<sup>Required</sup> <a name="task" id="schuettc.ConstructProject.runTaskCommand.parameter.task"></a>
 
 - *Type:* projen.Task
 
@@ -7453,7 +6637,7 @@ The task for which the command is required.
 
 ---
 
-##### `synth` <a name="synth" id="mrpj.ConstructProject.synth"></a>
+##### `synth` <a name="synth" id="schuettc.ConstructProject.synth"></a>
 
 ```typescript
 public synth(): void
@@ -7468,7 +6652,7 @@ Synthesize all project files into `outdir`.
 5. Call "postSynthesize()" for all components of this project
 6. Call "this.postSynthesize()"
 
-##### `tryFindFile` <a name="tryFindFile" id="mrpj.ConstructProject.tryFindFile"></a>
+##### `tryFindFile` <a name="tryFindFile" id="schuettc.ConstructProject.tryFindFile"></a>
 
 ```typescript
 public tryFindFile(filePath: string): FileBase
@@ -7476,7 +6660,7 @@ public tryFindFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and all its subprojects.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ConstructProject.tryFindFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ConstructProject.tryFindFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -7487,7 +6671,7 @@ from the root of _this_ project.
 
 ---
 
-##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="mrpj.ConstructProject.tryFindJsonFile"></a>
+##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="schuettc.ConstructProject.tryFindJsonFile"></a>
 
 ```typescript
 public tryFindJsonFile(filePath: string): JsonFile
@@ -7495,7 +6679,7 @@ public tryFindJsonFile(filePath: string): JsonFile
 
 Finds a json file by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ConstructProject.tryFindJsonFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ConstructProject.tryFindJsonFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -7503,7 +6687,7 @@ The file path.
 
 ---
 
-##### `tryFindObjectFile` <a name="tryFindObjectFile" id="mrpj.ConstructProject.tryFindObjectFile"></a>
+##### `tryFindObjectFile` <a name="tryFindObjectFile" id="schuettc.ConstructProject.tryFindObjectFile"></a>
 
 ```typescript
 public tryFindObjectFile(filePath: string): ObjectFile
@@ -7511,7 +6695,7 @@ public tryFindObjectFile(filePath: string): ObjectFile
 
 Finds an object file (like JsonFile, YamlFile, etc.) by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ConstructProject.tryFindObjectFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ConstructProject.tryFindObjectFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -7519,7 +6703,7 @@ The file path.
 
 ---
 
-##### `tryRemoveFile` <a name="tryRemoveFile" id="mrpj.ConstructProject.tryRemoveFile"></a>
+##### `tryRemoveFile` <a name="tryRemoveFile" id="schuettc.ConstructProject.tryRemoveFile"></a>
 
 ```typescript
 public tryRemoveFile(filePath: string): FileBase
@@ -7527,7 +6711,7 @@ public tryRemoveFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and removes it.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ConstructProject.tryRemoveFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ConstructProject.tryRemoveFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -7538,19 +6722,19 @@ resolved from the root of _this_ project.
 
 ---
 
-##### `addBins` <a name="addBins" id="mrpj.ConstructProject.addBins"></a>
+##### `addBins` <a name="addBins" id="schuettc.ConstructProject.addBins"></a>
 
 ```typescript
 public addBins(bins: {[ key: string ]: string}): void
 ```
 
-###### `bins`<sup>Required</sup> <a name="bins" id="mrpj.ConstructProject.addBins.parameter.bins"></a>
+###### `bins`<sup>Required</sup> <a name="bins" id="schuettc.ConstructProject.addBins.parameter.bins"></a>
 
 - *Type:* {[ key: string ]: string}
 
 ---
 
-##### `addBundledDeps` <a name="addBundledDeps" id="mrpj.ConstructProject.addBundledDeps"></a>
+##### `addBundledDeps` <a name="addBundledDeps" id="schuettc.ConstructProject.addBundledDeps"></a>
 
 ```typescript
 public addBundledDeps(deps: string): void
@@ -7561,7 +6745,7 @@ Defines bundled dependencies.
 Bundled dependencies will be added as normal dependencies as well as to the
 `bundledDependencies` section of your `package.json`.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addBundledDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addBundledDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7575,7 +6759,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="mrpj.ConstructProject.addCompileCommand"></a>
+##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="schuettc.ConstructProject.addCompileCommand"></a>
 
 ```typescript
 public addCompileCommand(commands: string): void
@@ -7583,13 +6767,13 @@ public addCompileCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.ConstructProject.addCompileCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.ConstructProject.addCompileCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### `addDeps` <a name="addDeps" id="mrpj.ConstructProject.addDeps"></a>
+##### `addDeps` <a name="addDeps" id="schuettc.ConstructProject.addDeps"></a>
 
 ```typescript
 public addDeps(deps: string): void
@@ -7597,7 +6781,7 @@ public addDeps(deps: string): void
 
 Defines normal dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7611,7 +6795,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addDevDeps` <a name="addDevDeps" id="mrpj.ConstructProject.addDevDeps"></a>
+##### `addDevDeps` <a name="addDevDeps" id="schuettc.ConstructProject.addDevDeps"></a>
 
 ```typescript
 public addDevDeps(deps: string): void
@@ -7619,7 +6803,7 @@ public addDevDeps(deps: string): void
 
 Defines development/test dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addDevDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addDevDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7633,7 +6817,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addFields` <a name="addFields" id="mrpj.ConstructProject.addFields"></a>
+##### `addFields` <a name="addFields" id="schuettc.ConstructProject.addFields"></a>
 
 ```typescript
 public addFields(fields: {[ key: string ]: any}): void
@@ -7641,7 +6825,7 @@ public addFields(fields: {[ key: string ]: any}): void
 
 Directly set fields in `package.json`.
 
-###### `fields`<sup>Required</sup> <a name="fields" id="mrpj.ConstructProject.addFields.parameter.fields"></a>
+###### `fields`<sup>Required</sup> <a name="fields" id="schuettc.ConstructProject.addFields.parameter.fields"></a>
 
 - *Type:* {[ key: string ]: any}
 
@@ -7649,7 +6833,7 @@ The fields to set.
 
 ---
 
-##### `addKeywords` <a name="addKeywords" id="mrpj.ConstructProject.addKeywords"></a>
+##### `addKeywords` <a name="addKeywords" id="schuettc.ConstructProject.addKeywords"></a>
 
 ```typescript
 public addKeywords(keywords: string): void
@@ -7657,7 +6841,7 @@ public addKeywords(keywords: string): void
 
 Adds keywords to package.json (deduplicated).
 
-###### `keywords`<sup>Required</sup> <a name="keywords" id="mrpj.ConstructProject.addKeywords.parameter.keywords"></a>
+###### `keywords`<sup>Required</sup> <a name="keywords" id="schuettc.ConstructProject.addKeywords.parameter.keywords"></a>
 
 - *Type:* string
 
@@ -7665,7 +6849,7 @@ The keywords to add.
 
 ---
 
-##### `addPeerDeps` <a name="addPeerDeps" id="mrpj.ConstructProject.addPeerDeps"></a>
+##### `addPeerDeps` <a name="addPeerDeps" id="schuettc.ConstructProject.addPeerDeps"></a>
 
 ```typescript
 public addPeerDeps(deps: string): void
@@ -7677,7 +6861,7 @@ When adding peer dependencies, a devDependency will also be added on the
 pinned version of the declared peer. This will ensure that you are testing
 your code against the minimum version required from your consumers.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addPeerDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addPeerDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7691,7 +6875,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addScripts` <a name="addScripts" id="mrpj.ConstructProject.addScripts"></a>
+##### `addScripts` <a name="addScripts" id="schuettc.ConstructProject.addScripts"></a>
 
 ```typescript
 public addScripts(scripts: {[ key: string ]: string}): void
@@ -7699,7 +6883,7 @@ public addScripts(scripts: {[ key: string ]: string}): void
 
 Replaces the contents of multiple npm package.json scripts.
 
-###### `scripts`<sup>Required</sup> <a name="scripts" id="mrpj.ConstructProject.addScripts.parameter.scripts"></a>
+###### `scripts`<sup>Required</sup> <a name="scripts" id="schuettc.ConstructProject.addScripts.parameter.scripts"></a>
 
 - *Type:* {[ key: string ]: string}
 
@@ -7707,7 +6891,7 @@ The scripts to set.
 
 ---
 
-##### ~~`addTestCommand`~~ <a name="addTestCommand" id="mrpj.ConstructProject.addTestCommand"></a>
+##### ~~`addTestCommand`~~ <a name="addTestCommand" id="schuettc.ConstructProject.addTestCommand"></a>
 
 ```typescript
 public addTestCommand(commands: string): void
@@ -7715,13 +6899,13 @@ public addTestCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.ConstructProject.addTestCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.ConstructProject.addTestCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### ~~`hasScript`~~ <a name="hasScript" id="mrpj.ConstructProject.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="schuettc.ConstructProject.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -7729,7 +6913,7 @@ public hasScript(name: string): boolean
 
 Indicates if a script by the name name is defined.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.hasScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.hasScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -7737,7 +6921,7 @@ The name of the script.
 
 ---
 
-##### `removeScript` <a name="removeScript" id="mrpj.ConstructProject.removeScript"></a>
+##### `removeScript` <a name="removeScript" id="schuettc.ConstructProject.removeScript"></a>
 
 ```typescript
 public removeScript(name: string): void
@@ -7745,7 +6929,7 @@ public removeScript(name: string): void
 
 Removes the npm script (always successful).
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.removeScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.removeScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -7753,7 +6937,7 @@ The name of the script.
 
 ---
 
-##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="mrpj.ConstructProject.renderWorkflowSetup"></a>
+##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="schuettc.ConstructProject.renderWorkflowSetup"></a>
 
 ```typescript
 public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
@@ -7761,7 +6945,7 @@ public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
 
 Returns the set of workflow steps which should be executed to bootstrap a workflow.
 
-###### `options`<sup>Optional</sup> <a name="options" id="mrpj.ConstructProject.renderWorkflowSetup.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="schuettc.ConstructProject.renderWorkflowSetup.parameter.options"></a>
 
 - *Type:* projen.javascript.RenderWorkflowSetupOptions
 
@@ -7769,7 +6953,7 @@ Options.
 
 ---
 
-##### `setScript` <a name="setScript" id="mrpj.ConstructProject.setScript"></a>
+##### `setScript` <a name="setScript" id="schuettc.ConstructProject.setScript"></a>
 
 ```typescript
 public setScript(name: string, command: string): void
@@ -7777,7 +6961,7 @@ public setScript(name: string, command: string): void
 
 Replaces the contents of an npm package.json script.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.setScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.setScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -7785,7 +6969,7 @@ The script name.
 
 ---
 
-###### `command`<sup>Required</sup> <a name="command" id="mrpj.ConstructProject.setScript.parameter.command"></a>
+###### `command`<sup>Required</sup> <a name="command" id="schuettc.ConstructProject.setScript.parameter.command"></a>
 
 - *Type:* string
 
@@ -7793,7 +6977,7 @@ The command to execute.
 
 ---
 
-##### ~~`addCdkDependencies`~~ <a name="addCdkDependencies" id="mrpj.ConstructProject.addCdkDependencies"></a>
+##### ~~`addCdkDependencies`~~ <a name="addCdkDependencies" id="schuettc.ConstructProject.addCdkDependencies"></a>
 
 ```typescript
 public addCdkDependencies(deps: string): void
@@ -7803,7 +6987,7 @@ Adds dependencies to AWS CDK modules.
 
 Since this is a library project, dependencies will be added as peer dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addCdkDependencies.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addCdkDependencies.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7811,7 +6995,7 @@ names of cdk modules (e.g. `@aws-cdk/aws-lambda`).
 
 ---
 
-##### ~~`addCdkTestDependencies`~~ <a name="addCdkTestDependencies" id="mrpj.ConstructProject.addCdkTestDependencies"></a>
+##### ~~`addCdkTestDependencies`~~ <a name="addCdkTestDependencies" id="schuettc.ConstructProject.addCdkTestDependencies"></a>
 
 ```typescript
 public addCdkTestDependencies(deps: string): void
@@ -7819,7 +7003,7 @@ public addCdkTestDependencies(deps: string): void
 
 Adds AWS CDK modules as dev dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.addCdkTestDependencies.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.addCdkTestDependencies.parameter.deps"></a>
 
 - *Type:* string
 
@@ -7832,74 +7016,74 @@ names of cdk modules (e.g. `@aws-cdk/aws-lambda`).
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ConstructProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.ConstructProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
-| <code><a href="#mrpj.ConstructProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
-| <code><a href="#mrpj.ConstructProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
-| <code><a href="#mrpj.ConstructProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
-| <code><a href="#mrpj.ConstructProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
-| <code><a href="#mrpj.ConstructProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
-| <code><a href="#mrpj.ConstructProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
-| <code><a href="#mrpj.ConstructProject.property.name">name</a></code> | <code>string</code> | Project name. |
-| <code><a href="#mrpj.ConstructProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
-| <code><a href="#mrpj.ConstructProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
-| <code><a href="#mrpj.ConstructProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.ConstructProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
-| <code><a href="#mrpj.ConstructProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
-| <code><a href="#mrpj.ConstructProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
-| <code><a href="#mrpj.ConstructProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
-| <code><a href="#mrpj.ConstructProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
-| <code><a href="#mrpj.ConstructProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
-| <code><a href="#mrpj.ConstructProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
-| <code><a href="#mrpj.ConstructProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
-| <code><a href="#mrpj.ConstructProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
-| <code><a href="#mrpj.ConstructProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
-| <code><a href="#mrpj.ConstructProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
-| <code><a href="#mrpj.ConstructProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
-| <code><a href="#mrpj.ConstructProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
-| <code><a href="#mrpj.ConstructProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
-| <code><a href="#mrpj.ConstructProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
-| <code><a href="#mrpj.ConstructProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
-| <code><a href="#mrpj.ConstructProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
-| <code><a href="#mrpj.ConstructProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
-| <code><a href="#mrpj.ConstructProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
-| <code><a href="#mrpj.ConstructProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
-| <code><a href="#mrpj.ConstructProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
-| <code><a href="#mrpj.ConstructProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
-| <code><a href="#mrpj.ConstructProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
-| <code><a href="#mrpj.ConstructProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
-| <code><a href="#mrpj.ConstructProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
-| <code><a href="#mrpj.ConstructProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
-| <code><a href="#mrpj.ConstructProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
-| <code><a href="#mrpj.ConstructProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
-| <code><a href="#mrpj.ConstructProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
-| <code><a href="#mrpj.ConstructProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
-| <code><a href="#mrpj.ConstructProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
-| <code><a href="#mrpj.ConstructProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
-| <code><a href="#mrpj.ConstructProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.cdkDeps">cdkDeps</a></code> | <code>projen.awscdk.AwsCdkDeps</code> | *No description.* |
-| <code><a href="#mrpj.ConstructProject.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | The target CDK version for this library. |
-| <code><a href="#mrpj.ConstructProject.property.version">version</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.ConstructProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
+| <code><a href="#schuettc.ConstructProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
+| <code><a href="#schuettc.ConstructProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
+| <code><a href="#schuettc.ConstructProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
+| <code><a href="#schuettc.ConstructProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
+| <code><a href="#schuettc.ConstructProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
+| <code><a href="#schuettc.ConstructProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
+| <code><a href="#schuettc.ConstructProject.property.name">name</a></code> | <code>string</code> | Project name. |
+| <code><a href="#schuettc.ConstructProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
+| <code><a href="#schuettc.ConstructProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
+| <code><a href="#schuettc.ConstructProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.ConstructProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#schuettc.ConstructProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
+| <code><a href="#schuettc.ConstructProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
+| <code><a href="#schuettc.ConstructProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
+| <code><a href="#schuettc.ConstructProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
+| <code><a href="#schuettc.ConstructProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
+| <code><a href="#schuettc.ConstructProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
+| <code><a href="#schuettc.ConstructProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
+| <code><a href="#schuettc.ConstructProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
+| <code><a href="#schuettc.ConstructProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
+| <code><a href="#schuettc.ConstructProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
+| <code><a href="#schuettc.ConstructProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
+| <code><a href="#schuettc.ConstructProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
+| <code><a href="#schuettc.ConstructProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
+| <code><a href="#schuettc.ConstructProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
+| <code><a href="#schuettc.ConstructProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
+| <code><a href="#schuettc.ConstructProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
+| <code><a href="#schuettc.ConstructProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
+| <code><a href="#schuettc.ConstructProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
+| <code><a href="#schuettc.ConstructProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
+| <code><a href="#schuettc.ConstructProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
+| <code><a href="#schuettc.ConstructProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
+| <code><a href="#schuettc.ConstructProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
+| <code><a href="#schuettc.ConstructProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
+| <code><a href="#schuettc.ConstructProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
+| <code><a href="#schuettc.ConstructProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
+| <code><a href="#schuettc.ConstructProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
+| <code><a href="#schuettc.ConstructProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
+| <code><a href="#schuettc.ConstructProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
+| <code><a href="#schuettc.ConstructProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
+| <code><a href="#schuettc.ConstructProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
+| <code><a href="#schuettc.ConstructProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
+| <code><a href="#schuettc.ConstructProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.cdkDeps">cdkDeps</a></code> | <code>projen.awscdk.AwsCdkDeps</code> | *No description.* |
+| <code><a href="#schuettc.ConstructProject.property.cdkVersion">cdkVersion</a></code> | <code>string</code> | The target CDK version for this library. |
+| <code><a href="#schuettc.ConstructProject.property.version">version</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `buildTask`<sup>Required</sup> <a name="buildTask" id="mrpj.ConstructProject.property.buildTask"></a>
+##### `buildTask`<sup>Required</sup> <a name="buildTask" id="schuettc.ConstructProject.property.buildTask"></a>
 
 ```typescript
 public readonly buildTask: Task;
@@ -7909,7 +7093,7 @@ public readonly buildTask: Task;
 
 ---
 
-##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="mrpj.ConstructProject.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="schuettc.ConstructProject.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -7921,7 +7105,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compileTask`<sup>Required</sup> <a name="compileTask" id="mrpj.ConstructProject.property.compileTask"></a>
+##### `compileTask`<sup>Required</sup> <a name="compileTask" id="schuettc.ConstructProject.property.compileTask"></a>
 
 ```typescript
 public readonly compileTask: Task;
@@ -7931,7 +7115,7 @@ public readonly compileTask: Task;
 
 ---
 
-##### `components`<sup>Required</sup> <a name="components" id="mrpj.ConstructProject.property.components"></a>
+##### `components`<sup>Required</sup> <a name="components" id="schuettc.ConstructProject.property.components"></a>
 
 ```typescript
 public readonly components: Component[];
@@ -7943,7 +7127,7 @@ Returns all the components within this project.
 
 ---
 
-##### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ConstructProject.property.deps"></a>
+##### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ConstructProject.property.deps"></a>
 
 ```typescript
 public readonly deps: Dependencies;
@@ -7955,7 +7139,7 @@ Project dependencies.
 
 ---
 
-##### `ejected`<sup>Required</sup> <a name="ejected" id="mrpj.ConstructProject.property.ejected"></a>
+##### `ejected`<sup>Required</sup> <a name="ejected" id="schuettc.ConstructProject.property.ejected"></a>
 
 ```typescript
 public readonly ejected: boolean;
@@ -7967,7 +7151,7 @@ Whether or not the project is being ejected.
 
 ---
 
-##### `files`<sup>Required</sup> <a name="files" id="mrpj.ConstructProject.property.files"></a>
+##### `files`<sup>Required</sup> <a name="files" id="schuettc.ConstructProject.property.files"></a>
 
 ```typescript
 public readonly files: FileBase[];
@@ -7979,7 +7163,7 @@ All files in this project.
 
 ---
 
-##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="mrpj.ConstructProject.property.gitattributes"></a>
+##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="schuettc.ConstructProject.property.gitattributes"></a>
 
 ```typescript
 public readonly gitattributes: GitAttributesFile;
@@ -7991,7 +7175,7 @@ The .gitattributes file for this repository.
 
 ---
 
-##### `gitignore`<sup>Required</sup> <a name="gitignore" id="mrpj.ConstructProject.property.gitignore"></a>
+##### `gitignore`<sup>Required</sup> <a name="gitignore" id="schuettc.ConstructProject.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: IgnoreFile;
@@ -8003,7 +7187,7 @@ public readonly gitignore: IgnoreFile;
 
 ---
 
-##### `logger`<sup>Required</sup> <a name="logger" id="mrpj.ConstructProject.property.logger"></a>
+##### `logger`<sup>Required</sup> <a name="logger" id="schuettc.ConstructProject.property.logger"></a>
 
 ```typescript
 public readonly logger: Logger;
@@ -8015,7 +7199,7 @@ Logging utilities.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="mrpj.ConstructProject.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="schuettc.ConstructProject.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -8027,7 +7211,7 @@ Project name.
 
 ---
 
-##### `outdir`<sup>Required</sup> <a name="outdir" id="mrpj.ConstructProject.property.outdir"></a>
+##### `outdir`<sup>Required</sup> <a name="outdir" id="schuettc.ConstructProject.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -8039,7 +7223,7 @@ Absolute output directory of this project.
 
 ---
 
-##### `packageTask`<sup>Required</sup> <a name="packageTask" id="mrpj.ConstructProject.property.packageTask"></a>
+##### `packageTask`<sup>Required</sup> <a name="packageTask" id="schuettc.ConstructProject.property.packageTask"></a>
 
 ```typescript
 public readonly packageTask: Task;
@@ -8049,7 +7233,7 @@ public readonly packageTask: Task;
 
 ---
 
-##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="mrpj.ConstructProject.property.postCompileTask"></a>
+##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="schuettc.ConstructProject.property.postCompileTask"></a>
 
 ```typescript
 public readonly postCompileTask: Task;
@@ -8059,7 +7243,7 @@ public readonly postCompileTask: Task;
 
 ---
 
-##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="mrpj.ConstructProject.property.preCompileTask"></a>
+##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="schuettc.ConstructProject.property.preCompileTask"></a>
 
 ```typescript
 public readonly preCompileTask: Task;
@@ -8069,7 +7253,7 @@ public readonly preCompileTask: Task;
 
 ---
 
-##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="mrpj.ConstructProject.property.projectBuild"></a>
+##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="schuettc.ConstructProject.property.projectBuild"></a>
 
 ```typescript
 public readonly projectBuild: ProjectBuild;
@@ -8081,7 +7265,7 @@ Manages the build process of the project.
 
 ---
 
-##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="mrpj.ConstructProject.property.projenCommand"></a>
+##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="schuettc.ConstructProject.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -8093,7 +7277,7 @@ The command to use in order to run the projen CLI.
 
 ---
 
-##### `root`<sup>Required</sup> <a name="root" id="mrpj.ConstructProject.property.root"></a>
+##### `root`<sup>Required</sup> <a name="root" id="schuettc.ConstructProject.property.root"></a>
 
 ```typescript
 public readonly root: Project;
@@ -8105,7 +7289,7 @@ The root project.
 
 ---
 
-##### `subprojects`<sup>Required</sup> <a name="subprojects" id="mrpj.ConstructProject.property.subprojects"></a>
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="schuettc.ConstructProject.property.subprojects"></a>
 
 ```typescript
 public readonly subprojects: Project[];
@@ -8117,7 +7301,7 @@ Returns all the subprojects within this project.
 
 ---
 
-##### `tasks`<sup>Required</sup> <a name="tasks" id="mrpj.ConstructProject.property.tasks"></a>
+##### `tasks`<sup>Required</sup> <a name="tasks" id="schuettc.ConstructProject.property.tasks"></a>
 
 ```typescript
 public readonly tasks: Tasks;
@@ -8129,7 +7313,7 @@ Project tasks.
 
 ---
 
-##### `testTask`<sup>Required</sup> <a name="testTask" id="mrpj.ConstructProject.property.testTask"></a>
+##### `testTask`<sup>Required</sup> <a name="testTask" id="schuettc.ConstructProject.property.testTask"></a>
 
 ```typescript
 public readonly testTask: Task;
@@ -8139,7 +7323,7 @@ public readonly testTask: Task;
 
 ---
 
-##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="mrpj.ConstructProject.property.defaultTask"></a>
+##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="schuettc.ConstructProject.property.defaultTask"></a>
 
 ```typescript
 public readonly defaultTask: Task;
@@ -8154,7 +7338,7 @@ the project is being ejected.
 
 ---
 
-##### `initProject`<sup>Optional</sup> <a name="initProject" id="mrpj.ConstructProject.property.initProject"></a>
+##### `initProject`<sup>Optional</sup> <a name="initProject" id="schuettc.ConstructProject.property.initProject"></a>
 
 ```typescript
 public readonly initProject: InitProject;
@@ -8170,7 +7354,7 @@ FQN of the project type.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.ConstructProject.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.ConstructProject.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -8184,7 +7368,7 @@ If undefined, this is the root project.
 
 ---
 
-##### `projectType`<sup>Required</sup> <a name="projectType" id="mrpj.ConstructProject.property.projectType"></a>
+##### `projectType`<sup>Required</sup> <a name="projectType" id="schuettc.ConstructProject.property.projectType"></a>
 
 ```typescript
 public readonly projectType: ProjectType;
@@ -8194,7 +7378,7 @@ public readonly projectType: ProjectType;
 
 ---
 
-##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="mrpj.ConstructProject.property.autoApprove"></a>
+##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="schuettc.ConstructProject.property.autoApprove"></a>
 
 ```typescript
 public readonly autoApprove: AutoApprove;
@@ -8206,7 +7390,7 @@ Auto approve set up for this project.
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.ConstructProject.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.ConstructProject.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: DevContainer;
@@ -8220,7 +7404,7 @@ This will be `undefined` if devContainer boolean is false
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.ConstructProject.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.ConstructProject.property.github"></a>
 
 ```typescript
 public readonly github: GitHub;
@@ -8234,7 +7418,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.ConstructProject.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.ConstructProject.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: Gitpod;
@@ -8248,7 +7432,7 @@ This will be `undefined` if gitpod boolean is false
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.ConstructProject.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.ConstructProject.property.vscode"></a>
 
 ```typescript
 public readonly vscode: VsCode;
@@ -8262,7 +7446,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="mrpj.ConstructProject.property.allowLibraryDependencies"></a>
+##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="schuettc.ConstructProject.property.allowLibraryDependencies"></a>
 
 - *Deprecated:* use `package.allowLibraryDependencies`
 
@@ -8274,7 +7458,7 @@ public readonly allowLibraryDependencies: boolean;
 
 ---
 
-##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="mrpj.ConstructProject.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="schuettc.ConstructProject.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -8290,7 +7474,7 @@ tarball will be placed under `dist/js/boom-boom-1.2.3.tg`.
 
 ---
 
-##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="mrpj.ConstructProject.property.artifactsJavascriptDirectory"></a>
+##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="schuettc.ConstructProject.property.artifactsJavascriptDirectory"></a>
 
 ```typescript
 public readonly artifactsJavascriptDirectory: string;
@@ -8302,7 +7486,7 @@ The location of the npm tarball after build (`${artifactsDirectory}/js`).
 
 ---
 
-##### `bundler`<sup>Required</sup> <a name="bundler" id="mrpj.ConstructProject.property.bundler"></a>
+##### `bundler`<sup>Required</sup> <a name="bundler" id="schuettc.ConstructProject.property.bundler"></a>
 
 ```typescript
 public readonly bundler: Bundler;
@@ -8312,7 +7496,7 @@ public readonly bundler: Bundler;
 
 ---
 
-##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="mrpj.ConstructProject.property.entrypoint"></a>
+##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="schuettc.ConstructProject.property.entrypoint"></a>
 
 - *Deprecated:* use `package.entrypoint`
 
@@ -8324,7 +7508,7 @@ public readonly entrypoint: string;
 
 ---
 
-##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="mrpj.ConstructProject.property.manifest"></a>
+##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="schuettc.ConstructProject.property.manifest"></a>
 
 - *Deprecated:* use `package.addField(x, y)`
 
@@ -8336,7 +7520,7 @@ public readonly manifest: any;
 
 ---
 
-##### `npmrc`<sup>Required</sup> <a name="npmrc" id="mrpj.ConstructProject.property.npmrc"></a>
+##### `npmrc`<sup>Required</sup> <a name="npmrc" id="schuettc.ConstructProject.property.npmrc"></a>
 
 ```typescript
 public readonly npmrc: NpmConfig;
@@ -8348,7 +7532,7 @@ The .npmrc file.
 
 ---
 
-##### `package`<sup>Required</sup> <a name="package" id="mrpj.ConstructProject.property.package"></a>
+##### `package`<sup>Required</sup> <a name="package" id="schuettc.ConstructProject.property.package"></a>
 
 ```typescript
 public readonly package: NodePackage;
@@ -8360,7 +7544,7 @@ API for managing the node package.
 
 ---
 
-##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="mrpj.ConstructProject.property.packageManager"></a>
+##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="schuettc.ConstructProject.property.packageManager"></a>
 
 - *Deprecated:* use `package.packageManager`
 
@@ -8374,7 +7558,7 @@ The package manager to use.
 
 ---
 
-##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="mrpj.ConstructProject.property.runScriptCommand"></a>
+##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="schuettc.ConstructProject.property.runScriptCommand"></a>
 
 ```typescript
 public readonly runScriptCommand: string;
@@ -8386,7 +7570,7 @@ The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the p
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.ConstructProject.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.ConstructProject.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: AutoMerge;
@@ -8398,7 +7582,7 @@ Component that sets up mergify for merging approved pull requests.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.ConstructProject.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.ConstructProject.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: BuildWorkflow;
@@ -8412,7 +7596,7 @@ The PR build GitHub workflow.
 
 ---
 
-##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="mrpj.ConstructProject.property.buildWorkflowJobId"></a>
+##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="schuettc.ConstructProject.property.buildWorkflowJobId"></a>
 
 ```typescript
 public readonly buildWorkflowJobId: string;
@@ -8424,7 +7608,7 @@ The job ID of the build workflow.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.ConstructProject.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.ConstructProject.property.jest"></a>
 
 ```typescript
 public readonly jest: Jest;
@@ -8436,7 +7620,7 @@ The Jest configuration (if enabled).
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.ConstructProject.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.ConstructProject.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -8448,7 +7632,7 @@ Maximum node version required by this package.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.ConstructProject.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.ConstructProject.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -8460,7 +7644,7 @@ Minimum node.js version required by this package.
 
 ---
 
-##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="mrpj.ConstructProject.property.npmignore"></a>
+##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="schuettc.ConstructProject.property.npmignore"></a>
 
 ```typescript
 public readonly npmignore: IgnoreFile;
@@ -8472,7 +7656,7 @@ The .npmignore file.
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.ConstructProject.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.ConstructProject.property.prettier"></a>
 
 ```typescript
 public readonly prettier: Prettier;
@@ -8482,7 +7666,7 @@ public readonly prettier: Prettier;
 
 ---
 
-##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="mrpj.ConstructProject.property.publisher"></a>
+##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="schuettc.ConstructProject.property.publisher"></a>
 
 - *Deprecated:* use `release.publisher`.
 
@@ -8499,7 +7683,7 @@ release workflow.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.ConstructProject.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.ConstructProject.property.release"></a>
 
 ```typescript
 public readonly release: Release;
@@ -8511,7 +7695,7 @@ Release management.
 
 ---
 
-##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="mrpj.ConstructProject.property.upgradeWorkflow"></a>
+##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="schuettc.ConstructProject.property.upgradeWorkflow"></a>
 
 ```typescript
 public readonly upgradeWorkflow: UpgradeDependencies;
@@ -8523,7 +7707,7 @@ The upgrade workflow.
 
 ---
 
-##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="mrpj.ConstructProject.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="schuettc.ConstructProject.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -8533,7 +7717,7 @@ public readonly docsDirectory: string;
 
 ---
 
-##### `libdir`<sup>Required</sup> <a name="libdir" id="mrpj.ConstructProject.property.libdir"></a>
+##### `libdir`<sup>Required</sup> <a name="libdir" id="schuettc.ConstructProject.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -8545,7 +7729,7 @@ The directory in which compiled .js files reside.
 
 ---
 
-##### `srcdir`<sup>Required</sup> <a name="srcdir" id="mrpj.ConstructProject.property.srcdir"></a>
+##### `srcdir`<sup>Required</sup> <a name="srcdir" id="schuettc.ConstructProject.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -8557,7 +7741,7 @@ The directory in which the .ts sources reside.
 
 ---
 
-##### `testdir`<sup>Required</sup> <a name="testdir" id="mrpj.ConstructProject.property.testdir"></a>
+##### `testdir`<sup>Required</sup> <a name="testdir" id="schuettc.ConstructProject.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -8569,7 +7753,7 @@ The directory in which tests reside.
 
 ---
 
-##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="mrpj.ConstructProject.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="schuettc.ConstructProject.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfig;
@@ -8581,7 +7765,7 @@ A typescript configuration file which covers all files (sources, tests, projen).
 
 ---
 
-##### `watchTask`<sup>Required</sup> <a name="watchTask" id="mrpj.ConstructProject.property.watchTask"></a>
+##### `watchTask`<sup>Required</sup> <a name="watchTask" id="schuettc.ConstructProject.property.watchTask"></a>
 
 ```typescript
 public readonly watchTask: Task;
@@ -8593,7 +7777,7 @@ The "watch" task.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.ConstructProject.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.ConstructProject.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -8603,7 +7787,7 @@ public readonly docgen: boolean;
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.ConstructProject.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.ConstructProject.property.eslint"></a>
 
 ```typescript
 public readonly eslint: Eslint;
@@ -8613,7 +7797,7 @@ public readonly eslint: Eslint;
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.ConstructProject.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.ConstructProject.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfig;
@@ -8623,7 +7807,7 @@ public readonly tsconfig: TypescriptConfig;
 
 ---
 
-##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="mrpj.ConstructProject.property.tsconfigEslint"></a>
+##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="schuettc.ConstructProject.property.tsconfigEslint"></a>
 
 ```typescript
 public readonly tsconfigEslint: TypescriptConfig;
@@ -8633,7 +7817,7 @@ public readonly tsconfigEslint: TypescriptConfig;
 
 ---
 
-##### `cdkDeps`<sup>Required</sup> <a name="cdkDeps" id="mrpj.ConstructProject.property.cdkDeps"></a>
+##### `cdkDeps`<sup>Required</sup> <a name="cdkDeps" id="schuettc.ConstructProject.property.cdkDeps"></a>
 
 ```typescript
 public readonly cdkDeps: AwsCdkDeps;
@@ -8643,7 +7827,7 @@ public readonly cdkDeps: AwsCdkDeps;
 
 ---
 
-##### `cdkVersion`<sup>Required</sup> <a name="cdkVersion" id="mrpj.ConstructProject.property.cdkVersion"></a>
+##### `cdkVersion`<sup>Required</sup> <a name="cdkVersion" id="schuettc.ConstructProject.property.cdkVersion"></a>
 
 ```typescript
 public readonly cdkVersion: string;
@@ -8655,7 +7839,7 @@ The target CDK version for this library.
 
 ---
 
-##### ~~`version`~~<sup>Required</sup> <a name="version" id="mrpj.ConstructProject.property.version"></a>
+##### ~~`version`~~<sup>Required</sup> <a name="version" id="schuettc.ConstructProject.property.version"></a>
 
 - *Deprecated:* use `cdkVersion`
 
@@ -8671,11 +7855,11 @@ public readonly version: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ConstructProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
+| <code><a href="#schuettc.ConstructProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
 
 ---
 
-##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="mrpj.ConstructProject.property.DEFAULT_TASK"></a>
+##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="schuettc.ConstructProject.property.DEFAULT_TASK"></a>
 
 ```typescript
 public readonly DEFAULT_TASK: string;
@@ -8690,212 +7874,27 @@ this task should synthesize the project files.
 
 ---
 
-### Logo <a name="Logo" id="mrpj.logo.Logo"></a>
-
-- *Implements:* mrpj.logo.ILogo
-
-Create a logo for the project.
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#mrpj.logo.Logo.synth">synth</a></code> | Synth the logo. |
-
----
-
-##### `synth` <a name="synth" id="mrpj.logo.Logo.synth"></a>
-
-```typescript
-public synth(project: Project): void
-```
-
-Synth the logo.
-
-###### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.Logo.synth.parameter.project"></a>
-
-- *Type:* projen.Project
-
----
-
-#### Static Functions <a name="Static Functions" id="Static Functions"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#mrpj.logo.Logo.forProjen">forProjen</a></code> | A logo for projen related projects. |
-| <code><a href="#mrpj.logo.Logo.fromContent">fromContent</a></code> | Create the logo from this svg snippet. |
-| <code><a href="#mrpj.logo.Logo.fromFile">fromFile</a></code> | Use an existing logo from a file. |
-| <code><a href="#mrpj.logo.Logo.placeholder">placeholder</a></code> | An empty placeholder logo. |
-
----
-
-##### `forProjen` <a name="forProjen" id="mrpj.logo.Logo.forProjen"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-logo.Logo.forProjen(path?: string, options?: LogoForProjenOptions)
-```
-
-A logo for projen related projects.
-
-###### `path`<sup>Optional</sup> <a name="path" id="mrpj.logo.Logo.forProjen.parameter.path"></a>
-
-- *Type:* string
-
----
-
-###### `options`<sup>Optional</sup> <a name="options" id="mrpj.logo.Logo.forProjen.parameter.options"></a>
-
-- *Type:* mrpj.logo.LogoForProjenOptions
-
----
-
-##### `fromContent` <a name="fromContent" id="mrpj.logo.Logo.fromContent"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-logo.Logo.fromContent(content: string, options: LogoFromContentOptions)
-```
-
-Create the logo from this svg snippet.
-
-Content should NOT include the outermost <svg> tag.
-
-###### `content`<sup>Required</sup> <a name="content" id="mrpj.logo.Logo.fromContent.parameter.content"></a>
-
-- *Type:* string
-
----
-
-###### `options`<sup>Required</sup> <a name="options" id="mrpj.logo.Logo.fromContent.parameter.options"></a>
-
-- *Type:* mrpj.logo.LogoFromContentOptions
-
----
-
-##### `fromFile` <a name="fromFile" id="mrpj.logo.Logo.fromFile"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-logo.Logo.fromFile(path: string, options: LogoConfig)
-```
-
-Use an existing logo from a file.
-
-###### `path`<sup>Required</sup> <a name="path" id="mrpj.logo.Logo.fromFile.parameter.path"></a>
-
-- *Type:* string
-
----
-
-###### `options`<sup>Required</sup> <a name="options" id="mrpj.logo.Logo.fromFile.parameter.options"></a>
-
-- *Type:* mrpj.logo.LogoConfig
-
----
-
-##### `placeholder` <a name="placeholder" id="mrpj.logo.Logo.placeholder"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-logo.Logo.placeholder(path?: string)
-```
-
-An empty placeholder logo.
-
-Can be used the get started before a logo is created.
-
-###### `path`<sup>Optional</sup> <a name="path" id="mrpj.logo.Logo.placeholder.parameter.path"></a>
-
-- *Type:* string
-
----
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.Logo.property.content">content</a></code> | <code>string</code> | The SVG content of the logo as a string. |
-| <code><a href="#mrpj.logo.Logo.property.height">height</a></code> | <code>number</code> | The height of the logo in px. |
-| <code><a href="#mrpj.logo.Logo.property.width">width</a></code> | <code>number</code> | The width of the logo in px. |
-| <code><a href="#mrpj.logo.Logo.property.scale">scale</a></code> | <code>number</code> | Scale the logo by a factor. |
-
----
-
-##### `content`<sup>Required</sup> <a name="content" id="mrpj.logo.Logo.property.content"></a>
-
-```typescript
-public readonly content: string;
-```
-
-- *Type:* string
-
-The SVG content of the logo as a string.
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.Logo.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
-The height of the logo in px.
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.Logo.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
-The width of the logo in px.
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.Logo.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-
-Scale the logo by a factor.
-
----
-
-
-### ProjenProject <a name="ProjenProject" id="mrpj.ProjenProject"></a>
+### ProjenProject <a name="ProjenProject" id="schuettc.ProjenProject"></a>
 
 A project to create new projen projects & components.
 
-#### Initializers <a name="Initializers" id="mrpj.ProjenProject.Initializer"></a>
+#### Initializers <a name="Initializers" id="schuettc.ProjenProject.Initializer"></a>
 
 ```typescript
-import { ProjenProject } from 'mrpj'
+import { ProjenProject } from 'schuettc'
 
 new ProjenProject(options: ProjenProjectOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ProjenProject.Initializer.parameter.options">options</a></code> | <code><a href="#mrpj.ProjenProjectOptions">ProjenProjectOptions</a></code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.Initializer.parameter.options">options</a></code> | <code><a href="#schuettc.ProjenProjectOptions">ProjenProjectOptions</a></code> | *No description.* |
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="mrpj.ProjenProject.Initializer.parameter.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="schuettc.ProjenProject.Initializer.parameter.options"></a>
 
-- *Type:* <a href="#mrpj.ProjenProjectOptions">ProjenProjectOptions</a>
+- *Type:* <a href="#schuettc.ProjenProjectOptions">ProjenProjectOptions</a>
 
 ---
 
@@ -8903,39 +7902,39 @@ new ProjenProject(options: ProjenProjectOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#mrpj.ProjenProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
-| <code><a href="#mrpj.ProjenProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
-| <code><a href="#mrpj.ProjenProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
-| <code><a href="#mrpj.ProjenProject.addTask">addTask</a></code> | Adds a new task to this project. |
-| <code><a href="#mrpj.ProjenProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
-| <code><a href="#mrpj.ProjenProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
-| <code><a href="#mrpj.ProjenProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
-| <code><a href="#mrpj.ProjenProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
-| <code><a href="#mrpj.ProjenProject.removeTask">removeTask</a></code> | Removes a task from a project. |
-| <code><a href="#mrpj.ProjenProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
-| <code><a href="#mrpj.ProjenProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
-| <code><a href="#mrpj.ProjenProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
-| <code><a href="#mrpj.ProjenProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
-| <code><a href="#mrpj.ProjenProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
-| <code><a href="#mrpj.ProjenProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
-| <code><a href="#mrpj.ProjenProject.addBins">addBins</a></code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
-| <code><a href="#mrpj.ProjenProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.ProjenProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
-| <code><a href="#mrpj.ProjenProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
-| <code><a href="#mrpj.ProjenProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
-| <code><a href="#mrpj.ProjenProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
-| <code><a href="#mrpj.ProjenProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
-| <code><a href="#mrpj.ProjenProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
-| <code><a href="#mrpj.ProjenProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.ProjenProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
-| <code><a href="#mrpj.ProjenProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
-| <code><a href="#mrpj.ProjenProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
-| <code><a href="#mrpj.ProjenProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
+| <code><a href="#schuettc.ProjenProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
+| <code><a href="#schuettc.ProjenProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
+| <code><a href="#schuettc.ProjenProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
+| <code><a href="#schuettc.ProjenProject.addTask">addTask</a></code> | Adds a new task to this project. |
+| <code><a href="#schuettc.ProjenProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
+| <code><a href="#schuettc.ProjenProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
+| <code><a href="#schuettc.ProjenProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
+| <code><a href="#schuettc.ProjenProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
+| <code><a href="#schuettc.ProjenProject.removeTask">removeTask</a></code> | Removes a task from a project. |
+| <code><a href="#schuettc.ProjenProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
+| <code><a href="#schuettc.ProjenProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
+| <code><a href="#schuettc.ProjenProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
+| <code><a href="#schuettc.ProjenProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
+| <code><a href="#schuettc.ProjenProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
+| <code><a href="#schuettc.ProjenProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
+| <code><a href="#schuettc.ProjenProject.addBins">addBins</a></code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
+| <code><a href="#schuettc.ProjenProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.ProjenProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
+| <code><a href="#schuettc.ProjenProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
+| <code><a href="#schuettc.ProjenProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
+| <code><a href="#schuettc.ProjenProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
+| <code><a href="#schuettc.ProjenProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#schuettc.ProjenProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
+| <code><a href="#schuettc.ProjenProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.ProjenProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
+| <code><a href="#schuettc.ProjenProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
+| <code><a href="#schuettc.ProjenProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
+| <code><a href="#schuettc.ProjenProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
 
 ---
 
-##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="mrpj.ProjenProject.addExcludeFromCleanup"></a>
+##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="schuettc.ProjenProject.addExcludeFromCleanup"></a>
 
 ```typescript
 public addExcludeFromCleanup(globs: string): void
@@ -8946,7 +7945,7 @@ Exclude the matching files from pre-synth cleanup.
 Can be used when, for example, some
 source files include the projen marker and we don't want them to be erased during synth.
 
-###### `globs`<sup>Required</sup> <a name="globs" id="mrpj.ProjenProject.addExcludeFromCleanup.parameter.globs"></a>
+###### `globs`<sup>Required</sup> <a name="globs" id="schuettc.ProjenProject.addExcludeFromCleanup.parameter.globs"></a>
 
 - *Type:* string
 
@@ -8954,7 +7953,7 @@ The glob patterns to match.
 
 ---
 
-##### `addGitIgnore` <a name="addGitIgnore" id="mrpj.ProjenProject.addGitIgnore"></a>
+##### `addGitIgnore` <a name="addGitIgnore" id="schuettc.ProjenProject.addGitIgnore"></a>
 
 ```typescript
 public addGitIgnore(pattern: string): void
@@ -8962,7 +7961,7 @@ public addGitIgnore(pattern: string): void
 
 Adds a .gitignore pattern.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.ProjenProject.addGitIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.ProjenProject.addGitIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
@@ -8970,7 +7969,7 @@ The glob pattern to ignore.
 
 ---
 
-##### `addPackageIgnore` <a name="addPackageIgnore" id="mrpj.ProjenProject.addPackageIgnore"></a>
+##### `addPackageIgnore` <a name="addPackageIgnore" id="schuettc.ProjenProject.addPackageIgnore"></a>
 
 ```typescript
 public addPackageIgnore(pattern: string): void
@@ -8981,13 +7980,13 @@ Exclude these files from the bundled package.
 Implemented by project types based on the
 packaging mechanism. For example, `NodeProject` delegates this to `.npmignore`.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.ProjenProject.addPackageIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.ProjenProject.addPackageIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
 ---
 
-##### `addTask` <a name="addTask" id="mrpj.ProjenProject.addTask"></a>
+##### `addTask` <a name="addTask" id="schuettc.ProjenProject.addTask"></a>
 
 ```typescript
 public addTask(name: string, props?: TaskOptions): Task
@@ -8998,7 +7997,7 @@ Adds a new task to this project.
 This will fail if the project already has
 a task with this name.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.addTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.addTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -9006,7 +8005,7 @@ The task name to add.
 
 ---
 
-###### `props`<sup>Optional</sup> <a name="props" id="mrpj.ProjenProject.addTask.parameter.props"></a>
+###### `props`<sup>Optional</sup> <a name="props" id="schuettc.ProjenProject.addTask.parameter.props"></a>
 
 - *Type:* projen.TaskOptions
 
@@ -9014,7 +8013,7 @@ Task properties.
 
 ---
 
-##### ~~`addTip`~~ <a name="addTip" id="mrpj.ProjenProject.addTip"></a>
+##### ~~`addTip`~~ <a name="addTip" id="schuettc.ProjenProject.addTip"></a>
 
 ```typescript
 public addTip(message: string): void
@@ -9022,7 +8021,7 @@ public addTip(message: string): void
 
 Prints a "tip" message during synthesis.
 
-###### `message`<sup>Required</sup> <a name="message" id="mrpj.ProjenProject.addTip.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="schuettc.ProjenProject.addTip.parameter.message"></a>
 
 - *Type:* string
 
@@ -9030,7 +8029,7 @@ The message.
 
 ---
 
-##### `annotateGenerated` <a name="annotateGenerated" id="mrpj.ProjenProject.annotateGenerated"></a>
+##### `annotateGenerated` <a name="annotateGenerated" id="schuettc.ProjenProject.annotateGenerated"></a>
 
 ```typescript
 public annotateGenerated(glob: string): void
@@ -9044,7 +8043,7 @@ repository statistics and language breakdown.
 
 > [https://github.com/github/linguist/blob/master/docs/overrides.md](https://github.com/github/linguist/blob/master/docs/overrides.md)
 
-###### `glob`<sup>Required</sup> <a name="glob" id="mrpj.ProjenProject.annotateGenerated.parameter.glob"></a>
+###### `glob`<sup>Required</sup> <a name="glob" id="schuettc.ProjenProject.annotateGenerated.parameter.glob"></a>
 
 - *Type:* string
 
@@ -9052,7 +8051,7 @@ the glob pattern to match (could be a file path).
 
 ---
 
-##### `postSynthesize` <a name="postSynthesize" id="mrpj.ProjenProject.postSynthesize"></a>
+##### `postSynthesize` <a name="postSynthesize" id="schuettc.ProjenProject.postSynthesize"></a>
 
 ```typescript
 public postSynthesize(): void
@@ -9062,7 +8061,7 @@ Called after all components are synthesized.
 
 Order is *not* guaranteed.
 
-##### `preSynthesize` <a name="preSynthesize" id="mrpj.ProjenProject.preSynthesize"></a>
+##### `preSynthesize` <a name="preSynthesize" id="schuettc.ProjenProject.preSynthesize"></a>
 
 ```typescript
 public preSynthesize(): void
@@ -9070,7 +8069,7 @@ public preSynthesize(): void
 
 Called before all components are synthesized.
 
-##### `removeTask` <a name="removeTask" id="mrpj.ProjenProject.removeTask"></a>
+##### `removeTask` <a name="removeTask" id="schuettc.ProjenProject.removeTask"></a>
 
 ```typescript
 public removeTask(name: string): Task
@@ -9078,7 +8077,7 @@ public removeTask(name: string): Task
 
 Removes a task from a project.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.removeTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.removeTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -9086,7 +8085,7 @@ The name of the task to remove.
 
 ---
 
-##### `runTaskCommand` <a name="runTaskCommand" id="mrpj.ProjenProject.runTaskCommand"></a>
+##### `runTaskCommand` <a name="runTaskCommand" id="schuettc.ProjenProject.runTaskCommand"></a>
 
 ```typescript
 public runTaskCommand(task: Task): string
@@ -9097,7 +8096,7 @@ Returns the shell command to execute in order to run a task.
 This will
 typically be `npx projen TASK`.
 
-###### `task`<sup>Required</sup> <a name="task" id="mrpj.ProjenProject.runTaskCommand.parameter.task"></a>
+###### `task`<sup>Required</sup> <a name="task" id="schuettc.ProjenProject.runTaskCommand.parameter.task"></a>
 
 - *Type:* projen.Task
 
@@ -9105,7 +8104,7 @@ The task for which the command is required.
 
 ---
 
-##### `synth` <a name="synth" id="mrpj.ProjenProject.synth"></a>
+##### `synth` <a name="synth" id="schuettc.ProjenProject.synth"></a>
 
 ```typescript
 public synth(): void
@@ -9120,7 +8119,7 @@ Synthesize all project files into `outdir`.
 5. Call "postSynthesize()" for all components of this project
 6. Call "this.postSynthesize()"
 
-##### `tryFindFile` <a name="tryFindFile" id="mrpj.ProjenProject.tryFindFile"></a>
+##### `tryFindFile` <a name="tryFindFile" id="schuettc.ProjenProject.tryFindFile"></a>
 
 ```typescript
 public tryFindFile(filePath: string): FileBase
@@ -9128,7 +8127,7 @@ public tryFindFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and all its subprojects.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ProjenProject.tryFindFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ProjenProject.tryFindFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -9139,7 +8138,7 @@ from the root of _this_ project.
 
 ---
 
-##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="mrpj.ProjenProject.tryFindJsonFile"></a>
+##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="schuettc.ProjenProject.tryFindJsonFile"></a>
 
 ```typescript
 public tryFindJsonFile(filePath: string): JsonFile
@@ -9147,7 +8146,7 @@ public tryFindJsonFile(filePath: string): JsonFile
 
 Finds a json file by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ProjenProject.tryFindJsonFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ProjenProject.tryFindJsonFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -9155,7 +8154,7 @@ The file path.
 
 ---
 
-##### `tryFindObjectFile` <a name="tryFindObjectFile" id="mrpj.ProjenProject.tryFindObjectFile"></a>
+##### `tryFindObjectFile` <a name="tryFindObjectFile" id="schuettc.ProjenProject.tryFindObjectFile"></a>
 
 ```typescript
 public tryFindObjectFile(filePath: string): ObjectFile
@@ -9163,7 +8162,7 @@ public tryFindObjectFile(filePath: string): ObjectFile
 
 Finds an object file (like JsonFile, YamlFile, etc.) by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ProjenProject.tryFindObjectFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ProjenProject.tryFindObjectFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -9171,7 +8170,7 @@ The file path.
 
 ---
 
-##### `tryRemoveFile` <a name="tryRemoveFile" id="mrpj.ProjenProject.tryRemoveFile"></a>
+##### `tryRemoveFile` <a name="tryRemoveFile" id="schuettc.ProjenProject.tryRemoveFile"></a>
 
 ```typescript
 public tryRemoveFile(filePath: string): FileBase
@@ -9179,7 +8178,7 @@ public tryRemoveFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and removes it.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.ProjenProject.tryRemoveFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.ProjenProject.tryRemoveFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -9190,19 +8189,19 @@ resolved from the root of _this_ project.
 
 ---
 
-##### `addBins` <a name="addBins" id="mrpj.ProjenProject.addBins"></a>
+##### `addBins` <a name="addBins" id="schuettc.ProjenProject.addBins"></a>
 
 ```typescript
 public addBins(bins: {[ key: string ]: string}): void
 ```
 
-###### `bins`<sup>Required</sup> <a name="bins" id="mrpj.ProjenProject.addBins.parameter.bins"></a>
+###### `bins`<sup>Required</sup> <a name="bins" id="schuettc.ProjenProject.addBins.parameter.bins"></a>
 
 - *Type:* {[ key: string ]: string}
 
 ---
 
-##### `addBundledDeps` <a name="addBundledDeps" id="mrpj.ProjenProject.addBundledDeps"></a>
+##### `addBundledDeps` <a name="addBundledDeps" id="schuettc.ProjenProject.addBundledDeps"></a>
 
 ```typescript
 public addBundledDeps(deps: string): void
@@ -9213,7 +8212,7 @@ Defines bundled dependencies.
 Bundled dependencies will be added as normal dependencies as well as to the
 `bundledDependencies` section of your `package.json`.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ProjenProject.addBundledDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ProjenProject.addBundledDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -9227,7 +8226,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="mrpj.ProjenProject.addCompileCommand"></a>
+##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="schuettc.ProjenProject.addCompileCommand"></a>
 
 ```typescript
 public addCompileCommand(commands: string): void
@@ -9235,13 +8234,13 @@ public addCompileCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.ProjenProject.addCompileCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.ProjenProject.addCompileCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### `addDeps` <a name="addDeps" id="mrpj.ProjenProject.addDeps"></a>
+##### `addDeps` <a name="addDeps" id="schuettc.ProjenProject.addDeps"></a>
 
 ```typescript
 public addDeps(deps: string): void
@@ -9249,7 +8248,7 @@ public addDeps(deps: string): void
 
 Defines normal dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ProjenProject.addDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ProjenProject.addDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -9263,7 +8262,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addDevDeps` <a name="addDevDeps" id="mrpj.ProjenProject.addDevDeps"></a>
+##### `addDevDeps` <a name="addDevDeps" id="schuettc.ProjenProject.addDevDeps"></a>
 
 ```typescript
 public addDevDeps(deps: string): void
@@ -9271,7 +8270,7 @@ public addDevDeps(deps: string): void
 
 Defines development/test dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ProjenProject.addDevDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ProjenProject.addDevDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -9285,7 +8284,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addFields` <a name="addFields" id="mrpj.ProjenProject.addFields"></a>
+##### `addFields` <a name="addFields" id="schuettc.ProjenProject.addFields"></a>
 
 ```typescript
 public addFields(fields: {[ key: string ]: any}): void
@@ -9293,7 +8292,7 @@ public addFields(fields: {[ key: string ]: any}): void
 
 Directly set fields in `package.json`.
 
-###### `fields`<sup>Required</sup> <a name="fields" id="mrpj.ProjenProject.addFields.parameter.fields"></a>
+###### `fields`<sup>Required</sup> <a name="fields" id="schuettc.ProjenProject.addFields.parameter.fields"></a>
 
 - *Type:* {[ key: string ]: any}
 
@@ -9301,7 +8300,7 @@ The fields to set.
 
 ---
 
-##### `addKeywords` <a name="addKeywords" id="mrpj.ProjenProject.addKeywords"></a>
+##### `addKeywords` <a name="addKeywords" id="schuettc.ProjenProject.addKeywords"></a>
 
 ```typescript
 public addKeywords(keywords: string): void
@@ -9309,7 +8308,7 @@ public addKeywords(keywords: string): void
 
 Adds keywords to package.json (deduplicated).
 
-###### `keywords`<sup>Required</sup> <a name="keywords" id="mrpj.ProjenProject.addKeywords.parameter.keywords"></a>
+###### `keywords`<sup>Required</sup> <a name="keywords" id="schuettc.ProjenProject.addKeywords.parameter.keywords"></a>
 
 - *Type:* string
 
@@ -9317,7 +8316,7 @@ The keywords to add.
 
 ---
 
-##### `addPeerDeps` <a name="addPeerDeps" id="mrpj.ProjenProject.addPeerDeps"></a>
+##### `addPeerDeps` <a name="addPeerDeps" id="schuettc.ProjenProject.addPeerDeps"></a>
 
 ```typescript
 public addPeerDeps(deps: string): void
@@ -9329,7 +8328,7 @@ When adding peer dependencies, a devDependency will also be added on the
 pinned version of the declared peer. This will ensure that you are testing
 your code against the minimum version required from your consumers.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ProjenProject.addPeerDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ProjenProject.addPeerDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -9343,7 +8342,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addScripts` <a name="addScripts" id="mrpj.ProjenProject.addScripts"></a>
+##### `addScripts` <a name="addScripts" id="schuettc.ProjenProject.addScripts"></a>
 
 ```typescript
 public addScripts(scripts: {[ key: string ]: string}): void
@@ -9351,7 +8350,7 @@ public addScripts(scripts: {[ key: string ]: string}): void
 
 Replaces the contents of multiple npm package.json scripts.
 
-###### `scripts`<sup>Required</sup> <a name="scripts" id="mrpj.ProjenProject.addScripts.parameter.scripts"></a>
+###### `scripts`<sup>Required</sup> <a name="scripts" id="schuettc.ProjenProject.addScripts.parameter.scripts"></a>
 
 - *Type:* {[ key: string ]: string}
 
@@ -9359,7 +8358,7 @@ The scripts to set.
 
 ---
 
-##### ~~`addTestCommand`~~ <a name="addTestCommand" id="mrpj.ProjenProject.addTestCommand"></a>
+##### ~~`addTestCommand`~~ <a name="addTestCommand" id="schuettc.ProjenProject.addTestCommand"></a>
 
 ```typescript
 public addTestCommand(commands: string): void
@@ -9367,13 +8366,13 @@ public addTestCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.ProjenProject.addTestCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.ProjenProject.addTestCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### ~~`hasScript`~~ <a name="hasScript" id="mrpj.ProjenProject.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="schuettc.ProjenProject.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -9381,7 +8380,7 @@ public hasScript(name: string): boolean
 
 Indicates if a script by the name name is defined.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.hasScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.hasScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -9389,7 +8388,7 @@ The name of the script.
 
 ---
 
-##### `removeScript` <a name="removeScript" id="mrpj.ProjenProject.removeScript"></a>
+##### `removeScript` <a name="removeScript" id="schuettc.ProjenProject.removeScript"></a>
 
 ```typescript
 public removeScript(name: string): void
@@ -9397,7 +8396,7 @@ public removeScript(name: string): void
 
 Removes the npm script (always successful).
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.removeScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.removeScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -9405,7 +8404,7 @@ The name of the script.
 
 ---
 
-##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="mrpj.ProjenProject.renderWorkflowSetup"></a>
+##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="schuettc.ProjenProject.renderWorkflowSetup"></a>
 
 ```typescript
 public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
@@ -9413,7 +8412,7 @@ public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
 
 Returns the set of workflow steps which should be executed to bootstrap a workflow.
 
-###### `options`<sup>Optional</sup> <a name="options" id="mrpj.ProjenProject.renderWorkflowSetup.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="schuettc.ProjenProject.renderWorkflowSetup.parameter.options"></a>
 
 - *Type:* projen.javascript.RenderWorkflowSetupOptions
 
@@ -9421,7 +8420,7 @@ Options.
 
 ---
 
-##### `setScript` <a name="setScript" id="mrpj.ProjenProject.setScript"></a>
+##### `setScript` <a name="setScript" id="schuettc.ProjenProject.setScript"></a>
 
 ```typescript
 public setScript(name: string, command: string): void
@@ -9429,7 +8428,7 @@ public setScript(name: string, command: string): void
 
 Replaces the contents of an npm package.json script.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.setScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.setScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -9437,7 +8436,7 @@ The script name.
 
 ---
 
-###### `command`<sup>Required</sup> <a name="command" id="mrpj.ProjenProject.setScript.parameter.command"></a>
+###### `command`<sup>Required</sup> <a name="command" id="schuettc.ProjenProject.setScript.parameter.command"></a>
 
 - *Type:* string
 
@@ -9450,73 +8449,71 @@ The command to execute.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ProjenProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.ProjenProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
-| <code><a href="#mrpj.ProjenProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
-| <code><a href="#mrpj.ProjenProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
-| <code><a href="#mrpj.ProjenProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
-| <code><a href="#mrpj.ProjenProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
-| <code><a href="#mrpj.ProjenProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
-| <code><a href="#mrpj.ProjenProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
-| <code><a href="#mrpj.ProjenProject.property.name">name</a></code> | <code>string</code> | Project name. |
-| <code><a href="#mrpj.ProjenProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
-| <code><a href="#mrpj.ProjenProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
-| <code><a href="#mrpj.ProjenProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.ProjenProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
-| <code><a href="#mrpj.ProjenProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
-| <code><a href="#mrpj.ProjenProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
-| <code><a href="#mrpj.ProjenProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
-| <code><a href="#mrpj.ProjenProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
-| <code><a href="#mrpj.ProjenProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
-| <code><a href="#mrpj.ProjenProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
-| <code><a href="#mrpj.ProjenProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
-| <code><a href="#mrpj.ProjenProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
-| <code><a href="#mrpj.ProjenProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
-| <code><a href="#mrpj.ProjenProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
-| <code><a href="#mrpj.ProjenProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
-| <code><a href="#mrpj.ProjenProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
-| <code><a href="#mrpj.ProjenProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
-| <code><a href="#mrpj.ProjenProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
-| <code><a href="#mrpj.ProjenProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
-| <code><a href="#mrpj.ProjenProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
-| <code><a href="#mrpj.ProjenProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
-| <code><a href="#mrpj.ProjenProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
-| <code><a href="#mrpj.ProjenProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
-| <code><a href="#mrpj.ProjenProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
-| <code><a href="#mrpj.ProjenProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
-| <code><a href="#mrpj.ProjenProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
-| <code><a href="#mrpj.ProjenProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
-| <code><a href="#mrpj.ProjenProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
-| <code><a href="#mrpj.ProjenProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
-| <code><a href="#mrpj.ProjenProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
-| <code><a href="#mrpj.ProjenProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
-| <code><a href="#mrpj.ProjenProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
-| <code><a href="#mrpj.ProjenProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
-| <code><a href="#mrpj.ProjenProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
-| <code><a href="#mrpj.ProjenProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
-| <code><a href="#mrpj.ProjenProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.logo">logo</a></code> | <code>mrpj.logo.SvgFile</code> | *No description.* |
-| <code><a href="#mrpj.ProjenProject.property.wordmark">wordmark</a></code> | <code>mrpj.logo.Wordmark</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.ProjenProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
+| <code><a href="#schuettc.ProjenProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
+| <code><a href="#schuettc.ProjenProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
+| <code><a href="#schuettc.ProjenProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
+| <code><a href="#schuettc.ProjenProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
+| <code><a href="#schuettc.ProjenProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
+| <code><a href="#schuettc.ProjenProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
+| <code><a href="#schuettc.ProjenProject.property.name">name</a></code> | <code>string</code> | Project name. |
+| <code><a href="#schuettc.ProjenProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
+| <code><a href="#schuettc.ProjenProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
+| <code><a href="#schuettc.ProjenProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.ProjenProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#schuettc.ProjenProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
+| <code><a href="#schuettc.ProjenProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
+| <code><a href="#schuettc.ProjenProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
+| <code><a href="#schuettc.ProjenProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
+| <code><a href="#schuettc.ProjenProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
+| <code><a href="#schuettc.ProjenProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
+| <code><a href="#schuettc.ProjenProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
+| <code><a href="#schuettc.ProjenProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
+| <code><a href="#schuettc.ProjenProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
+| <code><a href="#schuettc.ProjenProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
+| <code><a href="#schuettc.ProjenProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
+| <code><a href="#schuettc.ProjenProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
+| <code><a href="#schuettc.ProjenProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
+| <code><a href="#schuettc.ProjenProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
+| <code><a href="#schuettc.ProjenProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
+| <code><a href="#schuettc.ProjenProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
+| <code><a href="#schuettc.ProjenProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
+| <code><a href="#schuettc.ProjenProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
+| <code><a href="#schuettc.ProjenProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
+| <code><a href="#schuettc.ProjenProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
+| <code><a href="#schuettc.ProjenProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
+| <code><a href="#schuettc.ProjenProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
+| <code><a href="#schuettc.ProjenProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
+| <code><a href="#schuettc.ProjenProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
+| <code><a href="#schuettc.ProjenProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
+| <code><a href="#schuettc.ProjenProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
+| <code><a href="#schuettc.ProjenProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
+| <code><a href="#schuettc.ProjenProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
+| <code><a href="#schuettc.ProjenProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
+| <code><a href="#schuettc.ProjenProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
+| <code><a href="#schuettc.ProjenProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
+| <code><a href="#schuettc.ProjenProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#schuettc.ProjenProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
 
 ---
 
-##### `buildTask`<sup>Required</sup> <a name="buildTask" id="mrpj.ProjenProject.property.buildTask"></a>
+##### `buildTask`<sup>Required</sup> <a name="buildTask" id="schuettc.ProjenProject.property.buildTask"></a>
 
 ```typescript
 public readonly buildTask: Task;
@@ -9526,7 +8523,7 @@ public readonly buildTask: Task;
 
 ---
 
-##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="mrpj.ProjenProject.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="schuettc.ProjenProject.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -9538,7 +8535,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compileTask`<sup>Required</sup> <a name="compileTask" id="mrpj.ProjenProject.property.compileTask"></a>
+##### `compileTask`<sup>Required</sup> <a name="compileTask" id="schuettc.ProjenProject.property.compileTask"></a>
 
 ```typescript
 public readonly compileTask: Task;
@@ -9548,7 +8545,7 @@ public readonly compileTask: Task;
 
 ---
 
-##### `components`<sup>Required</sup> <a name="components" id="mrpj.ProjenProject.property.components"></a>
+##### `components`<sup>Required</sup> <a name="components" id="schuettc.ProjenProject.property.components"></a>
 
 ```typescript
 public readonly components: Component[];
@@ -9560,7 +8557,7 @@ Returns all the components within this project.
 
 ---
 
-##### `deps`<sup>Required</sup> <a name="deps" id="mrpj.ProjenProject.property.deps"></a>
+##### `deps`<sup>Required</sup> <a name="deps" id="schuettc.ProjenProject.property.deps"></a>
 
 ```typescript
 public readonly deps: Dependencies;
@@ -9572,7 +8569,7 @@ Project dependencies.
 
 ---
 
-##### `ejected`<sup>Required</sup> <a name="ejected" id="mrpj.ProjenProject.property.ejected"></a>
+##### `ejected`<sup>Required</sup> <a name="ejected" id="schuettc.ProjenProject.property.ejected"></a>
 
 ```typescript
 public readonly ejected: boolean;
@@ -9584,7 +8581,7 @@ Whether or not the project is being ejected.
 
 ---
 
-##### `files`<sup>Required</sup> <a name="files" id="mrpj.ProjenProject.property.files"></a>
+##### `files`<sup>Required</sup> <a name="files" id="schuettc.ProjenProject.property.files"></a>
 
 ```typescript
 public readonly files: FileBase[];
@@ -9596,7 +8593,7 @@ All files in this project.
 
 ---
 
-##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="mrpj.ProjenProject.property.gitattributes"></a>
+##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="schuettc.ProjenProject.property.gitattributes"></a>
 
 ```typescript
 public readonly gitattributes: GitAttributesFile;
@@ -9608,7 +8605,7 @@ The .gitattributes file for this repository.
 
 ---
 
-##### `gitignore`<sup>Required</sup> <a name="gitignore" id="mrpj.ProjenProject.property.gitignore"></a>
+##### `gitignore`<sup>Required</sup> <a name="gitignore" id="schuettc.ProjenProject.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: IgnoreFile;
@@ -9620,7 +8617,7 @@ public readonly gitignore: IgnoreFile;
 
 ---
 
-##### `logger`<sup>Required</sup> <a name="logger" id="mrpj.ProjenProject.property.logger"></a>
+##### `logger`<sup>Required</sup> <a name="logger" id="schuettc.ProjenProject.property.logger"></a>
 
 ```typescript
 public readonly logger: Logger;
@@ -9632,7 +8629,7 @@ Logging utilities.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="mrpj.ProjenProject.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="schuettc.ProjenProject.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -9644,7 +8641,7 @@ Project name.
 
 ---
 
-##### `outdir`<sup>Required</sup> <a name="outdir" id="mrpj.ProjenProject.property.outdir"></a>
+##### `outdir`<sup>Required</sup> <a name="outdir" id="schuettc.ProjenProject.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -9656,7 +8653,7 @@ Absolute output directory of this project.
 
 ---
 
-##### `packageTask`<sup>Required</sup> <a name="packageTask" id="mrpj.ProjenProject.property.packageTask"></a>
+##### `packageTask`<sup>Required</sup> <a name="packageTask" id="schuettc.ProjenProject.property.packageTask"></a>
 
 ```typescript
 public readonly packageTask: Task;
@@ -9666,7 +8663,7 @@ public readonly packageTask: Task;
 
 ---
 
-##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="mrpj.ProjenProject.property.postCompileTask"></a>
+##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="schuettc.ProjenProject.property.postCompileTask"></a>
 
 ```typescript
 public readonly postCompileTask: Task;
@@ -9676,7 +8673,7 @@ public readonly postCompileTask: Task;
 
 ---
 
-##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="mrpj.ProjenProject.property.preCompileTask"></a>
+##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="schuettc.ProjenProject.property.preCompileTask"></a>
 
 ```typescript
 public readonly preCompileTask: Task;
@@ -9686,7 +8683,7 @@ public readonly preCompileTask: Task;
 
 ---
 
-##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="mrpj.ProjenProject.property.projectBuild"></a>
+##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="schuettc.ProjenProject.property.projectBuild"></a>
 
 ```typescript
 public readonly projectBuild: ProjectBuild;
@@ -9698,7 +8695,7 @@ Manages the build process of the project.
 
 ---
 
-##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="mrpj.ProjenProject.property.projenCommand"></a>
+##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="schuettc.ProjenProject.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -9710,7 +8707,7 @@ The command to use in order to run the projen CLI.
 
 ---
 
-##### `root`<sup>Required</sup> <a name="root" id="mrpj.ProjenProject.property.root"></a>
+##### `root`<sup>Required</sup> <a name="root" id="schuettc.ProjenProject.property.root"></a>
 
 ```typescript
 public readonly root: Project;
@@ -9722,7 +8719,7 @@ The root project.
 
 ---
 
-##### `subprojects`<sup>Required</sup> <a name="subprojects" id="mrpj.ProjenProject.property.subprojects"></a>
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="schuettc.ProjenProject.property.subprojects"></a>
 
 ```typescript
 public readonly subprojects: Project[];
@@ -9734,7 +8731,7 @@ Returns all the subprojects within this project.
 
 ---
 
-##### `tasks`<sup>Required</sup> <a name="tasks" id="mrpj.ProjenProject.property.tasks"></a>
+##### `tasks`<sup>Required</sup> <a name="tasks" id="schuettc.ProjenProject.property.tasks"></a>
 
 ```typescript
 public readonly tasks: Tasks;
@@ -9746,7 +8743,7 @@ Project tasks.
 
 ---
 
-##### `testTask`<sup>Required</sup> <a name="testTask" id="mrpj.ProjenProject.property.testTask"></a>
+##### `testTask`<sup>Required</sup> <a name="testTask" id="schuettc.ProjenProject.property.testTask"></a>
 
 ```typescript
 public readonly testTask: Task;
@@ -9756,7 +8753,7 @@ public readonly testTask: Task;
 
 ---
 
-##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="mrpj.ProjenProject.property.defaultTask"></a>
+##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="schuettc.ProjenProject.property.defaultTask"></a>
 
 ```typescript
 public readonly defaultTask: Task;
@@ -9771,7 +8768,7 @@ the project is being ejected.
 
 ---
 
-##### `initProject`<sup>Optional</sup> <a name="initProject" id="mrpj.ProjenProject.property.initProject"></a>
+##### `initProject`<sup>Optional</sup> <a name="initProject" id="schuettc.ProjenProject.property.initProject"></a>
 
 ```typescript
 public readonly initProject: InitProject;
@@ -9787,7 +8784,7 @@ FQN of the project type.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.ProjenProject.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.ProjenProject.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -9801,7 +8798,7 @@ If undefined, this is the root project.
 
 ---
 
-##### `projectType`<sup>Required</sup> <a name="projectType" id="mrpj.ProjenProject.property.projectType"></a>
+##### `projectType`<sup>Required</sup> <a name="projectType" id="schuettc.ProjenProject.property.projectType"></a>
 
 ```typescript
 public readonly projectType: ProjectType;
@@ -9811,7 +8808,7 @@ public readonly projectType: ProjectType;
 
 ---
 
-##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="mrpj.ProjenProject.property.autoApprove"></a>
+##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="schuettc.ProjenProject.property.autoApprove"></a>
 
 ```typescript
 public readonly autoApprove: AutoApprove;
@@ -9823,7 +8820,7 @@ Auto approve set up for this project.
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.ProjenProject.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.ProjenProject.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: DevContainer;
@@ -9837,7 +8834,7 @@ This will be `undefined` if devContainer boolean is false
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.ProjenProject.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.ProjenProject.property.github"></a>
 
 ```typescript
 public readonly github: GitHub;
@@ -9851,7 +8848,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.ProjenProject.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.ProjenProject.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: Gitpod;
@@ -9865,7 +8862,7 @@ This will be `undefined` if gitpod boolean is false
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.ProjenProject.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.ProjenProject.property.vscode"></a>
 
 ```typescript
 public readonly vscode: VsCode;
@@ -9879,7 +8876,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="mrpj.ProjenProject.property.allowLibraryDependencies"></a>
+##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="schuettc.ProjenProject.property.allowLibraryDependencies"></a>
 
 - *Deprecated:* use `package.allowLibraryDependencies`
 
@@ -9891,7 +8888,7 @@ public readonly allowLibraryDependencies: boolean;
 
 ---
 
-##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="mrpj.ProjenProject.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="schuettc.ProjenProject.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -9907,7 +8904,7 @@ tarball will be placed under `dist/js/boom-boom-1.2.3.tg`.
 
 ---
 
-##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="mrpj.ProjenProject.property.artifactsJavascriptDirectory"></a>
+##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="schuettc.ProjenProject.property.artifactsJavascriptDirectory"></a>
 
 ```typescript
 public readonly artifactsJavascriptDirectory: string;
@@ -9919,7 +8916,7 @@ The location of the npm tarball after build (`${artifactsDirectory}/js`).
 
 ---
 
-##### `bundler`<sup>Required</sup> <a name="bundler" id="mrpj.ProjenProject.property.bundler"></a>
+##### `bundler`<sup>Required</sup> <a name="bundler" id="schuettc.ProjenProject.property.bundler"></a>
 
 ```typescript
 public readonly bundler: Bundler;
@@ -9929,7 +8926,7 @@ public readonly bundler: Bundler;
 
 ---
 
-##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="mrpj.ProjenProject.property.entrypoint"></a>
+##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="schuettc.ProjenProject.property.entrypoint"></a>
 
 - *Deprecated:* use `package.entrypoint`
 
@@ -9941,7 +8938,7 @@ public readonly entrypoint: string;
 
 ---
 
-##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="mrpj.ProjenProject.property.manifest"></a>
+##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="schuettc.ProjenProject.property.manifest"></a>
 
 - *Deprecated:* use `package.addField(x, y)`
 
@@ -9953,7 +8950,7 @@ public readonly manifest: any;
 
 ---
 
-##### `npmrc`<sup>Required</sup> <a name="npmrc" id="mrpj.ProjenProject.property.npmrc"></a>
+##### `npmrc`<sup>Required</sup> <a name="npmrc" id="schuettc.ProjenProject.property.npmrc"></a>
 
 ```typescript
 public readonly npmrc: NpmConfig;
@@ -9965,7 +8962,7 @@ The .npmrc file.
 
 ---
 
-##### `package`<sup>Required</sup> <a name="package" id="mrpj.ProjenProject.property.package"></a>
+##### `package`<sup>Required</sup> <a name="package" id="schuettc.ProjenProject.property.package"></a>
 
 ```typescript
 public readonly package: NodePackage;
@@ -9977,7 +8974,7 @@ API for managing the node package.
 
 ---
 
-##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="mrpj.ProjenProject.property.packageManager"></a>
+##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="schuettc.ProjenProject.property.packageManager"></a>
 
 - *Deprecated:* use `package.packageManager`
 
@@ -9991,7 +8988,7 @@ The package manager to use.
 
 ---
 
-##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="mrpj.ProjenProject.property.runScriptCommand"></a>
+##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="schuettc.ProjenProject.property.runScriptCommand"></a>
 
 ```typescript
 public readonly runScriptCommand: string;
@@ -10003,7 +9000,7 @@ The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the p
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.ProjenProject.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.ProjenProject.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: AutoMerge;
@@ -10015,7 +9012,7 @@ Component that sets up mergify for merging approved pull requests.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.ProjenProject.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.ProjenProject.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: BuildWorkflow;
@@ -10029,7 +9026,7 @@ The PR build GitHub workflow.
 
 ---
 
-##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="mrpj.ProjenProject.property.buildWorkflowJobId"></a>
+##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="schuettc.ProjenProject.property.buildWorkflowJobId"></a>
 
 ```typescript
 public readonly buildWorkflowJobId: string;
@@ -10041,7 +9038,7 @@ The job ID of the build workflow.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.ProjenProject.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.ProjenProject.property.jest"></a>
 
 ```typescript
 public readonly jest: Jest;
@@ -10053,7 +9050,7 @@ The Jest configuration (if enabled).
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.ProjenProject.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.ProjenProject.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -10065,7 +9062,7 @@ Maximum node version required by this package.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.ProjenProject.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.ProjenProject.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -10077,7 +9074,7 @@ Minimum node.js version required by this package.
 
 ---
 
-##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="mrpj.ProjenProject.property.npmignore"></a>
+##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="schuettc.ProjenProject.property.npmignore"></a>
 
 ```typescript
 public readonly npmignore: IgnoreFile;
@@ -10089,7 +9086,7 @@ The .npmignore file.
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.ProjenProject.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.ProjenProject.property.prettier"></a>
 
 ```typescript
 public readonly prettier: Prettier;
@@ -10099,7 +9096,7 @@ public readonly prettier: Prettier;
 
 ---
 
-##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="mrpj.ProjenProject.property.publisher"></a>
+##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="schuettc.ProjenProject.property.publisher"></a>
 
 - *Deprecated:* use `release.publisher`.
 
@@ -10116,7 +9113,7 @@ release workflow.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.ProjenProject.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.ProjenProject.property.release"></a>
 
 ```typescript
 public readonly release: Release;
@@ -10128,7 +9125,7 @@ Release management.
 
 ---
 
-##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="mrpj.ProjenProject.property.upgradeWorkflow"></a>
+##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="schuettc.ProjenProject.property.upgradeWorkflow"></a>
 
 ```typescript
 public readonly upgradeWorkflow: UpgradeDependencies;
@@ -10140,7 +9137,7 @@ The upgrade workflow.
 
 ---
 
-##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="mrpj.ProjenProject.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="schuettc.ProjenProject.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -10150,7 +9147,7 @@ public readonly docsDirectory: string;
 
 ---
 
-##### `libdir`<sup>Required</sup> <a name="libdir" id="mrpj.ProjenProject.property.libdir"></a>
+##### `libdir`<sup>Required</sup> <a name="libdir" id="schuettc.ProjenProject.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -10162,7 +9159,7 @@ The directory in which compiled .js files reside.
 
 ---
 
-##### `srcdir`<sup>Required</sup> <a name="srcdir" id="mrpj.ProjenProject.property.srcdir"></a>
+##### `srcdir`<sup>Required</sup> <a name="srcdir" id="schuettc.ProjenProject.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -10174,7 +9171,7 @@ The directory in which the .ts sources reside.
 
 ---
 
-##### `testdir`<sup>Required</sup> <a name="testdir" id="mrpj.ProjenProject.property.testdir"></a>
+##### `testdir`<sup>Required</sup> <a name="testdir" id="schuettc.ProjenProject.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -10186,7 +9183,7 @@ The directory in which tests reside.
 
 ---
 
-##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="mrpj.ProjenProject.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="schuettc.ProjenProject.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfig;
@@ -10198,7 +9195,7 @@ A typescript configuration file which covers all files (sources, tests, projen).
 
 ---
 
-##### `watchTask`<sup>Required</sup> <a name="watchTask" id="mrpj.ProjenProject.property.watchTask"></a>
+##### `watchTask`<sup>Required</sup> <a name="watchTask" id="schuettc.ProjenProject.property.watchTask"></a>
 
 ```typescript
 public readonly watchTask: Task;
@@ -10210,7 +9207,7 @@ The "watch" task.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.ProjenProject.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.ProjenProject.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -10220,7 +9217,7 @@ public readonly docgen: boolean;
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.ProjenProject.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.ProjenProject.property.eslint"></a>
 
 ```typescript
 public readonly eslint: Eslint;
@@ -10230,7 +9227,7 @@ public readonly eslint: Eslint;
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.ProjenProject.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.ProjenProject.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfig;
@@ -10240,7 +9237,7 @@ public readonly tsconfig: TypescriptConfig;
 
 ---
 
-##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="mrpj.ProjenProject.property.tsconfigEslint"></a>
+##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="schuettc.ProjenProject.property.tsconfigEslint"></a>
 
 ```typescript
 public readonly tsconfigEslint: TypescriptConfig;
@@ -10250,35 +9247,15 @@ public readonly tsconfigEslint: TypescriptConfig;
 
 ---
 
-##### `logo`<sup>Optional</sup> <a name="logo" id="mrpj.ProjenProject.property.logo"></a>
-
-```typescript
-public readonly logo: SvgFile;
-```
-
-- *Type:* mrpj.logo.SvgFile
-
----
-
-##### `wordmark`<sup>Optional</sup> <a name="wordmark" id="mrpj.ProjenProject.property.wordmark"></a>
-
-```typescript
-public readonly wordmark: Wordmark;
-```
-
-- *Type:* mrpj.logo.Wordmark
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.ProjenProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
+| <code><a href="#schuettc.ProjenProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
 
 ---
 
-##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="mrpj.ProjenProject.property.DEFAULT_TASK"></a>
+##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="schuettc.ProjenProject.property.DEFAULT_TASK"></a>
 
 ```typescript
 public readonly DEFAULT_TASK: string;
@@ -10293,192 +9270,25 @@ this task should synthesize the project files.
 
 ---
 
-### SvgFile <a name="SvgFile" id="mrpj.logo.SvgFile"></a>
+### TypeScriptProject <a name="TypeScriptProject" id="schuettc.TypeScriptProject"></a>
 
-A SVG file.
-
-#### Initializers <a name="Initializers" id="mrpj.logo.SvgFile.Initializer"></a>
+#### Initializers <a name="Initializers" id="schuettc.TypeScriptProject.Initializer"></a>
 
 ```typescript
-import { logo } from 'mrpj'
-
-new logo.SvgFile(project: Project, filePath: string, options: SvgFileOptions)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.SvgFile.Initializer.parameter.project">project</a></code> | <code>projen.Project</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFile.Initializer.parameter.filePath">filePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFile.Initializer.parameter.options">options</a></code> | <code>mrpj.logo.SvgFileOptions</code> | *No description.* |
-
----
-
-##### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.SvgFile.Initializer.parameter.project"></a>
-
-- *Type:* projen.Project
-
----
-
-##### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.logo.SvgFile.Initializer.parameter.filePath"></a>
-
-- *Type:* string
-
----
-
-##### `options`<sup>Required</sup> <a name="options" id="mrpj.logo.SvgFile.Initializer.parameter.options"></a>
-
-- *Type:* mrpj.logo.SvgFileOptions
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#mrpj.logo.SvgFile.postSynthesize">postSynthesize</a></code> | Called after synthesis. |
-| <code><a href="#mrpj.logo.SvgFile.preSynthesize">preSynthesize</a></code> | Called before synthesis. |
-| <code><a href="#mrpj.logo.SvgFile.synthesize">synthesize</a></code> | Synthesizes files to the project output directory. |
-| <code><a href="#mrpj.logo.SvgFile.close">close</a></code> | Decreases the indentation level and closes a code block. |
-| <code><a href="#mrpj.logo.SvgFile.line">line</a></code> | Emit a line of code. |
-| <code><a href="#mrpj.logo.SvgFile.open">open</a></code> | Opens a code block and increases the indentation level. |
-
----
-
-##### `postSynthesize` <a name="postSynthesize" id="mrpj.logo.SvgFile.postSynthesize"></a>
-
-```typescript
-public postSynthesize(): void
-```
-
-Called after synthesis.
-
-Order is *not* guaranteed.
-
-##### `preSynthesize` <a name="preSynthesize" id="mrpj.logo.SvgFile.preSynthesize"></a>
-
-```typescript
-public preSynthesize(): void
-```
-
-Called before synthesis.
-
-##### `synthesize` <a name="synthesize" id="mrpj.logo.SvgFile.synthesize"></a>
-
-```typescript
-public synthesize(): void
-```
-
-Synthesizes files to the project output directory.
-
-##### `close` <a name="close" id="mrpj.logo.SvgFile.close"></a>
-
-```typescript
-public close(code?: string): void
-```
-
-Decreases the indentation level and closes a code block.
-
-###### `code`<sup>Optional</sup> <a name="code" id="mrpj.logo.SvgFile.close.parameter.code"></a>
-
-- *Type:* string
-
-The code after the block is closed (e.g. `}`).
-
----
-
-##### `line` <a name="line" id="mrpj.logo.SvgFile.line"></a>
-
-```typescript
-public line(code?: string): void
-```
-
-Emit a line of code.
-
-###### `code`<sup>Optional</sup> <a name="code" id="mrpj.logo.SvgFile.line.parameter.code"></a>
-
-- *Type:* string
-
-The contents, if not specified, just adds a newline.
-
----
-
-##### `open` <a name="open" id="mrpj.logo.SvgFile.open"></a>
-
-```typescript
-public open(code?: string): void
-```
-
-Opens a code block and increases the indentation level.
-
-###### `code`<sup>Optional</sup> <a name="code" id="mrpj.logo.SvgFile.open.parameter.code"></a>
-
-- *Type:* string
-
-The code before the block starts (e.g. `export class {`).
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.SvgFile.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFile.property.filePath">filePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.logo.SvgFile.property.marker">marker</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.SvgFile.property.project"></a>
-
-```typescript
-public readonly project: Project;
-```
-
-- *Type:* projen.Project
-
----
-
-##### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.logo.SvgFile.property.filePath"></a>
-
-```typescript
-public readonly filePath: string;
-```
-
-- *Type:* string
-
----
-
-##### `marker`<sup>Optional</sup> <a name="marker" id="mrpj.logo.SvgFile.property.marker"></a>
-
-```typescript
-public readonly marker: string;
-```
-
-- *Type:* string
-
----
-
-
-### TypeScriptProject <a name="TypeScriptProject" id="mrpj.TypeScriptProject"></a>
-
-#### Initializers <a name="Initializers" id="mrpj.TypeScriptProject.Initializer"></a>
-
-```typescript
-import { TypeScriptProject } from 'mrpj'
+import { TypeScriptProject } from 'schuettc'
 
 new TypeScriptProject(options: TypeScriptProjectOptions)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.TypeScriptProject.Initializer.parameter.options">options</a></code> | <code><a href="#mrpj.TypeScriptProjectOptions">TypeScriptProjectOptions</a></code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.Initializer.parameter.options">options</a></code> | <code><a href="#schuettc.TypeScriptProjectOptions">TypeScriptProjectOptions</a></code> | *No description.* |
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="mrpj.TypeScriptProject.Initializer.parameter.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="schuettc.TypeScriptProject.Initializer.parameter.options"></a>
 
-- *Type:* <a href="#mrpj.TypeScriptProjectOptions">TypeScriptProjectOptions</a>
+- *Type:* <a href="#schuettc.TypeScriptProjectOptions">TypeScriptProjectOptions</a>
 
 ---
 
@@ -10486,39 +9296,39 @@ new TypeScriptProject(options: TypeScriptProjectOptions)
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#mrpj.TypeScriptProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
-| <code><a href="#mrpj.TypeScriptProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
-| <code><a href="#mrpj.TypeScriptProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
-| <code><a href="#mrpj.TypeScriptProject.addTask">addTask</a></code> | Adds a new task to this project. |
-| <code><a href="#mrpj.TypeScriptProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
-| <code><a href="#mrpj.TypeScriptProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
-| <code><a href="#mrpj.TypeScriptProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
-| <code><a href="#mrpj.TypeScriptProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
-| <code><a href="#mrpj.TypeScriptProject.removeTask">removeTask</a></code> | Removes a task from a project. |
-| <code><a href="#mrpj.TypeScriptProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
-| <code><a href="#mrpj.TypeScriptProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
-| <code><a href="#mrpj.TypeScriptProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
-| <code><a href="#mrpj.TypeScriptProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
-| <code><a href="#mrpj.TypeScriptProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
-| <code><a href="#mrpj.TypeScriptProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
-| <code><a href="#mrpj.TypeScriptProject.addBins">addBins</a></code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
-| <code><a href="#mrpj.TypeScriptProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.TypeScriptProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
-| <code><a href="#mrpj.TypeScriptProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
-| <code><a href="#mrpj.TypeScriptProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
-| <code><a href="#mrpj.TypeScriptProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
-| <code><a href="#mrpj.TypeScriptProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
-| <code><a href="#mrpj.TypeScriptProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
-| <code><a href="#mrpj.TypeScriptProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
-| <code><a href="#mrpj.TypeScriptProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
-| <code><a href="#mrpj.TypeScriptProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
-| <code><a href="#mrpj.TypeScriptProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
-| <code><a href="#mrpj.TypeScriptProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
+| <code><a href="#schuettc.TypeScriptProject.addExcludeFromCleanup">addExcludeFromCleanup</a></code> | Exclude the matching files from pre-synth cleanup. |
+| <code><a href="#schuettc.TypeScriptProject.addGitIgnore">addGitIgnore</a></code> | Adds a .gitignore pattern. |
+| <code><a href="#schuettc.TypeScriptProject.addPackageIgnore">addPackageIgnore</a></code> | Exclude these files from the bundled package. |
+| <code><a href="#schuettc.TypeScriptProject.addTask">addTask</a></code> | Adds a new task to this project. |
+| <code><a href="#schuettc.TypeScriptProject.addTip">addTip</a></code> | Prints a "tip" message during synthesis. |
+| <code><a href="#schuettc.TypeScriptProject.annotateGenerated">annotateGenerated</a></code> | Marks the provided file(s) as being generated. |
+| <code><a href="#schuettc.TypeScriptProject.postSynthesize">postSynthesize</a></code> | Called after all components are synthesized. |
+| <code><a href="#schuettc.TypeScriptProject.preSynthesize">preSynthesize</a></code> | Called before all components are synthesized. |
+| <code><a href="#schuettc.TypeScriptProject.removeTask">removeTask</a></code> | Removes a task from a project. |
+| <code><a href="#schuettc.TypeScriptProject.runTaskCommand">runTaskCommand</a></code> | Returns the shell command to execute in order to run a task. |
+| <code><a href="#schuettc.TypeScriptProject.synth">synth</a></code> | Synthesize all project files into `outdir`. |
+| <code><a href="#schuettc.TypeScriptProject.tryFindFile">tryFindFile</a></code> | Finds a file at the specified relative path within this project and all its subprojects. |
+| <code><a href="#schuettc.TypeScriptProject.tryFindJsonFile">tryFindJsonFile</a></code> | Finds a json file by name. |
+| <code><a href="#schuettc.TypeScriptProject.tryFindObjectFile">tryFindObjectFile</a></code> | Finds an object file (like JsonFile, YamlFile, etc.) by name. |
+| <code><a href="#schuettc.TypeScriptProject.tryRemoveFile">tryRemoveFile</a></code> | Finds a file at the specified relative path within this project and removes it. |
+| <code><a href="#schuettc.TypeScriptProject.addBins">addBins</a></code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.addBundledDeps">addBundledDeps</a></code> | Defines bundled dependencies. |
+| <code><a href="#schuettc.TypeScriptProject.addCompileCommand">addCompileCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.TypeScriptProject.addDeps">addDeps</a></code> | Defines normal dependencies. |
+| <code><a href="#schuettc.TypeScriptProject.addDevDeps">addDevDeps</a></code> | Defines development/test dependencies. |
+| <code><a href="#schuettc.TypeScriptProject.addFields">addFields</a></code> | Directly set fields in `package.json`. |
+| <code><a href="#schuettc.TypeScriptProject.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
+| <code><a href="#schuettc.TypeScriptProject.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#schuettc.TypeScriptProject.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
+| <code><a href="#schuettc.TypeScriptProject.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
+| <code><a href="#schuettc.TypeScriptProject.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
+| <code><a href="#schuettc.TypeScriptProject.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
+| <code><a href="#schuettc.TypeScriptProject.renderWorkflowSetup">renderWorkflowSetup</a></code> | Returns the set of workflow steps which should be executed to bootstrap a workflow. |
+| <code><a href="#schuettc.TypeScriptProject.setScript">setScript</a></code> | Replaces the contents of an npm package.json script. |
 
 ---
 
-##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="mrpj.TypeScriptProject.addExcludeFromCleanup"></a>
+##### `addExcludeFromCleanup` <a name="addExcludeFromCleanup" id="schuettc.TypeScriptProject.addExcludeFromCleanup"></a>
 
 ```typescript
 public addExcludeFromCleanup(globs: string): void
@@ -10529,7 +9339,7 @@ Exclude the matching files from pre-synth cleanup.
 Can be used when, for example, some
 source files include the projen marker and we don't want them to be erased during synth.
 
-###### `globs`<sup>Required</sup> <a name="globs" id="mrpj.TypeScriptProject.addExcludeFromCleanup.parameter.globs"></a>
+###### `globs`<sup>Required</sup> <a name="globs" id="schuettc.TypeScriptProject.addExcludeFromCleanup.parameter.globs"></a>
 
 - *Type:* string
 
@@ -10537,7 +9347,7 @@ The glob patterns to match.
 
 ---
 
-##### `addGitIgnore` <a name="addGitIgnore" id="mrpj.TypeScriptProject.addGitIgnore"></a>
+##### `addGitIgnore` <a name="addGitIgnore" id="schuettc.TypeScriptProject.addGitIgnore"></a>
 
 ```typescript
 public addGitIgnore(pattern: string): void
@@ -10545,7 +9355,7 @@ public addGitIgnore(pattern: string): void
 
 Adds a .gitignore pattern.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.TypeScriptProject.addGitIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.TypeScriptProject.addGitIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
@@ -10553,7 +9363,7 @@ The glob pattern to ignore.
 
 ---
 
-##### `addPackageIgnore` <a name="addPackageIgnore" id="mrpj.TypeScriptProject.addPackageIgnore"></a>
+##### `addPackageIgnore` <a name="addPackageIgnore" id="schuettc.TypeScriptProject.addPackageIgnore"></a>
 
 ```typescript
 public addPackageIgnore(pattern: string): void
@@ -10564,13 +9374,13 @@ Exclude these files from the bundled package.
 Implemented by project types based on the
 packaging mechanism. For example, `NodeProject` delegates this to `.npmignore`.
 
-###### `pattern`<sup>Required</sup> <a name="pattern" id="mrpj.TypeScriptProject.addPackageIgnore.parameter.pattern"></a>
+###### `pattern`<sup>Required</sup> <a name="pattern" id="schuettc.TypeScriptProject.addPackageIgnore.parameter.pattern"></a>
 
 - *Type:* string
 
 ---
 
-##### `addTask` <a name="addTask" id="mrpj.TypeScriptProject.addTask"></a>
+##### `addTask` <a name="addTask" id="schuettc.TypeScriptProject.addTask"></a>
 
 ```typescript
 public addTask(name: string, props?: TaskOptions): Task
@@ -10581,7 +9391,7 @@ Adds a new task to this project.
 This will fail if the project already has
 a task with this name.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.addTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.addTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -10589,7 +9399,7 @@ The task name to add.
 
 ---
 
-###### `props`<sup>Optional</sup> <a name="props" id="mrpj.TypeScriptProject.addTask.parameter.props"></a>
+###### `props`<sup>Optional</sup> <a name="props" id="schuettc.TypeScriptProject.addTask.parameter.props"></a>
 
 - *Type:* projen.TaskOptions
 
@@ -10597,7 +9407,7 @@ Task properties.
 
 ---
 
-##### ~~`addTip`~~ <a name="addTip" id="mrpj.TypeScriptProject.addTip"></a>
+##### ~~`addTip`~~ <a name="addTip" id="schuettc.TypeScriptProject.addTip"></a>
 
 ```typescript
 public addTip(message: string): void
@@ -10605,7 +9415,7 @@ public addTip(message: string): void
 
 Prints a "tip" message during synthesis.
 
-###### `message`<sup>Required</sup> <a name="message" id="mrpj.TypeScriptProject.addTip.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="schuettc.TypeScriptProject.addTip.parameter.message"></a>
 
 - *Type:* string
 
@@ -10613,7 +9423,7 @@ The message.
 
 ---
 
-##### `annotateGenerated` <a name="annotateGenerated" id="mrpj.TypeScriptProject.annotateGenerated"></a>
+##### `annotateGenerated` <a name="annotateGenerated" id="schuettc.TypeScriptProject.annotateGenerated"></a>
 
 ```typescript
 public annotateGenerated(glob: string): void
@@ -10627,7 +9437,7 @@ repository statistics and language breakdown.
 
 > [https://github.com/github/linguist/blob/master/docs/overrides.md](https://github.com/github/linguist/blob/master/docs/overrides.md)
 
-###### `glob`<sup>Required</sup> <a name="glob" id="mrpj.TypeScriptProject.annotateGenerated.parameter.glob"></a>
+###### `glob`<sup>Required</sup> <a name="glob" id="schuettc.TypeScriptProject.annotateGenerated.parameter.glob"></a>
 
 - *Type:* string
 
@@ -10635,7 +9445,7 @@ the glob pattern to match (could be a file path).
 
 ---
 
-##### `postSynthesize` <a name="postSynthesize" id="mrpj.TypeScriptProject.postSynthesize"></a>
+##### `postSynthesize` <a name="postSynthesize" id="schuettc.TypeScriptProject.postSynthesize"></a>
 
 ```typescript
 public postSynthesize(): void
@@ -10645,7 +9455,7 @@ Called after all components are synthesized.
 
 Order is *not* guaranteed.
 
-##### `preSynthesize` <a name="preSynthesize" id="mrpj.TypeScriptProject.preSynthesize"></a>
+##### `preSynthesize` <a name="preSynthesize" id="schuettc.TypeScriptProject.preSynthesize"></a>
 
 ```typescript
 public preSynthesize(): void
@@ -10653,7 +9463,7 @@ public preSynthesize(): void
 
 Called before all components are synthesized.
 
-##### `removeTask` <a name="removeTask" id="mrpj.TypeScriptProject.removeTask"></a>
+##### `removeTask` <a name="removeTask" id="schuettc.TypeScriptProject.removeTask"></a>
 
 ```typescript
 public removeTask(name: string): Task
@@ -10661,7 +9471,7 @@ public removeTask(name: string): Task
 
 Removes a task from a project.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.removeTask.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.removeTask.parameter.name"></a>
 
 - *Type:* string
 
@@ -10669,7 +9479,7 @@ The name of the task to remove.
 
 ---
 
-##### `runTaskCommand` <a name="runTaskCommand" id="mrpj.TypeScriptProject.runTaskCommand"></a>
+##### `runTaskCommand` <a name="runTaskCommand" id="schuettc.TypeScriptProject.runTaskCommand"></a>
 
 ```typescript
 public runTaskCommand(task: Task): string
@@ -10680,7 +9490,7 @@ Returns the shell command to execute in order to run a task.
 This will
 typically be `npx projen TASK`.
 
-###### `task`<sup>Required</sup> <a name="task" id="mrpj.TypeScriptProject.runTaskCommand.parameter.task"></a>
+###### `task`<sup>Required</sup> <a name="task" id="schuettc.TypeScriptProject.runTaskCommand.parameter.task"></a>
 
 - *Type:* projen.Task
 
@@ -10688,7 +9498,7 @@ The task for which the command is required.
 
 ---
 
-##### `synth` <a name="synth" id="mrpj.TypeScriptProject.synth"></a>
+##### `synth` <a name="synth" id="schuettc.TypeScriptProject.synth"></a>
 
 ```typescript
 public synth(): void
@@ -10703,7 +9513,7 @@ Synthesize all project files into `outdir`.
 5. Call "postSynthesize()" for all components of this project
 6. Call "this.postSynthesize()"
 
-##### `tryFindFile` <a name="tryFindFile" id="mrpj.TypeScriptProject.tryFindFile"></a>
+##### `tryFindFile` <a name="tryFindFile" id="schuettc.TypeScriptProject.tryFindFile"></a>
 
 ```typescript
 public tryFindFile(filePath: string): FileBase
@@ -10711,7 +9521,7 @@ public tryFindFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and all its subprojects.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.TypeScriptProject.tryFindFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.TypeScriptProject.tryFindFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -10722,7 +9532,7 @@ from the root of _this_ project.
 
 ---
 
-##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="mrpj.TypeScriptProject.tryFindJsonFile"></a>
+##### ~~`tryFindJsonFile`~~ <a name="tryFindJsonFile" id="schuettc.TypeScriptProject.tryFindJsonFile"></a>
 
 ```typescript
 public tryFindJsonFile(filePath: string): JsonFile
@@ -10730,7 +9540,7 @@ public tryFindJsonFile(filePath: string): JsonFile
 
 Finds a json file by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.TypeScriptProject.tryFindJsonFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.TypeScriptProject.tryFindJsonFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -10738,7 +9548,7 @@ The file path.
 
 ---
 
-##### `tryFindObjectFile` <a name="tryFindObjectFile" id="mrpj.TypeScriptProject.tryFindObjectFile"></a>
+##### `tryFindObjectFile` <a name="tryFindObjectFile" id="schuettc.TypeScriptProject.tryFindObjectFile"></a>
 
 ```typescript
 public tryFindObjectFile(filePath: string): ObjectFile
@@ -10746,7 +9556,7 @@ public tryFindObjectFile(filePath: string): ObjectFile
 
 Finds an object file (like JsonFile, YamlFile, etc.) by name.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.TypeScriptProject.tryFindObjectFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.TypeScriptProject.tryFindObjectFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -10754,7 +9564,7 @@ The file path.
 
 ---
 
-##### `tryRemoveFile` <a name="tryRemoveFile" id="mrpj.TypeScriptProject.tryRemoveFile"></a>
+##### `tryRemoveFile` <a name="tryRemoveFile" id="schuettc.TypeScriptProject.tryRemoveFile"></a>
 
 ```typescript
 public tryRemoveFile(filePath: string): FileBase
@@ -10762,7 +9572,7 @@ public tryRemoveFile(filePath: string): FileBase
 
 Finds a file at the specified relative path within this project and removes it.
 
-###### `filePath`<sup>Required</sup> <a name="filePath" id="mrpj.TypeScriptProject.tryRemoveFile.parameter.filePath"></a>
+###### `filePath`<sup>Required</sup> <a name="filePath" id="schuettc.TypeScriptProject.tryRemoveFile.parameter.filePath"></a>
 
 - *Type:* string
 
@@ -10773,19 +9583,19 @@ resolved from the root of _this_ project.
 
 ---
 
-##### `addBins` <a name="addBins" id="mrpj.TypeScriptProject.addBins"></a>
+##### `addBins` <a name="addBins" id="schuettc.TypeScriptProject.addBins"></a>
 
 ```typescript
 public addBins(bins: {[ key: string ]: string}): void
 ```
 
-###### `bins`<sup>Required</sup> <a name="bins" id="mrpj.TypeScriptProject.addBins.parameter.bins"></a>
+###### `bins`<sup>Required</sup> <a name="bins" id="schuettc.TypeScriptProject.addBins.parameter.bins"></a>
 
 - *Type:* {[ key: string ]: string}
 
 ---
 
-##### `addBundledDeps` <a name="addBundledDeps" id="mrpj.TypeScriptProject.addBundledDeps"></a>
+##### `addBundledDeps` <a name="addBundledDeps" id="schuettc.TypeScriptProject.addBundledDeps"></a>
 
 ```typescript
 public addBundledDeps(deps: string): void
@@ -10796,7 +9606,7 @@ Defines bundled dependencies.
 Bundled dependencies will be added as normal dependencies as well as to the
 `bundledDependencies` section of your `package.json`.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.TypeScriptProject.addBundledDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.TypeScriptProject.addBundledDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -10810,7 +9620,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="mrpj.TypeScriptProject.addCompileCommand"></a>
+##### ~~`addCompileCommand`~~ <a name="addCompileCommand" id="schuettc.TypeScriptProject.addCompileCommand"></a>
 
 ```typescript
 public addCompileCommand(commands: string): void
@@ -10818,13 +9628,13 @@ public addCompileCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.TypeScriptProject.addCompileCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.TypeScriptProject.addCompileCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### `addDeps` <a name="addDeps" id="mrpj.TypeScriptProject.addDeps"></a>
+##### `addDeps` <a name="addDeps" id="schuettc.TypeScriptProject.addDeps"></a>
 
 ```typescript
 public addDeps(deps: string): void
@@ -10832,7 +9642,7 @@ public addDeps(deps: string): void
 
 Defines normal dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.TypeScriptProject.addDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.TypeScriptProject.addDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -10846,7 +9656,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addDevDeps` <a name="addDevDeps" id="mrpj.TypeScriptProject.addDevDeps"></a>
+##### `addDevDeps` <a name="addDevDeps" id="schuettc.TypeScriptProject.addDevDeps"></a>
 
 ```typescript
 public addDevDeps(deps: string): void
@@ -10854,7 +9664,7 @@ public addDevDeps(deps: string): void
 
 Defines development/test dependencies.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.TypeScriptProject.addDevDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.TypeScriptProject.addDevDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -10868,7 +9678,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addFields` <a name="addFields" id="mrpj.TypeScriptProject.addFields"></a>
+##### `addFields` <a name="addFields" id="schuettc.TypeScriptProject.addFields"></a>
 
 ```typescript
 public addFields(fields: {[ key: string ]: any}): void
@@ -10876,7 +9686,7 @@ public addFields(fields: {[ key: string ]: any}): void
 
 Directly set fields in `package.json`.
 
-###### `fields`<sup>Required</sup> <a name="fields" id="mrpj.TypeScriptProject.addFields.parameter.fields"></a>
+###### `fields`<sup>Required</sup> <a name="fields" id="schuettc.TypeScriptProject.addFields.parameter.fields"></a>
 
 - *Type:* {[ key: string ]: any}
 
@@ -10884,7 +9694,7 @@ The fields to set.
 
 ---
 
-##### `addKeywords` <a name="addKeywords" id="mrpj.TypeScriptProject.addKeywords"></a>
+##### `addKeywords` <a name="addKeywords" id="schuettc.TypeScriptProject.addKeywords"></a>
 
 ```typescript
 public addKeywords(keywords: string): void
@@ -10892,7 +9702,7 @@ public addKeywords(keywords: string): void
 
 Adds keywords to package.json (deduplicated).
 
-###### `keywords`<sup>Required</sup> <a name="keywords" id="mrpj.TypeScriptProject.addKeywords.parameter.keywords"></a>
+###### `keywords`<sup>Required</sup> <a name="keywords" id="schuettc.TypeScriptProject.addKeywords.parameter.keywords"></a>
 
 - *Type:* string
 
@@ -10900,7 +9710,7 @@ The keywords to add.
 
 ---
 
-##### `addPeerDeps` <a name="addPeerDeps" id="mrpj.TypeScriptProject.addPeerDeps"></a>
+##### `addPeerDeps` <a name="addPeerDeps" id="schuettc.TypeScriptProject.addPeerDeps"></a>
 
 ```typescript
 public addPeerDeps(deps: string): void
@@ -10912,7 +9722,7 @@ When adding peer dependencies, a devDependency will also be added on the
 pinned version of the declared peer. This will ensure that you are testing
 your code against the minimum version required from your consumers.
 
-###### `deps`<sup>Required</sup> <a name="deps" id="mrpj.TypeScriptProject.addPeerDeps.parameter.deps"></a>
+###### `deps`<sup>Required</sup> <a name="deps" id="schuettc.TypeScriptProject.addPeerDeps.parameter.deps"></a>
 
 - *Type:* string
 
@@ -10926,7 +9736,7 @@ add/upgrade`. If you wish to specify a version range use this syntax:
 
 ---
 
-##### `addScripts` <a name="addScripts" id="mrpj.TypeScriptProject.addScripts"></a>
+##### `addScripts` <a name="addScripts" id="schuettc.TypeScriptProject.addScripts"></a>
 
 ```typescript
 public addScripts(scripts: {[ key: string ]: string}): void
@@ -10934,7 +9744,7 @@ public addScripts(scripts: {[ key: string ]: string}): void
 
 Replaces the contents of multiple npm package.json scripts.
 
-###### `scripts`<sup>Required</sup> <a name="scripts" id="mrpj.TypeScriptProject.addScripts.parameter.scripts"></a>
+###### `scripts`<sup>Required</sup> <a name="scripts" id="schuettc.TypeScriptProject.addScripts.parameter.scripts"></a>
 
 - *Type:* {[ key: string ]: string}
 
@@ -10942,7 +9752,7 @@ The scripts to set.
 
 ---
 
-##### ~~`addTestCommand`~~ <a name="addTestCommand" id="mrpj.TypeScriptProject.addTestCommand"></a>
+##### ~~`addTestCommand`~~ <a name="addTestCommand" id="schuettc.TypeScriptProject.addTestCommand"></a>
 
 ```typescript
 public addTestCommand(commands: string): void
@@ -10950,13 +9760,13 @@ public addTestCommand(commands: string): void
 
 DEPRECATED.
 
-###### `commands`<sup>Required</sup> <a name="commands" id="mrpj.TypeScriptProject.addTestCommand.parameter.commands"></a>
+###### `commands`<sup>Required</sup> <a name="commands" id="schuettc.TypeScriptProject.addTestCommand.parameter.commands"></a>
 
 - *Type:* string
 
 ---
 
-##### ~~`hasScript`~~ <a name="hasScript" id="mrpj.TypeScriptProject.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="schuettc.TypeScriptProject.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -10964,7 +9774,7 @@ public hasScript(name: string): boolean
 
 Indicates if a script by the name name is defined.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.hasScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.hasScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -10972,7 +9782,7 @@ The name of the script.
 
 ---
 
-##### `removeScript` <a name="removeScript" id="mrpj.TypeScriptProject.removeScript"></a>
+##### `removeScript` <a name="removeScript" id="schuettc.TypeScriptProject.removeScript"></a>
 
 ```typescript
 public removeScript(name: string): void
@@ -10980,7 +9790,7 @@ public removeScript(name: string): void
 
 Removes the npm script (always successful).
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.removeScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.removeScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -10988,7 +9798,7 @@ The name of the script.
 
 ---
 
-##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="mrpj.TypeScriptProject.renderWorkflowSetup"></a>
+##### `renderWorkflowSetup` <a name="renderWorkflowSetup" id="schuettc.TypeScriptProject.renderWorkflowSetup"></a>
 
 ```typescript
 public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
@@ -10996,7 +9806,7 @@ public renderWorkflowSetup(options?: RenderWorkflowSetupOptions): JobStep[]
 
 Returns the set of workflow steps which should be executed to bootstrap a workflow.
 
-###### `options`<sup>Optional</sup> <a name="options" id="mrpj.TypeScriptProject.renderWorkflowSetup.parameter.options"></a>
+###### `options`<sup>Optional</sup> <a name="options" id="schuettc.TypeScriptProject.renderWorkflowSetup.parameter.options"></a>
 
 - *Type:* projen.javascript.RenderWorkflowSetupOptions
 
@@ -11004,7 +9814,7 @@ Options.
 
 ---
 
-##### `setScript` <a name="setScript" id="mrpj.TypeScriptProject.setScript"></a>
+##### `setScript` <a name="setScript" id="schuettc.TypeScriptProject.setScript"></a>
 
 ```typescript
 public setScript(name: string, command: string): void
@@ -11012,7 +9822,7 @@ public setScript(name: string, command: string): void
 
 Replaces the contents of an npm package.json script.
 
-###### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.setScript.parameter.name"></a>
+###### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.setScript.parameter.name"></a>
 
 - *Type:* string
 
@@ -11020,7 +9830,7 @@ The script name.
 
 ---
 
-###### `command`<sup>Required</sup> <a name="command" id="mrpj.TypeScriptProject.setScript.parameter.command"></a>
+###### `command`<sup>Required</sup> <a name="command" id="schuettc.TypeScriptProject.setScript.parameter.command"></a>
 
 - *Type:* string
 
@@ -11033,73 +9843,71 @@ The command to execute.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.TypeScriptProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
-| <code><a href="#mrpj.TypeScriptProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
-| <code><a href="#mrpj.TypeScriptProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
-| <code><a href="#mrpj.TypeScriptProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
-| <code><a href="#mrpj.TypeScriptProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
-| <code><a href="#mrpj.TypeScriptProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
-| <code><a href="#mrpj.TypeScriptProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
-| <code><a href="#mrpj.TypeScriptProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
-| <code><a href="#mrpj.TypeScriptProject.property.name">name</a></code> | <code>string</code> | Project name. |
-| <code><a href="#mrpj.TypeScriptProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
-| <code><a href="#mrpj.TypeScriptProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
-| <code><a href="#mrpj.TypeScriptProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
-| <code><a href="#mrpj.TypeScriptProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
-| <code><a href="#mrpj.TypeScriptProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
-| <code><a href="#mrpj.TypeScriptProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
-| <code><a href="#mrpj.TypeScriptProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
-| <code><a href="#mrpj.TypeScriptProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
-| <code><a href="#mrpj.TypeScriptProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
-| <code><a href="#mrpj.TypeScriptProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
-| <code><a href="#mrpj.TypeScriptProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
-| <code><a href="#mrpj.TypeScriptProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
-| <code><a href="#mrpj.TypeScriptProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
-| <code><a href="#mrpj.TypeScriptProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
-| <code><a href="#mrpj.TypeScriptProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
-| <code><a href="#mrpj.TypeScriptProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
-| <code><a href="#mrpj.TypeScriptProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
-| <code><a href="#mrpj.TypeScriptProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
-| <code><a href="#mrpj.TypeScriptProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
-| <code><a href="#mrpj.TypeScriptProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
-| <code><a href="#mrpj.TypeScriptProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
-| <code><a href="#mrpj.TypeScriptProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
-| <code><a href="#mrpj.TypeScriptProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
-| <code><a href="#mrpj.TypeScriptProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
-| <code><a href="#mrpj.TypeScriptProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
-| <code><a href="#mrpj.TypeScriptProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
-| <code><a href="#mrpj.TypeScriptProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
-| <code><a href="#mrpj.TypeScriptProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
-| <code><a href="#mrpj.TypeScriptProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
-| <code><a href="#mrpj.TypeScriptProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
-| <code><a href="#mrpj.TypeScriptProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
-| <code><a href="#mrpj.TypeScriptProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
-| <code><a href="#mrpj.TypeScriptProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
-| <code><a href="#mrpj.TypeScriptProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
-| <code><a href="#mrpj.TypeScriptProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
-| <code><a href="#mrpj.TypeScriptProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.logo">logo</a></code> | <code>mrpj.logo.SvgFile</code> | *No description.* |
-| <code><a href="#mrpj.TypeScriptProject.property.wordmark">wordmark</a></code> | <code>mrpj.logo.Wordmark</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.buildTask">buildTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.commitGenerated">commitGenerated</a></code> | <code>boolean</code> | Whether to commit the managed files by default. |
+| <code><a href="#schuettc.TypeScriptProject.property.compileTask">compileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.components">components</a></code> | <code>projen.Component[]</code> | Returns all the components within this project. |
+| <code><a href="#schuettc.TypeScriptProject.property.deps">deps</a></code> | <code>projen.Dependencies</code> | Project dependencies. |
+| <code><a href="#schuettc.TypeScriptProject.property.ejected">ejected</a></code> | <code>boolean</code> | Whether or not the project is being ejected. |
+| <code><a href="#schuettc.TypeScriptProject.property.files">files</a></code> | <code>projen.FileBase[]</code> | All files in this project. |
+| <code><a href="#schuettc.TypeScriptProject.property.gitattributes">gitattributes</a></code> | <code>projen.GitAttributesFile</code> | The .gitattributes file for this repository. |
+| <code><a href="#schuettc.TypeScriptProject.property.gitignore">gitignore</a></code> | <code>projen.IgnoreFile</code> | .gitignore. |
+| <code><a href="#schuettc.TypeScriptProject.property.logger">logger</a></code> | <code>projen.Logger</code> | Logging utilities. |
+| <code><a href="#schuettc.TypeScriptProject.property.name">name</a></code> | <code>string</code> | Project name. |
+| <code><a href="#schuettc.TypeScriptProject.property.outdir">outdir</a></code> | <code>string</code> | Absolute output directory of this project. |
+| <code><a href="#schuettc.TypeScriptProject.property.packageTask">packageTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.postCompileTask">postCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.preCompileTask">preCompileTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
+| <code><a href="#schuettc.TypeScriptProject.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
+| <code><a href="#schuettc.TypeScriptProject.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#schuettc.TypeScriptProject.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
+| <code><a href="#schuettc.TypeScriptProject.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
+| <code><a href="#schuettc.TypeScriptProject.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
+| <code><a href="#schuettc.TypeScriptProject.property.initProject">initProject</a></code> | <code>projen.InitProject</code> | The options used when this project is bootstrapped via `projen new`. |
+| <code><a href="#schuettc.TypeScriptProject.property.parent">parent</a></code> | <code>projen.Project</code> | A parent project. |
+| <code><a href="#schuettc.TypeScriptProject.property.projectType">projectType</a></code> | <code>projen.ProjectType</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.autoApprove">autoApprove</a></code> | <code>projen.github.AutoApprove</code> | Auto approve set up for this project. |
+| <code><a href="#schuettc.TypeScriptProject.property.devContainer">devContainer</a></code> | <code>projen.vscode.DevContainer</code> | Access for .devcontainer.json (used for GitHub Codespaces). |
+| <code><a href="#schuettc.TypeScriptProject.property.github">github</a></code> | <code>projen.github.GitHub</code> | Access all github components. |
+| <code><a href="#schuettc.TypeScriptProject.property.gitpod">gitpod</a></code> | <code>projen.Gitpod</code> | Access for Gitpod. |
+| <code><a href="#schuettc.TypeScriptProject.property.vscode">vscode</a></code> | <code>projen.vscode.VsCode</code> | Access all VSCode components. |
+| <code><a href="#schuettc.TypeScriptProject.property.allowLibraryDependencies">allowLibraryDependencies</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.artifactsDirectory">artifactsDirectory</a></code> | <code>string</code> | The build output directory. |
+| <code><a href="#schuettc.TypeScriptProject.property.artifactsJavascriptDirectory">artifactsJavascriptDirectory</a></code> | <code>string</code> | The location of the npm tarball after build (`${artifactsDirectory}/js`). |
+| <code><a href="#schuettc.TypeScriptProject.property.bundler">bundler</a></code> | <code>projen.javascript.Bundler</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.manifest">manifest</a></code> | <code>any</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.npmrc">npmrc</a></code> | <code>projen.javascript.NpmConfig</code> | The .npmrc file. |
+| <code><a href="#schuettc.TypeScriptProject.property.package">package</a></code> | <code>projen.javascript.NodePackage</code> | API for managing the node package. |
+| <code><a href="#schuettc.TypeScriptProject.property.packageManager">packageManager</a></code> | <code>projen.javascript.NodePackageManager</code> | The package manager to use. |
+| <code><a href="#schuettc.TypeScriptProject.property.runScriptCommand">runScriptCommand</a></code> | <code>string</code> | The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the package manager). |
+| <code><a href="#schuettc.TypeScriptProject.property.autoMerge">autoMerge</a></code> | <code>projen.github.AutoMerge</code> | Component that sets up mergify for merging approved pull requests. |
+| <code><a href="#schuettc.TypeScriptProject.property.buildWorkflow">buildWorkflow</a></code> | <code>projen.build.BuildWorkflow</code> | The PR build GitHub workflow. |
+| <code><a href="#schuettc.TypeScriptProject.property.buildWorkflowJobId">buildWorkflowJobId</a></code> | <code>string</code> | The job ID of the build workflow. |
+| <code><a href="#schuettc.TypeScriptProject.property.jest">jest</a></code> | <code>projen.javascript.Jest</code> | The Jest configuration (if enabled). |
+| <code><a href="#schuettc.TypeScriptProject.property.maxNodeVersion">maxNodeVersion</a></code> | <code>string</code> | Maximum node version required by this package. |
+| <code><a href="#schuettc.TypeScriptProject.property.minNodeVersion">minNodeVersion</a></code> | <code>string</code> | Minimum node.js version required by this package. |
+| <code><a href="#schuettc.TypeScriptProject.property.npmignore">npmignore</a></code> | <code>projen.IgnoreFile</code> | The .npmignore file. |
+| <code><a href="#schuettc.TypeScriptProject.property.prettier">prettier</a></code> | <code>projen.javascript.Prettier</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.publisher">publisher</a></code> | <code>projen.release.Publisher</code> | Package publisher. |
+| <code><a href="#schuettc.TypeScriptProject.property.release">release</a></code> | <code>projen.release.Release</code> | Release management. |
+| <code><a href="#schuettc.TypeScriptProject.property.upgradeWorkflow">upgradeWorkflow</a></code> | <code>projen.javascript.UpgradeDependencies</code> | The upgrade workflow. |
+| <code><a href="#schuettc.TypeScriptProject.property.docsDirectory">docsDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.libdir">libdir</a></code> | <code>string</code> | The directory in which compiled .js files reside. |
+| <code><a href="#schuettc.TypeScriptProject.property.srcdir">srcdir</a></code> | <code>string</code> | The directory in which the .ts sources reside. |
+| <code><a href="#schuettc.TypeScriptProject.property.testdir">testdir</a></code> | <code>string</code> | The directory in which tests reside. |
+| <code><a href="#schuettc.TypeScriptProject.property.tsconfigDev">tsconfigDev</a></code> | <code>projen.javascript.TypescriptConfig</code> | A typescript configuration file which covers all files (sources, tests, projen). |
+| <code><a href="#schuettc.TypeScriptProject.property.watchTask">watchTask</a></code> | <code>projen.Task</code> | The "watch" task. |
+| <code><a href="#schuettc.TypeScriptProject.property.docgen">docgen</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.eslint">eslint</a></code> | <code>projen.javascript.Eslint</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.tsconfig">tsconfig</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
+| <code><a href="#schuettc.TypeScriptProject.property.tsconfigEslint">tsconfigEslint</a></code> | <code>projen.javascript.TypescriptConfig</code> | *No description.* |
 
 ---
 
-##### `buildTask`<sup>Required</sup> <a name="buildTask" id="mrpj.TypeScriptProject.property.buildTask"></a>
+##### `buildTask`<sup>Required</sup> <a name="buildTask" id="schuettc.TypeScriptProject.property.buildTask"></a>
 
 ```typescript
 public readonly buildTask: Task;
@@ -11109,7 +9917,7 @@ public readonly buildTask: Task;
 
 ---
 
-##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="mrpj.TypeScriptProject.property.commitGenerated"></a>
+##### `commitGenerated`<sup>Required</sup> <a name="commitGenerated" id="schuettc.TypeScriptProject.property.commitGenerated"></a>
 
 ```typescript
 public readonly commitGenerated: boolean;
@@ -11121,7 +9929,7 @@ Whether to commit the managed files by default.
 
 ---
 
-##### `compileTask`<sup>Required</sup> <a name="compileTask" id="mrpj.TypeScriptProject.property.compileTask"></a>
+##### `compileTask`<sup>Required</sup> <a name="compileTask" id="schuettc.TypeScriptProject.property.compileTask"></a>
 
 ```typescript
 public readonly compileTask: Task;
@@ -11131,7 +9939,7 @@ public readonly compileTask: Task;
 
 ---
 
-##### `components`<sup>Required</sup> <a name="components" id="mrpj.TypeScriptProject.property.components"></a>
+##### `components`<sup>Required</sup> <a name="components" id="schuettc.TypeScriptProject.property.components"></a>
 
 ```typescript
 public readonly components: Component[];
@@ -11143,7 +9951,7 @@ Returns all the components within this project.
 
 ---
 
-##### `deps`<sup>Required</sup> <a name="deps" id="mrpj.TypeScriptProject.property.deps"></a>
+##### `deps`<sup>Required</sup> <a name="deps" id="schuettc.TypeScriptProject.property.deps"></a>
 
 ```typescript
 public readonly deps: Dependencies;
@@ -11155,7 +9963,7 @@ Project dependencies.
 
 ---
 
-##### `ejected`<sup>Required</sup> <a name="ejected" id="mrpj.TypeScriptProject.property.ejected"></a>
+##### `ejected`<sup>Required</sup> <a name="ejected" id="schuettc.TypeScriptProject.property.ejected"></a>
 
 ```typescript
 public readonly ejected: boolean;
@@ -11167,7 +9975,7 @@ Whether or not the project is being ejected.
 
 ---
 
-##### `files`<sup>Required</sup> <a name="files" id="mrpj.TypeScriptProject.property.files"></a>
+##### `files`<sup>Required</sup> <a name="files" id="schuettc.TypeScriptProject.property.files"></a>
 
 ```typescript
 public readonly files: FileBase[];
@@ -11179,7 +9987,7 @@ All files in this project.
 
 ---
 
-##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="mrpj.TypeScriptProject.property.gitattributes"></a>
+##### `gitattributes`<sup>Required</sup> <a name="gitattributes" id="schuettc.TypeScriptProject.property.gitattributes"></a>
 
 ```typescript
 public readonly gitattributes: GitAttributesFile;
@@ -11191,7 +9999,7 @@ The .gitattributes file for this repository.
 
 ---
 
-##### `gitignore`<sup>Required</sup> <a name="gitignore" id="mrpj.TypeScriptProject.property.gitignore"></a>
+##### `gitignore`<sup>Required</sup> <a name="gitignore" id="schuettc.TypeScriptProject.property.gitignore"></a>
 
 ```typescript
 public readonly gitignore: IgnoreFile;
@@ -11203,7 +10011,7 @@ public readonly gitignore: IgnoreFile;
 
 ---
 
-##### `logger`<sup>Required</sup> <a name="logger" id="mrpj.TypeScriptProject.property.logger"></a>
+##### `logger`<sup>Required</sup> <a name="logger" id="schuettc.TypeScriptProject.property.logger"></a>
 
 ```typescript
 public readonly logger: Logger;
@@ -11215,7 +10023,7 @@ Logging utilities.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="mrpj.TypeScriptProject.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="schuettc.TypeScriptProject.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -11227,7 +10035,7 @@ Project name.
 
 ---
 
-##### `outdir`<sup>Required</sup> <a name="outdir" id="mrpj.TypeScriptProject.property.outdir"></a>
+##### `outdir`<sup>Required</sup> <a name="outdir" id="schuettc.TypeScriptProject.property.outdir"></a>
 
 ```typescript
 public readonly outdir: string;
@@ -11239,7 +10047,7 @@ Absolute output directory of this project.
 
 ---
 
-##### `packageTask`<sup>Required</sup> <a name="packageTask" id="mrpj.TypeScriptProject.property.packageTask"></a>
+##### `packageTask`<sup>Required</sup> <a name="packageTask" id="schuettc.TypeScriptProject.property.packageTask"></a>
 
 ```typescript
 public readonly packageTask: Task;
@@ -11249,7 +10057,7 @@ public readonly packageTask: Task;
 
 ---
 
-##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="mrpj.TypeScriptProject.property.postCompileTask"></a>
+##### `postCompileTask`<sup>Required</sup> <a name="postCompileTask" id="schuettc.TypeScriptProject.property.postCompileTask"></a>
 
 ```typescript
 public readonly postCompileTask: Task;
@@ -11259,7 +10067,7 @@ public readonly postCompileTask: Task;
 
 ---
 
-##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="mrpj.TypeScriptProject.property.preCompileTask"></a>
+##### `preCompileTask`<sup>Required</sup> <a name="preCompileTask" id="schuettc.TypeScriptProject.property.preCompileTask"></a>
 
 ```typescript
 public readonly preCompileTask: Task;
@@ -11269,7 +10077,7 @@ public readonly preCompileTask: Task;
 
 ---
 
-##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="mrpj.TypeScriptProject.property.projectBuild"></a>
+##### `projectBuild`<sup>Required</sup> <a name="projectBuild" id="schuettc.TypeScriptProject.property.projectBuild"></a>
 
 ```typescript
 public readonly projectBuild: ProjectBuild;
@@ -11281,7 +10089,7 @@ Manages the build process of the project.
 
 ---
 
-##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="mrpj.TypeScriptProject.property.projenCommand"></a>
+##### `projenCommand`<sup>Required</sup> <a name="projenCommand" id="schuettc.TypeScriptProject.property.projenCommand"></a>
 
 ```typescript
 public readonly projenCommand: string;
@@ -11293,7 +10101,7 @@ The command to use in order to run the projen CLI.
 
 ---
 
-##### `root`<sup>Required</sup> <a name="root" id="mrpj.TypeScriptProject.property.root"></a>
+##### `root`<sup>Required</sup> <a name="root" id="schuettc.TypeScriptProject.property.root"></a>
 
 ```typescript
 public readonly root: Project;
@@ -11305,7 +10113,7 @@ The root project.
 
 ---
 
-##### `subprojects`<sup>Required</sup> <a name="subprojects" id="mrpj.TypeScriptProject.property.subprojects"></a>
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="schuettc.TypeScriptProject.property.subprojects"></a>
 
 ```typescript
 public readonly subprojects: Project[];
@@ -11317,7 +10125,7 @@ Returns all the subprojects within this project.
 
 ---
 
-##### `tasks`<sup>Required</sup> <a name="tasks" id="mrpj.TypeScriptProject.property.tasks"></a>
+##### `tasks`<sup>Required</sup> <a name="tasks" id="schuettc.TypeScriptProject.property.tasks"></a>
 
 ```typescript
 public readonly tasks: Tasks;
@@ -11329,7 +10137,7 @@ Project tasks.
 
 ---
 
-##### `testTask`<sup>Required</sup> <a name="testTask" id="mrpj.TypeScriptProject.property.testTask"></a>
+##### `testTask`<sup>Required</sup> <a name="testTask" id="schuettc.TypeScriptProject.property.testTask"></a>
 
 ```typescript
 public readonly testTask: Task;
@@ -11339,7 +10147,7 @@ public readonly testTask: Task;
 
 ---
 
-##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="mrpj.TypeScriptProject.property.defaultTask"></a>
+##### `defaultTask`<sup>Optional</sup> <a name="defaultTask" id="schuettc.TypeScriptProject.property.defaultTask"></a>
 
 ```typescript
 public readonly defaultTask: Task;
@@ -11354,7 +10162,7 @@ the project is being ejected.
 
 ---
 
-##### `initProject`<sup>Optional</sup> <a name="initProject" id="mrpj.TypeScriptProject.property.initProject"></a>
+##### `initProject`<sup>Optional</sup> <a name="initProject" id="schuettc.TypeScriptProject.property.initProject"></a>
 
 ```typescript
 public readonly initProject: InitProject;
@@ -11370,7 +10178,7 @@ FQN of the project type.
 
 ---
 
-##### `parent`<sup>Optional</sup> <a name="parent" id="mrpj.TypeScriptProject.property.parent"></a>
+##### `parent`<sup>Optional</sup> <a name="parent" id="schuettc.TypeScriptProject.property.parent"></a>
 
 ```typescript
 public readonly parent: Project;
@@ -11384,7 +10192,7 @@ If undefined, this is the root project.
 
 ---
 
-##### `projectType`<sup>Required</sup> <a name="projectType" id="mrpj.TypeScriptProject.property.projectType"></a>
+##### `projectType`<sup>Required</sup> <a name="projectType" id="schuettc.TypeScriptProject.property.projectType"></a>
 
 ```typescript
 public readonly projectType: ProjectType;
@@ -11394,7 +10202,7 @@ public readonly projectType: ProjectType;
 
 ---
 
-##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="mrpj.TypeScriptProject.property.autoApprove"></a>
+##### `autoApprove`<sup>Optional</sup> <a name="autoApprove" id="schuettc.TypeScriptProject.property.autoApprove"></a>
 
 ```typescript
 public readonly autoApprove: AutoApprove;
@@ -11406,7 +10214,7 @@ Auto approve set up for this project.
 
 ---
 
-##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="mrpj.TypeScriptProject.property.devContainer"></a>
+##### `devContainer`<sup>Optional</sup> <a name="devContainer" id="schuettc.TypeScriptProject.property.devContainer"></a>
 
 ```typescript
 public readonly devContainer: DevContainer;
@@ -11420,7 +10228,7 @@ This will be `undefined` if devContainer boolean is false
 
 ---
 
-##### `github`<sup>Optional</sup> <a name="github" id="mrpj.TypeScriptProject.property.github"></a>
+##### `github`<sup>Optional</sup> <a name="github" id="schuettc.TypeScriptProject.property.github"></a>
 
 ```typescript
 public readonly github: GitHub;
@@ -11434,7 +10242,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="mrpj.TypeScriptProject.property.gitpod"></a>
+##### `gitpod`<sup>Optional</sup> <a name="gitpod" id="schuettc.TypeScriptProject.property.gitpod"></a>
 
 ```typescript
 public readonly gitpod: Gitpod;
@@ -11448,7 +10256,7 @@ This will be `undefined` if gitpod boolean is false
 
 ---
 
-##### `vscode`<sup>Optional</sup> <a name="vscode" id="mrpj.TypeScriptProject.property.vscode"></a>
+##### `vscode`<sup>Optional</sup> <a name="vscode" id="schuettc.TypeScriptProject.property.vscode"></a>
 
 ```typescript
 public readonly vscode: VsCode;
@@ -11462,7 +10270,7 @@ This will be `undefined` for subprojects.
 
 ---
 
-##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="mrpj.TypeScriptProject.property.allowLibraryDependencies"></a>
+##### ~~`allowLibraryDependencies`~~<sup>Required</sup> <a name="allowLibraryDependencies" id="schuettc.TypeScriptProject.property.allowLibraryDependencies"></a>
 
 - *Deprecated:* use `package.allowLibraryDependencies`
 
@@ -11474,7 +10282,7 @@ public readonly allowLibraryDependencies: boolean;
 
 ---
 
-##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="mrpj.TypeScriptProject.property.artifactsDirectory"></a>
+##### `artifactsDirectory`<sup>Required</sup> <a name="artifactsDirectory" id="schuettc.TypeScriptProject.property.artifactsDirectory"></a>
 
 ```typescript
 public readonly artifactsDirectory: string;
@@ -11490,7 +10298,7 @@ tarball will be placed under `dist/js/boom-boom-1.2.3.tg`.
 
 ---
 
-##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="mrpj.TypeScriptProject.property.artifactsJavascriptDirectory"></a>
+##### `artifactsJavascriptDirectory`<sup>Required</sup> <a name="artifactsJavascriptDirectory" id="schuettc.TypeScriptProject.property.artifactsJavascriptDirectory"></a>
 
 ```typescript
 public readonly artifactsJavascriptDirectory: string;
@@ -11502,7 +10310,7 @@ The location of the npm tarball after build (`${artifactsDirectory}/js`).
 
 ---
 
-##### `bundler`<sup>Required</sup> <a name="bundler" id="mrpj.TypeScriptProject.property.bundler"></a>
+##### `bundler`<sup>Required</sup> <a name="bundler" id="schuettc.TypeScriptProject.property.bundler"></a>
 
 ```typescript
 public readonly bundler: Bundler;
@@ -11512,7 +10320,7 @@ public readonly bundler: Bundler;
 
 ---
 
-##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="mrpj.TypeScriptProject.property.entrypoint"></a>
+##### ~~`entrypoint`~~<sup>Required</sup> <a name="entrypoint" id="schuettc.TypeScriptProject.property.entrypoint"></a>
 
 - *Deprecated:* use `package.entrypoint`
 
@@ -11524,7 +10332,7 @@ public readonly entrypoint: string;
 
 ---
 
-##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="mrpj.TypeScriptProject.property.manifest"></a>
+##### ~~`manifest`~~<sup>Required</sup> <a name="manifest" id="schuettc.TypeScriptProject.property.manifest"></a>
 
 - *Deprecated:* use `package.addField(x, y)`
 
@@ -11536,7 +10344,7 @@ public readonly manifest: any;
 
 ---
 
-##### `npmrc`<sup>Required</sup> <a name="npmrc" id="mrpj.TypeScriptProject.property.npmrc"></a>
+##### `npmrc`<sup>Required</sup> <a name="npmrc" id="schuettc.TypeScriptProject.property.npmrc"></a>
 
 ```typescript
 public readonly npmrc: NpmConfig;
@@ -11548,7 +10356,7 @@ The .npmrc file.
 
 ---
 
-##### `package`<sup>Required</sup> <a name="package" id="mrpj.TypeScriptProject.property.package"></a>
+##### `package`<sup>Required</sup> <a name="package" id="schuettc.TypeScriptProject.property.package"></a>
 
 ```typescript
 public readonly package: NodePackage;
@@ -11560,7 +10368,7 @@ API for managing the node package.
 
 ---
 
-##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="mrpj.TypeScriptProject.property.packageManager"></a>
+##### ~~`packageManager`~~<sup>Required</sup> <a name="packageManager" id="schuettc.TypeScriptProject.property.packageManager"></a>
 
 - *Deprecated:* use `package.packageManager`
 
@@ -11574,7 +10382,7 @@ The package manager to use.
 
 ---
 
-##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="mrpj.TypeScriptProject.property.runScriptCommand"></a>
+##### `runScriptCommand`<sup>Required</sup> <a name="runScriptCommand" id="schuettc.TypeScriptProject.property.runScriptCommand"></a>
 
 ```typescript
 public readonly runScriptCommand: string;
@@ -11586,7 +10394,7 @@ The command to use to run scripts (e.g. `yarn run` or `npm run` depends on the p
 
 ---
 
-##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="mrpj.TypeScriptProject.property.autoMerge"></a>
+##### `autoMerge`<sup>Optional</sup> <a name="autoMerge" id="schuettc.TypeScriptProject.property.autoMerge"></a>
 
 ```typescript
 public readonly autoMerge: AutoMerge;
@@ -11598,7 +10406,7 @@ Component that sets up mergify for merging approved pull requests.
 
 ---
 
-##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="mrpj.TypeScriptProject.property.buildWorkflow"></a>
+##### `buildWorkflow`<sup>Optional</sup> <a name="buildWorkflow" id="schuettc.TypeScriptProject.property.buildWorkflow"></a>
 
 ```typescript
 public readonly buildWorkflow: BuildWorkflow;
@@ -11612,7 +10420,7 @@ The PR build GitHub workflow.
 
 ---
 
-##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="mrpj.TypeScriptProject.property.buildWorkflowJobId"></a>
+##### `buildWorkflowJobId`<sup>Optional</sup> <a name="buildWorkflowJobId" id="schuettc.TypeScriptProject.property.buildWorkflowJobId"></a>
 
 ```typescript
 public readonly buildWorkflowJobId: string;
@@ -11624,7 +10432,7 @@ The job ID of the build workflow.
 
 ---
 
-##### `jest`<sup>Optional</sup> <a name="jest" id="mrpj.TypeScriptProject.property.jest"></a>
+##### `jest`<sup>Optional</sup> <a name="jest" id="schuettc.TypeScriptProject.property.jest"></a>
 
 ```typescript
 public readonly jest: Jest;
@@ -11636,7 +10444,7 @@ The Jest configuration (if enabled).
 
 ---
 
-##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="mrpj.TypeScriptProject.property.maxNodeVersion"></a>
+##### `maxNodeVersion`<sup>Optional</sup> <a name="maxNodeVersion" id="schuettc.TypeScriptProject.property.maxNodeVersion"></a>
 
 ```typescript
 public readonly maxNodeVersion: string;
@@ -11648,7 +10456,7 @@ Maximum node version required by this package.
 
 ---
 
-##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="mrpj.TypeScriptProject.property.minNodeVersion"></a>
+##### `minNodeVersion`<sup>Optional</sup> <a name="minNodeVersion" id="schuettc.TypeScriptProject.property.minNodeVersion"></a>
 
 ```typescript
 public readonly minNodeVersion: string;
@@ -11660,7 +10468,7 @@ Minimum node.js version required by this package.
 
 ---
 
-##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="mrpj.TypeScriptProject.property.npmignore"></a>
+##### `npmignore`<sup>Optional</sup> <a name="npmignore" id="schuettc.TypeScriptProject.property.npmignore"></a>
 
 ```typescript
 public readonly npmignore: IgnoreFile;
@@ -11672,7 +10480,7 @@ The .npmignore file.
 
 ---
 
-##### `prettier`<sup>Optional</sup> <a name="prettier" id="mrpj.TypeScriptProject.property.prettier"></a>
+##### `prettier`<sup>Optional</sup> <a name="prettier" id="schuettc.TypeScriptProject.property.prettier"></a>
 
 ```typescript
 public readonly prettier: Prettier;
@@ -11682,7 +10490,7 @@ public readonly prettier: Prettier;
 
 ---
 
-##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="mrpj.TypeScriptProject.property.publisher"></a>
+##### ~~`publisher`~~<sup>Optional</sup> <a name="publisher" id="schuettc.TypeScriptProject.property.publisher"></a>
 
 - *Deprecated:* use `release.publisher`.
 
@@ -11699,7 +10507,7 @@ release workflow.
 
 ---
 
-##### `release`<sup>Optional</sup> <a name="release" id="mrpj.TypeScriptProject.property.release"></a>
+##### `release`<sup>Optional</sup> <a name="release" id="schuettc.TypeScriptProject.property.release"></a>
 
 ```typescript
 public readonly release: Release;
@@ -11711,7 +10519,7 @@ Release management.
 
 ---
 
-##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="mrpj.TypeScriptProject.property.upgradeWorkflow"></a>
+##### `upgradeWorkflow`<sup>Optional</sup> <a name="upgradeWorkflow" id="schuettc.TypeScriptProject.property.upgradeWorkflow"></a>
 
 ```typescript
 public readonly upgradeWorkflow: UpgradeDependencies;
@@ -11723,7 +10531,7 @@ The upgrade workflow.
 
 ---
 
-##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="mrpj.TypeScriptProject.property.docsDirectory"></a>
+##### `docsDirectory`<sup>Required</sup> <a name="docsDirectory" id="schuettc.TypeScriptProject.property.docsDirectory"></a>
 
 ```typescript
 public readonly docsDirectory: string;
@@ -11733,7 +10541,7 @@ public readonly docsDirectory: string;
 
 ---
 
-##### `libdir`<sup>Required</sup> <a name="libdir" id="mrpj.TypeScriptProject.property.libdir"></a>
+##### `libdir`<sup>Required</sup> <a name="libdir" id="schuettc.TypeScriptProject.property.libdir"></a>
 
 ```typescript
 public readonly libdir: string;
@@ -11745,7 +10553,7 @@ The directory in which compiled .js files reside.
 
 ---
 
-##### `srcdir`<sup>Required</sup> <a name="srcdir" id="mrpj.TypeScriptProject.property.srcdir"></a>
+##### `srcdir`<sup>Required</sup> <a name="srcdir" id="schuettc.TypeScriptProject.property.srcdir"></a>
 
 ```typescript
 public readonly srcdir: string;
@@ -11757,7 +10565,7 @@ The directory in which the .ts sources reside.
 
 ---
 
-##### `testdir`<sup>Required</sup> <a name="testdir" id="mrpj.TypeScriptProject.property.testdir"></a>
+##### `testdir`<sup>Required</sup> <a name="testdir" id="schuettc.TypeScriptProject.property.testdir"></a>
 
 ```typescript
 public readonly testdir: string;
@@ -11769,7 +10577,7 @@ The directory in which tests reside.
 
 ---
 
-##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="mrpj.TypeScriptProject.property.tsconfigDev"></a>
+##### `tsconfigDev`<sup>Required</sup> <a name="tsconfigDev" id="schuettc.TypeScriptProject.property.tsconfigDev"></a>
 
 ```typescript
 public readonly tsconfigDev: TypescriptConfig;
@@ -11781,7 +10589,7 @@ A typescript configuration file which covers all files (sources, tests, projen).
 
 ---
 
-##### `watchTask`<sup>Required</sup> <a name="watchTask" id="mrpj.TypeScriptProject.property.watchTask"></a>
+##### `watchTask`<sup>Required</sup> <a name="watchTask" id="schuettc.TypeScriptProject.property.watchTask"></a>
 
 ```typescript
 public readonly watchTask: Task;
@@ -11793,7 +10601,7 @@ The "watch" task.
 
 ---
 
-##### `docgen`<sup>Optional</sup> <a name="docgen" id="mrpj.TypeScriptProject.property.docgen"></a>
+##### `docgen`<sup>Optional</sup> <a name="docgen" id="schuettc.TypeScriptProject.property.docgen"></a>
 
 ```typescript
 public readonly docgen: boolean;
@@ -11803,7 +10611,7 @@ public readonly docgen: boolean;
 
 ---
 
-##### `eslint`<sup>Optional</sup> <a name="eslint" id="mrpj.TypeScriptProject.property.eslint"></a>
+##### `eslint`<sup>Optional</sup> <a name="eslint" id="schuettc.TypeScriptProject.property.eslint"></a>
 
 ```typescript
 public readonly eslint: Eslint;
@@ -11813,7 +10621,7 @@ public readonly eslint: Eslint;
 
 ---
 
-##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="mrpj.TypeScriptProject.property.tsconfig"></a>
+##### `tsconfig`<sup>Optional</sup> <a name="tsconfig" id="schuettc.TypeScriptProject.property.tsconfig"></a>
 
 ```typescript
 public readonly tsconfig: TypescriptConfig;
@@ -11823,7 +10631,7 @@ public readonly tsconfig: TypescriptConfig;
 
 ---
 
-##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="mrpj.TypeScriptProject.property.tsconfigEslint"></a>
+##### `tsconfigEslint`<sup>Optional</sup> <a name="tsconfigEslint" id="schuettc.TypeScriptProject.property.tsconfigEslint"></a>
 
 ```typescript
 public readonly tsconfigEslint: TypescriptConfig;
@@ -11833,35 +10641,15 @@ public readonly tsconfigEslint: TypescriptConfig;
 
 ---
 
-##### `logo`<sup>Optional</sup> <a name="logo" id="mrpj.TypeScriptProject.property.logo"></a>
-
-```typescript
-public readonly logo: SvgFile;
-```
-
-- *Type:* mrpj.logo.SvgFile
-
----
-
-##### `wordmark`<sup>Optional</sup> <a name="wordmark" id="mrpj.TypeScriptProject.property.wordmark"></a>
-
-```typescript
-public readonly wordmark: Wordmark;
-```
-
-- *Type:* mrpj.logo.Wordmark
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#mrpj.TypeScriptProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
+| <code><a href="#schuettc.TypeScriptProject.property.DEFAULT_TASK">DEFAULT_TASK</a></code> | <code>string</code> | The name of the default task (the task executed when `projen` is run without arguments). |
 
 ---
 
-##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="mrpj.TypeScriptProject.property.DEFAULT_TASK"></a>
+##### `DEFAULT_TASK`<sup>Required</sup> <a name="DEFAULT_TASK" id="schuettc.TypeScriptProject.property.DEFAULT_TASK"></a>
 
 ```typescript
 public readonly DEFAULT_TASK: string;
@@ -11876,178 +10664,4 @@ this task should synthesize the project files.
 
 ---
 
-### Wordmark <a name="Wordmark" id="mrpj.logo.Wordmark"></a>
-
-#### Initializers <a name="Initializers" id="mrpj.logo.Wordmark.Initializer"></a>
-
-```typescript
-import { logo } from 'mrpj'
-
-new logo.Wordmark(project: Project, options?: WordmarkOptions)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.Wordmark.Initializer.parameter.project">project</a></code> | <code>projen.Project</code> | *No description.* |
-| <code><a href="#mrpj.logo.Wordmark.Initializer.parameter.options">options</a></code> | <code>mrpj.logo.WordmarkOptions</code> | *No description.* |
-
----
-
-##### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.Wordmark.Initializer.parameter.project"></a>
-
-- *Type:* projen.Project
-
----
-
-##### `options`<sup>Optional</sup> <a name="options" id="mrpj.logo.Wordmark.Initializer.parameter.options"></a>
-
-- *Type:* mrpj.logo.WordmarkOptions
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#mrpj.logo.Wordmark.postSynthesize">postSynthesize</a></code> | Called after synthesis. |
-| <code><a href="#mrpj.logo.Wordmark.preSynthesize">preSynthesize</a></code> | Called before synthesis. |
-| <code><a href="#mrpj.logo.Wordmark.synthesize">synthesize</a></code> | Synthesizes files to the project output directory. |
-
----
-
-##### `postSynthesize` <a name="postSynthesize" id="mrpj.logo.Wordmark.postSynthesize"></a>
-
-```typescript
-public postSynthesize(): void
-```
-
-Called after synthesis.
-
-Order is *not* guaranteed.
-
-##### `preSynthesize` <a name="preSynthesize" id="mrpj.logo.Wordmark.preSynthesize"></a>
-
-```typescript
-public preSynthesize(): void
-```
-
-Called before synthesis.
-
-##### `synthesize` <a name="synthesize" id="mrpj.logo.Wordmark.synthesize"></a>
-
-```typescript
-public synthesize(): void
-```
-
-Synthesizes files to the project output directory.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.Wordmark.property.project">project</a></code> | <code>projen.Project</code> | *No description.* |
-
----
-
-##### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.Wordmark.property.project"></a>
-
-```typescript
-public readonly project: Project;
-```
-
-- *Type:* projen.Project
-
----
-
-
-## Protocols <a name="Protocols" id="Protocols"></a>
-
-### ILogo <a name="ILogo" id="mrpj.logo.ILogo"></a>
-
-- *Implemented By:* mrpj.logo.Logo, mrpj.logo.ILogo
-
-Implementation interface of a logo.
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#mrpj.logo.ILogo.synth">synth</a></code> | Synth the logo. |
-
----
-
-##### `synth` <a name="synth" id="mrpj.logo.ILogo.synth"></a>
-
-```typescript
-public synth(project: Project): void
-```
-
-Synth the logo.
-
-###### `project`<sup>Required</sup> <a name="project" id="mrpj.logo.ILogo.synth.parameter.project"></a>
-
-- *Type:* projen.Project
-
----
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#mrpj.logo.ILogo.property.content">content</a></code> | <code>string</code> | The SVG content of the logo as a string. |
-| <code><a href="#mrpj.logo.ILogo.property.height">height</a></code> | <code>number</code> | The height of the logo in px. |
-| <code><a href="#mrpj.logo.ILogo.property.width">width</a></code> | <code>number</code> | The width of the logo in px. |
-| <code><a href="#mrpj.logo.ILogo.property.scale">scale</a></code> | <code>number</code> | Scale the logo by a factor. |
-
----
-
-##### `content`<sup>Required</sup> <a name="content" id="mrpj.logo.ILogo.property.content"></a>
-
-```typescript
-public readonly content: string;
-```
-
-- *Type:* string
-
-The SVG content of the logo as a string.
-
----
-
-##### `height`<sup>Required</sup> <a name="height" id="mrpj.logo.ILogo.property.height"></a>
-
-```typescript
-public readonly height: number;
-```
-
-- *Type:* number
-
-The height of the logo in px.
-
----
-
-##### `width`<sup>Required</sup> <a name="width" id="mrpj.logo.ILogo.property.width"></a>
-
-```typescript
-public readonly width: number;
-```
-
-- *Type:* number
-
-The width of the logo in px.
-
----
-
-##### `scale`<sup>Optional</sup> <a name="scale" id="mrpj.logo.ILogo.property.scale"></a>
-
-```typescript
-public readonly scale: number;
-```
-
-- *Type:* number
-- *Default:* 1
-
-Scale the logo by a factor.
-
----
 

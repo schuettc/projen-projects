@@ -52,11 +52,6 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
-!/images/logo.svg
-!/images/wordmark.svg
-!/images/wordmark-dark.svg
-!/images/wordmark-light.svg
-!/images/wordmark-dynamic.svg
 !/.nvmrc
 !/.node-version
 !/src/construct-project-options.ts

@@ -4488,6 +4488,11 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
+mrpj@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/mrpj/-/mrpj-0.1.6.tgz#364e1b7dde9e926a5372a4de702a1795b1642448"
+  integrity sha512-Rey6TKCTbocQivddqi3YJEVogB0kz9pMZbKoNtAvbnuDK5nPeIC6GQwvMQkXqXWeNpbOuy83Ofq4FUT0fhlj7g==
+
 ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"

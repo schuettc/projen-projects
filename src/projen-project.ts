@@ -1,6 +1,14 @@
 import { cdk } from 'projen';
-import { automation, dependencies, eslint, forceDefaults, logo, nodeVersion, packageInfo, preventSelfDependency, release } from './features';
-import { SvgFile, Wordmark } from './logo';
+import {
+  automation,
+  dependencies,
+  eslint,
+  forceDefaults,
+  nodeVersion,
+  packageInfo,
+  preventSelfDependency,
+  release,
+} from './features';
 import { ProjenProjectOptions } from './projen-project-options';
 import { configureFeatures, defaultOptions } from './utils';
 
@@ -9,9 +17,6 @@ import { configureFeatures, defaultOptions } from './utils';
  * @pjid projen
  */
 export class ProjenProject extends cdk.JsiiProject {
-  public readonly logo?: SvgFile;
-  public readonly wordmark?: Wordmark;
-
   public constructor(options: ProjenProjectOptions) {
     const opts = defaultOptions<ProjenProjectOptions>(
       packageInfo(),
@@ -30,11 +35,6 @@ export class ProjenProject extends cdk.JsiiProject {
 
     super(opts);
 
-    configureFeatures(
-      eslint,
-      logo,
-      nodeVersion,
-      preventSelfDependency,
-    )(this, opts);
+    configureFeatures(eslint, nodeVersion, preventSelfDependency)(this, opts);
   }
 }

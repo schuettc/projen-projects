@@ -149,26 +149,6 @@
         }
       ]
     },
-    "logo": {
-      "name": "logo",
-      "steps": [
-        {
-          "exec": "rsvg-convert -h 1024 images/logo.svg > images/logo.png"
-        },
-        {
-          "exec": "rsvg-convert -h 1024 images/wordmark.svg > images/wordmark.png"
-        },
-        {
-          "exec": "rsvg-convert -h 1024 images/wordmark-dark.svg > images/wordmark-dark.png"
-        },
-        {
-          "exec": "rsvg-convert -h 1024 images/wordmark-light.svg > images/wordmark-light.png"
-        },
-        {
-          "exec": "rsvg-convert -h 1024 images/wordmark-dynamic.svg > images/wordmark-dynamic.png"
-        }
-      ]
-    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package",
@@ -287,13 +267,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --filter=@jsii/spec,@mrgrain/jsii-struct-builder,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,npm-check-updates,projen,standard-version,ts-jest,ts-node"
+          "exec": "npm-check-updates --upgrade --target=minor --filter=@jsii/spec,@mrgrain/jsii-struct-builder,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest,jest-junit,jsii-diff,jsii-docgen,jsii-pacmak,mrpj,npm-check-updates,projen,standard-version,ts-jest,ts-node"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @jsii/spec @mrgrain/jsii-struct-builder @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak npm-check-updates projen standard-version ts-jest ts-node"
+          "exec": "yarn upgrade @jsii/spec @mrgrain/jsii-struct-builder @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii-diff jsii-docgen jsii-pacmak mrpj npm-check-updates projen standard-version ts-jest ts-node"
         },
         {
           "exec": "npx projen"

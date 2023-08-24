@@ -1,9 +1,9 @@
 {
-  "name": "mrpj",
+  "name": "schuettc",
   "description": "Opinionated projen project types.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mrgrain/projen-projects.git"
+    "url": "git@github.com:schuettc/projen-projects.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -15,7 +15,6 @@
     "docgen": "npx projen docgen",
     "eject": "npx projen eject",
     "eslint": "npx projen eslint",
-    "logo": "npx projen logo",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:js": "npx projen package:js",
@@ -31,8 +30,8 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "Momo Kornher",
-    "url": "https://moritzkornher.de",
+    "name": "Court Schuett",
+    "url": "https://subaud.io",
     "organization": false
   },
   "devDependencies": {
@@ -53,6 +52,7 @@
     "jsii-docgen": "^9",
     "jsii-pacmak": "^1.87.0",
     "jsii-rosetta": "5.1.x",
+    "mrpj": "^0.1.6",
     "npm-check-updates": "^16",
     "projen": "^0.72.18",
     "standard-version": "^9",
@@ -65,7 +65,7 @@
   },
   "main": "lib/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/mrgrain/projen-projects",
+  "homepage": "https://github.com/schuettc/projen-projects",
   "version": "0.0.0",
   "jest": {
     "testMatch": [

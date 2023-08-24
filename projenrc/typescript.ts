@@ -4,7 +4,6 @@ import { Struct } from '@mrgrain/jsii-struct-builder';
 import { Component, typescript } from 'projen';
 import { ExtendedStruct } from './extended-struct';
 
-
 export class TypeScriptProjectOptionsBuilder extends Component {
   public constructor(project: typescript.TypeScriptProject) {
     super(project);
@@ -21,9 +20,7 @@ export class TypeScriptProjectOptionsBuilder extends Component {
       .packageInfo()
       .releaseConfig()
       .automationConfig()
-      .logoSystem()
       .withoutDeprecated()
       .withStability(Stability.Stable);
   }
 }
-
